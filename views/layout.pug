@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+
+    //- import pug mixins file 
+    include ./common/_mixins.pug
+    
+    +CSS_Boxicons
+    +CSS_Bootstrap
+    +CSS_Datatables-bs5 
+    +CSS_Datatables-buttons-bs5 
+    +CSS_Datatables-select-bs5 
+    
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    
+    title= title
+
+    //- Scripts by ./common/_mixins.pug
+    +JQuery
+    +Datatables-JQuery 
+    +JS_Bootstrap
+    +JS_Datatables-dt
+    +Datatables-bs5 
+    +JS_Datatables-buttons
+    +Datatables-buttons-bs5
+    +JS_JsZip
+    //+Datatables-select-bs5 
+    
+    script(src='/javascripts/index.js')
+
+  body#body-pd
+    include includes/header.pug
+    include includes/sidebar.pug
+    block content

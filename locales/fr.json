@@ -1,0 +1,15 @@
+{
+ "MyApplication": "My Ping Center",
+ "Clubs": "Clubs",
+ "ClubShortDescription": "Sigle du club",
+ "ClubName": "Nom du club",
+ "EditingClub": "Modifier un club",
+ "Players": "Joueurs",
+ "Close": "Fermer",
+ "Save": "Sauvegarder",
+ "Modify": "Modifier",
+ "Delete": "Supprimer",
+ "EnterClubShortDescription": "EnterClubShortDescription",
+ "MSG_ClubShortDescriptionIsMandatory": "Sigle du club obligatoire",
+ "MSG_ClubLongDescriptionIsMandatory": "Nom du club obligatoire"
+}

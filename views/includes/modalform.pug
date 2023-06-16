@@ -1,0 +1,12 @@
+.modal.fade#modalForm(tabindex=-1, role="dialog")
+        .modal-dialog(role="document")
+          .modal-content
+            form#modalFormForm(action="to_be_set_dynamically" method="to_be_set_dynamically")
+              .modal-header#modalFormHeader(style ="justify-content:flex-start")
+                div.mx-2 
+                  i#modalFormHeaderImage
+                span#modalFormTitle
+              .modal-body#modalFormBody
+              .modal-footer
+                button(type="button", class="btn btn-secondary", data-bs-dismiss="modal", data-bs-target="#modalForm") #{__('Close')} 
+                button#modalFormSubmitButton(type="button", class="btn btn-primary") #{__('Save')}
