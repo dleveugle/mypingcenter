@@ -45,3 +45,22 @@ exports.club_delete = function(id) {
             error => reject(error));
     });
 };
+
+exports.club_create = function(req, res, next) {
+    return new Promise((resolve, reject) =>{
+        Club.create({
+            shortdesc: req.body.shortdesc,
+            longdesc: req.body.longdesc
+        })
+        .then(
+            data => resolve(data),
+            error => reject(error));
+    });
+};
+
+exports.club_new = function(req, res, next) {
+    return new Promise((resolve, reject) =>{
+        resolve(Club.build())
+    });
+};
+
