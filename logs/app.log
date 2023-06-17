@@ -1,0 +1,10 @@
+2023-06-17T16:42:53.896Z info: Received a GET request for /clubs/
+2023-06-17T16:45:45.108Z info: Received a GET request for /clubs/
+2023-06-17T16:45:54.976Z info: Received a GET request for /
+2023-06-17T17:06:35.901Z info: Received a GET request for /
+2023-06-17T17:07:03.348Z info: Received a GET request for /
+2023-06-17T17:10:01.634Z info: Received a GET request for /
+2023-06-17T17:10:01.639Z error: This is an error message
+2023-06-17T17:10:01.640Z warn: This is a warning message
+2023-06-17T17:10:01.641Z info: This is an info message
+2023-06-17T17:10:22.171Z info: Received a GET request for /clubs

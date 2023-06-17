@@ -3,10 +3,9 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
-var logger = require('morgan');
 
 const i18n = require('i18n');
-var services = require('./services');
+var services = require('./services'); // i18n & logger
 
 /**
  * Load utilities
@@ -14,11 +13,8 @@ var services = require('./services');
 global.Utils = require(__dirname + '/utils');
 
 
-// instantiate routers
-//var indexRouter = global.Utils.requireRoutes('index');
-//var clubsRouter = global.Utils.requireRoutes('clubRouter');
-
 var app = express();
+
 
 // application settings
 services.i18nUrls.configure(app, i18n, {
@@ -36,7 +32,6 @@ app.set('view engine', 'pug');
 
 app.locals.basedir = path.join(__dirname, 'views');
 
-app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser("mypingcenter"));
@@ -107,6 +102,11 @@ app.use((req, res, next) => {
 
 // Routers
 console.log(global.Utils);
+app.use((req, res, next) => {
+  // Log an info message for each incoming request
+  services.logger.info(`Received a ${req.method} request for ${req.url}`);
+  next();
+});
 app.use('/', global.Utils.requireRoutes('index'));
 app.use('/clubs', global.Utils.requireRoutes('clubRouter'));
 
