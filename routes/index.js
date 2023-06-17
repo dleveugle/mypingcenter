@@ -11,6 +11,7 @@ router.get('/', function(req, res, next) {
   services.logger.log("verbose", "This is a verbose message");
   services.logger.log("debug", "This is a debug message");
   services.logger.log("silly", "This is a silly message");
+  req.flash("success", "your flash messages are working");
   res.render('index', { title: 'Express' });
 });
 

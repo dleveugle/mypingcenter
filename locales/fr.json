@@ -13,5 +13,7 @@
  "EnterClubShortDescription": "EnterClubShortDescription",
  "MSG_ClubShortDescriptionIsMandatory": "Sigle du club obligatoire",
  "MSG_ClubLongDescriptionIsMandatory": "Nom du club obligatoire",
+ "MSG_ClubCreated": "Club créé",
+ "MSG_ClubDeleted": "Club supprimé",
  "Create": "Create"
 }

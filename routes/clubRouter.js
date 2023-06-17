@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 const { body, validationResult } = global.Utils.requireNodeModule('express-validator');
 const clubController = global.Utils.requireControllers('clubController');
+const services = global.Utils.requireServices();
 
 
 /**
@@ -71,7 +72,9 @@ router.post('/edit/:id',  [
       } else {
         clubController.club_update(req)
         .then(res.status(200).jsonp({}))
-        .catch(next);
+        .catch((err)=>{
+            services.logger.error(err);
+           next(err)});
       }
 });
 
@@ -93,8 +96,13 @@ function(req, res, next)
         return res.status(422).jsonp(errors.array());
       } else {
         clubController.club_create(req)
-        .then(res.status(200).jsonp({}))
-        .catch(next);
+        .then(()=>{
+            req.flash('success', req.__('MSG_ClubCreated'))
+            res.status(200).jsonp({})
+        })
+        .catch((err)=>{
+            services.logger.error(err);
+           next(err)});
       } 
 });
 
@@ -105,8 +113,13 @@ function(req, res, next)
 router.delete('/delete/:id',
     function(req, res, next) {
         clubController.club_delete(req.params.id)
-        .then(res.status(200).jsonp({}))
-        .catch(next);
+        .then(()=> {
+            req.flash('success', req.__('MSG_ClubDeleted'));
+            res.status(200).jsonp({})
+        })
+        .catch((err)=>{
+            services.logger.error(err);
+           next(err)});
 });
 
 module.exports = router;

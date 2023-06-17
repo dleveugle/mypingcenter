@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
+const flash = require('connect-flash');
 
 const i18n = require('i18n');
 var services = require('./services'); // i18n & logger
@@ -65,6 +66,14 @@ app.use(function(req, res, next) {
       return i18n.__.apply(req, arguments);
   };
 
+  next();
+});
+
+// express-messages middleware 
+app.use(flash());
+app.use((req, res, next) => {
+  res.locals.errors = req.flash("error");
+  res.locals.successes = req.flash("success");
   next();
 });
 

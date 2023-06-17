@@ -8,3 +8,39 @@
 2023-06-17T17:10:01.640Z warn: This is a warning message
 2023-06-17T17:10:01.641Z info: This is an info message
 2023-06-17T17:10:22.171Z info: Received a GET request for /clubs
+2023-06-17T18:30:35.773Z info: Received a GET request for /
+2023-06-17T18:30:35.779Z error: This is an error message
+2023-06-17T18:30:35.780Z warn: This is a warning message
+2023-06-17T18:30:35.780Z info: This is an info message
+2023-06-17T18:30:36.856Z info: Received a GET request for /favicon.ico
+2023-06-17T18:30:47.311Z info: Received a GET request for /clubs
+2023-06-17T18:30:53.028Z info: Received a GET request for /
+2023-06-17T18:30:53.030Z error: This is an error message
+2023-06-17T18:30:53.031Z warn: This is a warning message
+2023-06-17T18:30:53.032Z info: This is an info message
+2023-06-17T18:31:02.546Z info: Received a GET request for /
+2023-06-17T18:31:02.547Z error: This is an error message
+2023-06-17T18:31:02.547Z warn: This is a warning message
+2023-06-17T18:31:02.549Z info: This is an info message
+2023-06-17T18:42:21.984Z info: Received a GET request for /
+2023-06-17T18:42:21.999Z error: This is an error message
+2023-06-17T18:42:22.052Z warn: This is a warning message
+2023-06-17T18:42:22.102Z info: This is an info message
+2023-06-17T18:42:24.631Z info: Received a GET request for /clubs
+2023-06-17T18:42:26.038Z info: Received a DELETE request for /clubs/delete/4
+2023-06-17T18:42:26.090Z info: Received a GET request for /clubs/
+2023-06-17T18:45:19.073Z info: Received a GET request for /clubs/
+2023-06-17T18:45:23.128Z info: Received a GET request for /clubs/new
+2023-06-17T18:45:23.142Z info: Received a GET request for /clubs/edit/-1
+2023-06-17T18:45:26.615Z info: Received a POST request for /clubs/create/
+2023-06-17T18:48:25.293Z info: Received a GET request for /clubs/
+2023-06-17T18:48:31.637Z info: Received a DELETE request for /clubs/delete/5
+2023-06-17T18:48:31.662Z info: Received a GET request for /clubs/
+2023-06-17T18:48:36.699Z info: Received a GET request for /clubs/new
+2023-06-17T18:48:36.709Z info: Received a GET request for /clubs/edit/-1
+2023-06-17T18:48:39.908Z info: Received a POST request for /clubs/create/
+2023-06-17T18:51:58.558Z info: Received a GET request for /clubs/
+2023-06-17T18:52:01.586Z info: Received a GET request for /clubs/new
+2023-06-17T18:52:01.597Z info: Received a GET request for /clubs/edit/-1
+2023-06-17T18:52:04.155Z info: Received a POST request for /clubs/create/
+2023-06-17T18:52:04.185Z error: __ is not defined
