@@ -37,6 +37,7 @@
     "mariadb": "^3.1.2",
     "morgan": "~1.9.1",
     "pug": "^3.0.2",
-    "sequelize": "^6.32.0"
+    "sequelize": "^6.32.0",
+    "winston": "^3.9.0"
   }
 }

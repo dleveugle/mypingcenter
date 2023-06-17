@@ -4,6 +4,7 @@
  "ClubShortDescription": "Sigle du club",
  "ClubName": "Nom du club",
  "EditingClub": "Modifier un club",
+ "CreatingClub": "Créer un club",
  "Players": "Joueurs",
  "Close": "Fermer",
  "Save": "Sauvegarder",
@@ -11,5 +12,6 @@
  "Delete": "Supprimer",
  "EnterClubShortDescription": "EnterClubShortDescription",
  "MSG_ClubShortDescriptionIsMandatory": "Sigle du club obligatoire",
- "MSG_ClubLongDescriptionIsMandatory": "Nom du club obligatoire"
+ "MSG_ClubLongDescriptionIsMandatory": "Nom du club obligatoire",
+ "Create": "Create"
 }

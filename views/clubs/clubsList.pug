@@ -5,6 +5,8 @@ block content
   .card.border-0
     .card-header.border-0.bg-transparent
       #table-buttons.inline 
+      button.addButton(type=button class="btn btn-primary btn-sm" onclick="newClub()"  
+                  data-toggle="tooltip" data-bs-placement="bottom" title=__('Create'))  
     .card-body.border-0.striped
       table#example.table.table-striped.table-hover
         thead 
@@ -22,7 +24,7 @@ block content
               td  
                 .btn-group.ms-2(role="group")
                   
-                  button.addButton(type=button class="btn btn-primary btn-sm" onclick="editClub("+val.id+")"  
+                  button.editButton(type=button class="btn btn-primary btn-sm" onclick="editClub("+val.id+")"  
                   data-toggle="tooltip" data-bs-placement="bottom" title=__('Modify'))  
                     i.bx.bx-edit-alt
                 .btn-group.ms-2(role="group")
@@ -60,6 +62,22 @@ block content
             url: '/clubs/edit/'+ id
           })
           .done(function(data, id){
+              $("#modalFormBody").html(data);
+              $('#modalForm').modal('show');
+          });
+        }
+
+        // create a new club
+        function newClub(){
+          $('#modalFormHeaderImage').attr('class', 'bx bx-edit-alt bx-sm');
+          $('#modalFormTitle').html('#{__('CreatingClub')}');
+          $('#modalFormForm').attr('action', '/clubs/create/');
+          $('#modalFormForm').attr('method', 'POST');
+          $.ajax({
+            type: 'GET',
+            url: '/clubs/new'
+          })
+          .done(function(data){
               $("#modalFormBody").html(data);
               $('#modalForm').modal('show');
           });

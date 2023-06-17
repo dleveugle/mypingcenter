@@ -24,15 +24,34 @@ router.get('/', function(req, res, next){
  * @param {number} id
  */
 router.get('/edit/:id', function(req, res, next){
-    clubController.club_details(req.params.id)
-        .then(results => {
-            res.render('clubs/clubEdit', {
-                breadcrumb: ['CLUBS','EDIT'],
-                details: results
-            });
-        })
-        .catch(next);
+    if (id = -1){
+        console.log("Creating a new club !!");
+        clubController.club_new()
+            .then(results => {
+                res.render('clubs/clubEdit', {
+                    breadcrumb: ['CLUBS','EDIT'],
+                    details: results
+                });
+            })
+            .catch((err)=>{
+                console.log("Error : "+ err);
+               next(err)});
+    }
+    else{
+        clubController.club_details(req.params.id)
+            .then(results => {
+                res.render('clubs/clubEdit', {
+                    breadcrumb: ['CLUBS','EDIT'],
+                    details: results
+                });
+            })
+            .catch(next);
+    }
 });
+
+router.get('/new',function(req, res, next){
+    res.redirect('edit/-1');
+})
 
 /**
  * POST club edit
@@ -55,6 +74,30 @@ router.post('/edit/:id',  [
         .catch(next);
       }
 });
+
+/**
+ * 
+ */
+router.post('/create', [
+    body('shortdesc').not().isEmpty().withMessage((value, { req, location, path }) => {
+        return req.__('MSG_ClubShortDescriptionIsMandatory', { value, location, path });
+    }),
+    body('longdesc').not().isEmpty().withMessage((value, { req, location, path }) => {
+        return req.__('MSG_ClubLongDescriptionIsMandatory', { value, location, path });
+    })
+],
+function(req, res, next)
+{
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(422).jsonp(errors.array());
+      } else {
+        clubController.club_create(req)
+        .then(res.status(200).jsonp({}))
+        .catch(next);
+      } 
+});
+
 
 /**
  * DELETE a club by id
