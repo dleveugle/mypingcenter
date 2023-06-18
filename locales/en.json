@@ -1,5 +1,14 @@
 {
  "Clubs": "Clubs",
  "MyApplication": "MyApplication",
- "Players": "Players"
+ "Players": "Players",
+ "CreatingClub": "CreatingClub",
+ "NewClub": "NewClub",
+ "ClubShortDescription": "ClubShortDescription",
+ "ClubName": "ClubName",
+ "Modify": "Modify",
+ "Delete": "Delete",
+ "Close": "Close",
+ "Save": "Save",
+ "EditingClub": "EditingClub"
 }

@@ -28,6 +28,10 @@ a{
   text-decoration: none
 }
 
+div.flash-message{
+  opacity: 0;
+}
+
 div.form-floating label {
   color: var(--first-color)!important;
   font-style: italic;

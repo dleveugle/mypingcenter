@@ -19,6 +19,7 @@ module.exports =  function(){
         modelsDir:      __dirname + '/models',
         routesDir:      __dirname + '/routes',
         controllersDir: __dirname + '/controllers',
+        servicesDir: __dirname + '/services',
 
         // Require method for javascripts
         requireJS: function(script) {
@@ -43,6 +44,9 @@ module.exports =  function(){
         },
         requireNodeModule: function(script) {
             return require(`${this.nodeDir}/${script}`);
+        },
+        requireServices: function() {
+            return require(`${this.servicesDir}`);
         },
         _: () => {return _();}
 

@@ -1,0 +1,19 @@
+
+{ 
+    "development":{
+        "use_env_variable": false,
+        "dialect": "mariadb",
+        "host": "localhost",
+        "username": "root",
+        "password": "",
+        "database": "pingcenter",
+        "dialectOptions": {
+            "useUTC": false, 
+            "dateStrings": true,
+            "typeCast": true,
+            "timezone": "Etc/GMT-1" 
+        },
+        "timezone": "Etc/GMT-1" 
+    }
+}
+

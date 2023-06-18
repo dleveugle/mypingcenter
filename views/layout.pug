@@ -14,6 +14,7 @@ html
     +CSS_Datatables-select-bs5 
     
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/animation.css')
     
     title= title
 
@@ -33,4 +34,9 @@ html
   body#body-pd
     include includes/header.pug
     include includes/sidebar.pug
-    block content
+    
+    block content 
+
+    include includes/flashMessage.pug
+
+    script(src="/javascripts/documentReady.js")
