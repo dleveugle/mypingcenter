@@ -34,7 +34,9 @@ html
   body#body-pd
     include includes/header.pug
     include includes/sidebar.pug
-    include includes/flashMessage.pug
+    
     block content 
+
+    include includes/flashMessage.pug
 
     script(src="/javascripts/documentReady.js")
