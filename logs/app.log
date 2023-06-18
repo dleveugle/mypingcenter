@@ -194,3 +194,38 @@
 2023-06-18T17:15:27.132Z info: This is an info message
 2023-06-18T17:15:28.593Z info: Received a GET request for /clubs
 2023-06-18T17:15:53.981Z info: Received a GET request for /clubs
+2023-06-18T17:27:28.655Z info: Received a GET request for /
+2023-06-18T17:27:28.657Z error: This is an error message
+2023-06-18T17:27:28.658Z warn: This is a warning message
+2023-06-18T17:27:28.658Z info: This is an info message
+2023-06-18T17:27:29.272Z info: Received a GET request for /favicon.ico
+2023-06-18T17:27:33.457Z info: Received a GET request for /clubs
+2023-06-18T17:27:45.140Z info: Received a GET request for /clubs/new
+2023-06-18T17:27:45.155Z info: Received a GET request for /clubs/edit/-1
+2023-06-18T17:27:57.423Z info: Received a POST request for /clubs/create/
+2023-06-18T17:27:57.728Z info: Received a GET request for /clubs/
+2023-06-18T17:28:03.091Z info: Received a DELETE request for /clubs/delete/24
+2023-06-18T17:28:03.137Z info: Received a GET request for /clubs/
+2023-06-18T17:28:10.226Z info: Received a POST request for /clubs/create/
+2023-06-18T17:28:10.260Z info: Received a GET request for /clubs/
+2023-06-18T17:28:23.127Z info: Received a GET request for /clubs/new
+2023-06-18T17:28:23.535Z info: Received a GET request for /clubs/edit/-1
+2023-06-18T17:28:32.239Z info: Received a POST request for /clubs/create/
+2023-06-18T17:28:37.051Z info: Received a POST request for /clubs/create/
+2023-06-18T17:28:37.153Z info: Received a GET request for /clubs/
+2023-06-18T17:28:45.141Z info: Received a DELETE request for /clubs/delete/26
+2023-06-18T17:28:45.188Z info: Received a GET request for /clubs/
+2023-06-18T17:28:50.271Z info: Received a DELETE request for /clubs/delete/25
+2023-06-18T17:28:50.319Z info: Received a GET request for /clubs/
+2023-06-18T17:28:58.044Z info: Received a GET request for /clubs/new
+2023-06-18T17:28:58.350Z info: Received a GET request for /clubs/edit/-1
+2023-06-18T17:29:02.202Z info: Received a POST request for /clubs/create/
+2023-06-18T17:29:04.802Z info: Received a POST request for /clubs/create/
+2023-06-18T17:29:04.843Z info: Received a GET request for /clubs/
+2023-06-18T20:13:01.956Z info: Received a GET request for /
+2023-06-18T20:13:01.960Z error: This is an error message
+2023-06-18T20:13:01.961Z warn: This is a warning message
+2023-06-18T20:13:01.961Z info: This is an info message
+2023-06-18T20:13:02.773Z info: Received a GET request for /favicon.ico
+2023-06-18T20:13:04.355Z info: Received a GET request for /clubs
+2023-06-18T20:13:07.072Z info: Received a GET request for /players
