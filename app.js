@@ -65,7 +65,6 @@ app.use(function(req, res, next) {
   res.locals.__ = res.__ = function() {
       return i18n.__.apply(req, arguments);
   };
-
   next();
 });
 
@@ -122,7 +121,7 @@ app.use('/clubs', global.Utils.requireRoutes('clubRouter'));
 /**
  * Database 
  */ 
-app.db = require("./config/database").db;
+app.db = require('./models').sequelize;
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

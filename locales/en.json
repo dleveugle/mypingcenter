@@ -10,5 +10,7 @@
  "Delete": "Delete",
  "Close": "Close",
  "Save": "Save",
- "EditingClub": "EditingClub"
+ "EditingClub": "EditingClub",
+ "MSG_ClubCreated": "MSG_ClubCreated",
+ "MSG_ClubDeleted": "MSG_ClubDeleted"
 }
