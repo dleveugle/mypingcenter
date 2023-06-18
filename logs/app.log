@@ -177,3 +177,20 @@
 2023-06-18T17:06:41.704Z info: Received a GET request for /clubs/
 2023-06-18T17:06:46.550Z info: Received a DELETE request for /clubs/delete/23
 2023-06-18T17:06:46.571Z info: Received a GET request for /clubs/
+2023-06-18T17:10:59.215Z info: Received a GET request for /clubs/
+2023-06-18T17:11:09.191Z info: Received a GET request for /clubs/
+2023-06-18T17:11:55.917Z info: Received a GET request for /clubs/
+2023-06-18T17:12:37.527Z info: Received a GET request for /clubs/
+2023-06-18T17:13:08.221Z info: Received a GET request for /clubs/
+2023-06-18T17:13:33.130Z info: Received a GET request for /clubs/
+2023-06-18T17:14:42.880Z info: Received a GET request for /clubs/
+2023-06-18T17:15:11.733Z info: Received a GET request for /clubs/
+2023-06-18T17:15:20.138Z info: Received a GET request for /clubs/
+2023-06-18T17:15:21.912Z info: Received a GET request for /clubs/
+2023-06-18T17:15:22.347Z info: Received a GET request for /favicon.ico
+2023-06-18T17:15:27.129Z info: Received a GET request for /
+2023-06-18T17:15:27.130Z error: This is an error message
+2023-06-18T17:15:27.131Z warn: This is a warning message
+2023-06-18T17:15:27.132Z info: This is an info message
+2023-06-18T17:15:28.593Z info: Received a GET request for /clubs
+2023-06-18T17:15:53.981Z info: Received a GET request for /clubs
