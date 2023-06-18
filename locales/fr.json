@@ -1,6 +1,6 @@
 {
  "Clubs": "Clubs",
- "Players": "Players",
+ "Players": "Joueurs",
  "MyApplication": "MyApplication",
  "CreatingClub": "CreatingClub",
  "NewClub": "NewClub",
@@ -11,5 +11,6 @@
  "Close": "Close",
  "Save": "Save",
  "EditingClub": "EditingClub",
- "MSG_ClubDeleted": "MSG_ClubDeleted"
+ "MSG_ClubDeleted": "Club supprimé",
+ "MSG_ClubCreated": "Club créé"
 }
