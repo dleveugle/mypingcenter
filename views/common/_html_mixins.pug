@@ -1,0 +1,9 @@
+mixin _editButton(_onclick)
+    button.editButton(type=button class="btn btn-primary btn-sm" onclick=_onclick  
+                  data-toggle="tooltip" data-bs-placement="bottom" title=__('Modify'))  
+                    i.bx.bx-edit-alt
+
+mixin _deleteButton(_onclick)
+    button.delButton(type=button class="btn btn-primary btn-sm" onclick=_onclick
+                  data-toggle="tooltip" data-bs-placement="bottom" title=__('Delete'))  
+                    i.bx.bx-trash-alt

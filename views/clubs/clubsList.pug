@@ -5,7 +5,7 @@ block content
   .card.border-0
     .card-header.border-0.bg-transparent
       #table-buttons.inline 
-      button.addButton(type=button class="btn btn-primary btn-sm" onclick="newClub()"  
+      button.addButton(type=button class="btn btn-primary btn-lg" onclick="newClub()"  
                   data-toggle="tooltip" data-bs-placement="bottom" title=__('CreatingClub') )  #{__('NewClub')}
 
     .card-body.border-0.striped
@@ -22,16 +22,12 @@ block content
               th(scope="row") #{val.id}
               td #{val.shortdesc} 
               td #{val.longdesc}
-              td  
+              td.text-center  
                 .btn-group.ms-2(role="group")
-                  
-                  button.editButton(type=button class="btn btn-primary btn-sm" onclick="editClub("+val.id+")"  
-                  data-toggle="tooltip" data-bs-placement="bottom" title=__('Modify'))  
-                    i.bx.bx-edit-alt
+                  +_editButton("editClub("+val.id+")")
+
                 .btn-group.ms-2(role="group")
-                  button.delButton(type=button class="btn btn-primary btn-sm" onclick="deleteClub("+val.id+")"
-                  data-toggle="tooltip" data-bs-placement="bottom" title=__('Delete'))  
-                    i.bx.bx-trash-alt
+                  +_deleteButton("deleteClub("+val.id+")")
 
           
       include /includes/modalform.pug

@@ -6,7 +6,7 @@
 	div.input-group.has-validation
 		div.form-floating.mb-3
 			input#txtFirstName(type="text", class="form-control", value=details.firstname, name="firstname" 
-			placeholder="#" autofocus/)
+			placeholder="#")
 			label.form-label(for="txtFirstName") #{__('PlayerFirstName')}
 			div#invalid-firstname.invalid-feedback
 
@@ -17,8 +17,8 @@
 		div#invalid-lastname.invalid-feedback
 
 	div.form-floating.mb-3
-		input#txtBirthDate(type="text", class="form-control" value=details.birthdate name="birthdate"
-		placeholder="#")
+		input#txtBirthDate(type="date", class="form-control" data-bs-date-format="dd-mm-yyyy" value=moment(details.birthdate).format("YYYY-MM-DD") name="birthdate"
+		placeholder="#" )
 		label.form-label(for="txtBirthDate") #{__('PlayerBirthDate')}
 		div#invalid-birthdate.invalid-feedback
 

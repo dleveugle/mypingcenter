@@ -5,7 +5,7 @@ block content
   .card.border-0
     .card-header.border-0.bg-transparent
       #table-buttons.inline 
-      button.addButton(type=button class="btn btn-primary btn-sm" onclick="newPlayer()"  
+      button.addButton(type=button class="btn btn-primary btn-lg" onclick="newPlayer()"  
                   data-toggle="tooltip" data-bs-placement="bottom" title=__('CreatingPlayer') )  #{__('NewPlayer')}
 
     .card-body.border-0.striped
@@ -26,7 +26,7 @@ block content
               td #{val.lastname}
               td #{moment(val.birthdate).format("DD/MM/YYYY")}
               td #{val.clubid}
-              td  
+              td.text-center
                 .btn-group.ms-2(role="group")
                   
                   button.editButton(type=button class="btn btn-primary btn-sm" onclick="editPlayer("+val.id+")"  

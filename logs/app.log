@@ -627,3 +627,139 @@ Invalid indentation, you can use tabs or spaces but not both
 2023-06-20T20:42:51.626Z info: Received a GET request for /players/
 2023-06-20T20:42:55.154Z info: Received a DELETE request for /players/delete/3
 2023-06-20T20:42:55.176Z info: Received a GET request for /players/
+2023-06-21T19:20:00.228Z info: Received a GET request for /
+2023-06-21T19:20:00.232Z error: This is an error message
+2023-06-21T19:20:00.232Z warn: This is a warning message
+2023-06-21T19:20:00.233Z info: This is an info message
+2023-06-21T19:20:00.973Z info: Received a GET request for /favicon.ico
+2023-06-21T19:20:00.976Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:130:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-21T19:20:02.510Z info: Received a GET request for /clubs
+2023-06-21T19:20:20.718Z info: Received a GET request for /players
+2023-06-21T19:20:29.209Z info: Received a GET request for /clubs
+2023-06-21T19:20:31.374Z info: Received a GET request for /clubs/new
+2023-06-21T19:20:31.386Z info: Received a GET request for /clubs/edit/-1
+2023-06-21T19:21:09.020Z info: Received a GET request for /
+2023-06-21T19:21:09.022Z error: This is an error message
+2023-06-21T19:21:09.023Z warn: This is a warning message
+2023-06-21T19:21:09.025Z info: This is an info message
+2023-06-21T19:21:09.420Z info: Received a GET request for /favicon.ico
+2023-06-21T19:21:09.423Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:130:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-21T19:21:14.445Z info: Received a GET request for /clubs
+2023-06-21T19:21:49.239Z info: Received a GET request for /clubs/edit/2
+2023-06-21T19:21:54.319Z info: Received a GET request for /clubs/new
+2023-06-21T19:21:54.325Z info: Received a GET request for /clubs/edit/-1
+2023-06-21T19:21:56.630Z info: Received a POST request for /clubs/create/
+2023-06-21T19:21:58.424Z info: Received a POST request for /clubs/create/
+2023-06-21T19:21:58.477Z info: Received a GET request for /clubs/
+2023-06-21T19:22:03.750Z info: Received a DELETE request for /clubs/delete/8
+2023-06-21T19:22:03.780Z info: Received a GET request for /clubs/
+2023-06-21T19:23:42.801Z info: Received a GET request for /clubs/
+2023-06-21T19:25:35.294Z info: Received a GET request for /clubs/
+2023-06-21T19:25:48.099Z info: Received a GET request for /clubs/
+2023-06-21T19:25:53.877Z info: Received a GET request for /clubs/
+2023-06-21T19:27:10.056Z info: Received a GET request for /clubs/
+2023-06-21T19:29:24.167Z info: Received a GET request for /clubs/
+2023-06-21T19:29:46.155Z info: Received a GET request for /clubs/
+2023-06-21T19:30:25.204Z info: Received a GET request for /players
+2023-06-21T19:30:54.001Z info: Received a GET request for /players
+2023-06-21T19:32:43.379Z info: Received a GET request for /players/edit/1
+2023-06-21T19:32:43.394Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00"}
+2023-06-21T19:39:30.173Z info: Received a GET request for /players/edit/1
+2023-06-21T19:39:30.189Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00"}
+2023-06-21T19:39:43.000Z info: Received a GET request for /players
+2023-06-21T19:39:45.149Z info: Received a GET request for /players/edit/1
+2023-06-21T19:39:45.158Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00"}
+2023-06-21T19:39:54.365Z info: Received a POST request for /players/edit/1
+2023-06-21T19:39:54.397Z info: Received a GET request for /players/
+2023-06-21T19:39:56.340Z info: Received a GET request for /players/edit/1
+2023-06-21T19:39:56.344Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":null}
+2023-06-21T19:40:36.768Z info: Received a GET request for /players/
+2023-06-21T19:40:38.488Z info: Received a GET request for /players/edit/1
+2023-06-21T19:40:38.492Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":null}
+2023-06-21T19:40:38.503Z error: Error: C:\dev\node\pingcenter\views\players\playerEdit.pug:20:62
+    18| 
+    19| 	div.form-floating.mb-3
+  > 20| 		input#txtBirthDate(type="date", class="form-control" value=#{moment(val.birthdate).format("DD/MM/YYYY")} name="birthdate"
+---------------------------------------------------------------------^
+    21| 		placeholder="#" )
+    22| 		label.form-label(for="txtBirthDate") #{__('PlayerBirthDate')}
+    23| 		div#invalid-birthdate.invalid-feedback
+
+Syntax Error: Unexpected character '#'
+    at makeError (C:\dev\node\pingcenter\node_modules\pug-error\index.js:34:13)
+    at Lexer.error (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:62:15)
+    at Lexer.assertExpression (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:96:12)
+    at Lexer.attributeValue (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1428:10)
+    at Lexer.attribute (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1275:30)
+    at Lexer.attrs (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1454:20)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.advance (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1686:12)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.getTokens (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1706:12)
+2023-06-21T19:40:55.071Z info: Received a GET request for /players/
+2023-06-21T19:40:56.400Z info: Received a GET request for /players/edit/1
+2023-06-21T19:40:56.404Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":null}
+2023-06-21T19:40:56.428Z error: TypeError: C:\dev\node\pingcenter\views\players\playerEdit.pug:20
+    18| 
+    19| 	div.form-floating.mb-3
+  > 20| 		input#txtBirthDate(type="date", class="form-control" value=moment(val.birthdate).format("DD/MM/YYYY") name="birthdate"
+    21| 		placeholder="#" )
+    22| 		label.form-label(for="txtBirthDate") #{__('PlayerBirthDate')}
+    23| 		div#invalid-birthdate.invalid-feedback
+
+Cannot read properties of undefined (reading 'birthdate')
+    at eval (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:38:132)
+    at template (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:55:7)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:454:38)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:444:21)
+    at exports.__express [as engine] (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:493:11)
+    at View.render (C:\dev\node\pingcenter\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\dev\node\pingcenter\node_modules\express\lib\application.js:657:10)
+    at Function.render (C:\dev\node\pingcenter\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (C:\dev\node\pingcenter\node_modules\express\lib\response.js:1039:7)
+    at C:\dev\node\pingcenter\routes\playerRouter.js:49:21
+2023-06-21T19:41:07.354Z info: Received a GET request for /players/
+2023-06-21T19:41:08.430Z info: Received a GET request for /players/edit/1
+2023-06-21T19:41:08.436Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":null}
+2023-06-21T19:41:12.313Z info: Received a POST request for /players/edit/1
+2023-06-21T19:41:12.335Z info: Received a GET request for /players/
+2023-06-21T19:41:14.290Z info: Received a GET request for /players/edit/1
+2023-06-21T19:41:14.294Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"2023-06-23 01:00:00"}
+2023-06-21T19:42:55.598Z info: Received a GET request for /players/edit/1
+2023-06-21T19:42:55.608Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"2023-06-23 01:00:00"}
+2023-06-21T19:42:57.394Z info: Received a POST request for /players/edit/1
+2023-06-21T19:42:57.427Z info: Received a GET request for /players/
+2023-06-21T19:42:59.217Z info: Received a GET request for /players/edit/1
+2023-06-21T19:42:59.221Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":null}
+2023-06-21T19:43:05.699Z info: Received a POST request for /players/edit/1
+2023-06-21T19:43:05.721Z info: Received a GET request for /players/
+2023-06-21T19:43:07.474Z info: Received a GET request for /players/edit/1
+2023-06-21T19:43:07.480Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"2023-06-11 01:00:00"}
+2023-06-21T19:44:58.259Z info: Received a GET request for /players/edit/1
+2023-06-21T19:44:58.268Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"2023-06-11 01:00:00"}
+2023-06-21T19:45:00.739Z info: Received a GET request for /players/
+2023-06-21T19:45:02.137Z info: Received a GET request for /players/edit/1
+2023-06-21T19:45:02.141Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"2023-06-11 01:00:00"}
+2023-06-21T19:50:05.150Z info: Received a GET request for /players/
+2023-06-21T19:50:06.990Z info: Received a GET request for /clubs
+2023-06-21T19:50:10.501Z info: Received a GET request for /clubs/edit/1
