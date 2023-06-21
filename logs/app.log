@@ -229,3 +229,401 @@
 2023-06-18T20:13:02.773Z info: Received a GET request for /favicon.ico
 2023-06-18T20:13:04.355Z info: Received a GET request for /clubs
 2023-06-18T20:13:07.072Z info: Received a GET request for /players
+2023-06-20T19:13:41.148Z info: Received a GET request for /
+2023-06-20T19:13:41.153Z error: This is an error message
+2023-06-20T19:13:41.154Z warn: This is a warning message
+2023-06-20T19:13:41.154Z info: This is an info message
+2023-06-20T19:13:42.633Z info: Received a GET request for /favicon.ico
+2023-06-20T19:13:45.490Z info: Received a GET request for /clubs
+2023-06-20T19:14:07.242Z info: Received a GET request for /fr/clubs
+2023-06-20T19:14:07.922Z info: Received a GET request for /fr/clubs
+2023-06-20T19:14:10.763Z info: Received a GET request for /clubs
+2023-06-20T19:14:48.511Z info: Received a GET request for /clubs
+2023-06-20T19:14:51.891Z info: Received a GET request for /clubs
+2023-06-20T19:14:54.306Z info: Received a GET request for /clubs
+2023-06-20T19:14:54.586Z info: Received a GET request for /favicon.ico
+2023-06-20T19:16:05.368Z info: Received a GET request for /clubs
+2023-06-20T19:16:06.917Z info: Received a GET request for /clubs/new
+2023-06-20T19:16:06.926Z info: Received a GET request for /clubs/edit/-1
+2023-06-20T19:16:09.716Z info: Received a POST request for /clubs/create/
+2023-06-20T19:16:56.226Z info: Received a GET request for /clubs
+2023-06-20T19:17:05.022Z info: Received a GET request for /clubs/new
+2023-06-20T19:17:05.028Z info: Received a GET request for /clubs/edit/-1
+2023-06-20T19:17:08.024Z info: Received a POST request for /clubs/create/
+2023-06-20T19:17:52.093Z info: Received a GET request for /clubs
+2023-06-20T19:17:54.819Z info: Received a GET request for /clubs/new
+2023-06-20T19:17:54.829Z info: Received a GET request for /clubs/edit/-1
+2023-06-20T19:18:59.257Z info: Received a GET request for /clubs
+2023-06-20T19:19:02.533Z info: Received a GET request for /clubs/edit/1
+2023-06-20T19:19:04.846Z info: Received a POST request for /clubs/edit/1
+2023-06-20T19:19:17.470Z info: Received a GET request for /players
+2023-06-20T19:43:51.536Z info: Received a GET request for /players
+2023-06-20T19:44:47.284Z info: Received a GET request for /players
+2023-06-20T19:44:47.289Z error: Not Found
+2023-06-20T19:45:35.728Z info: Received a GET request for /players
+2023-06-20T19:45:35.731Z error: {"message":"Not Found"}
+2023-06-20T19:46:40.258Z info: Received a GET request for /players
+2023-06-20T19:46:40.263Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:128:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-20T19:48:06.097Z info: Received a GET request for /players
+2023-06-20T19:49:00.992Z info: Received a GET request for /players
+2023-06-20T19:54:53.784Z info: Received a GET request for /players
+2023-06-20T19:55:34.636Z info: Received a GET request for /players
+2023-06-20T19:55:34.663Z error: Error: C:\dev\node\pingcenter\views\players\playersList.pug:27:26
+    25|               td #{val.firstname} 
+    26|               td #{val.lastname}
+  > 27|               td= moment.(#{val.birthdate}).format("DD/MM/YYYY")
+---------------------------------^
+    28|               td #{val.clubid}
+    29|               td  
+    30|                 .btn-group.ms-2(role="group")
+
+Syntax Error: Unexpected token
+    at makeError (C:\dev\node\pingcenter\node_modules\pug-error\index.js:34:13)
+    at Lexer.error (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:62:15)
+    at Lexer.assertExpression (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:96:12)
+    at Lexer.code (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1180:28)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.advance (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1682:12)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.getTokens (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1706:12)
+    at lex (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:12:42)
+    at Object.lex (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:104:9)
+2023-06-20T19:56:33.800Z info: Received a GET request for /players
+2023-06-20T19:56:33.833Z error: Error: C:\dev\node\pingcenter\views\players\playersList.pug:27:27
+    25|               td #{val.firstname} 
+    26|               td #{val.lastname}
+  > 27|               td #{moment.(val.birthdate).format("DD/MM/YYYY")}
+----------------------------------^
+    28|               td #{val.clubid}
+    29|               td  
+    30|                 .btn-group.ms-2(role="group")
+
+Syntax Error: Unexpected token
+    at makeError (C:\dev\node\pingcenter\node_modules\pug-error\index.js:34:13)
+    at Lexer.error (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:62:15)
+    at Lexer.assertExpression (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:96:12)
+    at Lexer.addText (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:627:12)
+    at Lexer.text (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:653:12)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.advance (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1689:12)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.getTokens (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1706:12)
+    at lex (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:12:42)
+2023-06-20T19:56:42.272Z info: Received a GET request for /players
+2023-06-20T19:58:20.376Z info: Received a GET request for /players
+2023-06-20T19:58:34.483Z info: Received a GET request for /players
+2023-06-20T19:58:59.915Z info: Received a GET request for /players/edit/1
+2023-06-20T19:58:59.920Z error: Error: Failed to lookup view "players/playerEdit" in views directory "C:\dev\node\pingcenter\views"
+    at Function.render (C:\dev\node\pingcenter\node_modules\express\lib\application.js:597:17)
+    at ServerResponse.render (C:\dev\node\pingcenter\node_modules\express\lib\response.js:1039:7)
+    at C:\dev\node\pingcenter\routes\playerRouter.js:45:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-06-20T20:01:25.271Z info: Received a GET request for /players/edit/1
+2023-06-20T20:03:06.010Z info: Received a GET request for /players
+2023-06-20T20:03:08.252Z info: Received a GET request for /players/edit/1
+2023-06-20T20:03:08.265Z error: Error: C:\dev\node\pingcenter\views\players\playerEdit.pug:19:1
+    17| 		div#invalid-lastname.invalid-feedback
+    18| 
+  > 19|     div.form-floating.mb-3
+--------^
+    20| 		input#txtBirthDate(type="text", class="form-control" value=details.longdesc name="birthdate"
+    21| 		placeholder="#")
+    22| 		label.form-label(for="txtBirthDate") #{__('PlayerBirthDate')}
+
+Invalid indentation, you can use tabs or spaces but not both
+    at makeError (C:\dev\node\pingcenter\node_modules\pug-error\index.js:34:13)
+    at Lexer.error (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:62:15)
+    at Lexer.indent (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1498:14)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.advance (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1688:12)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.getTokens (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1706:12)
+    at lex (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:12:42)
+    at Object.lex (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:104:9)
+    at Function.loadString [as string] (C:\dev\node\pingcenter\node_modules\pug-load\index.js:53:24)
+2023-06-20T20:03:10.163Z info: Received a GET request for /players/edit/1
+2023-06-20T20:03:10.174Z error: Error: C:\dev\node\pingcenter\views\players\playerEdit.pug:19:1
+    17| 		div#invalid-lastname.invalid-feedback
+    18| 
+  > 19|     div.form-floating.mb-3
+--------^
+    20| 		input#txtBirthDate(type="text", class="form-control" value=details.longdesc name="birthdate"
+    21| 		placeholder="#")
+    22| 		label.form-label(for="txtBirthDate") #{__('PlayerBirthDate')}
+
+Invalid indentation, you can use tabs or spaces but not both
+    at makeError (C:\dev\node\pingcenter\node_modules\pug-error\index.js:34:13)
+    at Lexer.error (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:62:15)
+    at Lexer.indent (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1498:14)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.advance (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1688:12)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.getTokens (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1706:12)
+    at lex (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:12:42)
+    at Object.lex (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:104:9)
+    at Function.loadString [as string] (C:\dev\node\pingcenter\node_modules\pug-load\index.js:53:24)
+2023-06-20T20:03:58.295Z info: Received a GET request for /players
+2023-06-20T20:04:00.484Z info: Received a GET request for /players/edit/1
+2023-06-20T20:04:00.492Z error: Error: C:\dev\node\pingcenter\views\players\playerEdit.pug:19:1
+    17| 		div#invalid-lastname.invalid-feedback
+    18| 
+  > 19|     div.form-floating.mb-3
+--------^
+    20| 		input#txtBirthDate(type="text", class="form-control" value=details.longdesc name="birthdate"
+    21| 		placeholder="#")
+    22| 		label.form-label(for="txtBirthDate") #{__('PlayerBirthDate')}
+
+Invalid indentation, you can use tabs or spaces but not both
+    at makeError (C:\dev\node\pingcenter\node_modules\pug-error\index.js:34:13)
+    at Lexer.error (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:62:15)
+    at Lexer.indent (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1498:14)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.advance (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1688:12)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.getTokens (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1706:12)
+    at lex (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:12:42)
+    at Object.lex (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:104:9)
+    at Function.loadString [as string] (C:\dev\node\pingcenter\node_modules\pug-load\index.js:53:24)
+2023-06-20T20:04:37.714Z info: Received a GET request for /players
+2023-06-20T20:04:39.144Z info: Received a GET request for /players/edit/1
+2023-06-20T20:04:39.155Z error: Error: C:\dev\node\pingcenter\views\players\playerEdit.pug:25:1
+    23| 		div#invalid-birthdate.invalid-feedback
+    24| 
+  > 25|     div.form-floating.mb-3
+--------^
+    26| 		input#txtClub(type="text", class="form-control" value=details.longdesc name="clubid"
+    27| 		placeholder="#")
+    28| 		label.form-label(for="txtClub") #{__('PlayerClub')}
+
+Invalid indentation, you can use tabs or spaces but not both
+    at makeError (C:\dev\node\pingcenter\node_modules\pug-error\index.js:34:13)
+    at Lexer.error (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:62:15)
+    at Lexer.indent (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1498:14)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.advance (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1688:12)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.getTokens (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1706:12)
+    at lex (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:12:42)
+    at Object.lex (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:104:9)
+    at Function.loadString [as string] (C:\dev\node\pingcenter\node_modules\pug-load\index.js:53:24)
+2023-06-20T20:05:01.726Z info: Received a GET request for /players
+2023-06-20T20:05:02.885Z info: Received a GET request for /players/edit/1
+2023-06-20T20:05:31.672Z info: Received a GET request for /players
+2023-06-20T20:05:33.491Z info: Received a GET request for /players/edit/1
+2023-06-20T20:06:40.110Z info: Received a GET request for /players/edit/1
+2023-06-20T20:06:43.377Z info: Received a GET request for /players
+2023-06-20T20:06:45.479Z info: Received a GET request for /players/edit/1
+2023-06-20T20:06:58.606Z info: Received a GET request for /players
+2023-06-20T20:06:58.917Z info: Received a GET request for /favicon.ico
+2023-06-20T20:06:58.919Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:130:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-20T20:07:00.900Z info: Received a GET request for /players/edit/1
+2023-06-20T20:09:40.724Z info: Received a GET request for /players
+2023-06-20T20:09:42.716Z info: Received a GET request for /players/edit/1
+2023-06-20T20:10:15.126Z info: Received a GET request for /players
+2023-06-20T20:10:16.568Z info: Received a GET request for /players/edit/1
+2023-06-20T20:13:21.004Z info: Received a GET request for /players
+2023-06-20T20:13:23.655Z info: Received a GET request for /players/edit/1
+2023-06-20T20:15:05.388Z info: Received a GET request for /players
+2023-06-20T20:15:07.112Z info: Received a GET request for /players/edit/1
+2023-06-20T20:16:06.570Z info: Received a GET request for /players
+2023-06-20T20:16:08.256Z info: Received a GET request for /players/edit/1
+2023-06-20T20:16:48.934Z info: Received a GET request for /players
+2023-06-20T20:16:50.809Z info: Received a GET request for /players/edit/1
+2023-06-20T20:16:50.812Z error: ReferenceError: id is not defined
+    at C:\dev\node\pingcenter\routes\playerRouter.js:42:27
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+2023-06-20T20:20:04.043Z info: Received a GET request for /players/edit/1
+2023-06-20T20:20:04.046Z error: ReferenceError: id is not defined
+    at C:\dev\node\pingcenter\routes\playerRouter.js:42:27
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+2023-06-20T20:20:12.840Z info: Received a GET request for /players/edit/1
+2023-06-20T20:20:12.842Z error: ReferenceError: id is not defined
+    at C:\dev\node\pingcenter\routes\playerRouter.js:42:27
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+2023-06-20T20:22:21.570Z info: Received a GET request for /players/edit/1
+2023-06-20T20:22:21.575Z error: ReferenceError: id is not defined
+    at C:\dev\node\pingcenter\routes\playerRouter.js:35:27
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+2023-06-20T20:23:48.541Z info: Received a GET request for /clubs
+2023-06-20T20:23:50.472Z info: Received a GET request for /clubs/edit/1
+2023-06-20T20:29:16.436Z info: Received a GET request for /clubs
+2023-06-20T20:29:17.874Z info: Received a GET request for /clubs/edit/1
+2023-06-20T20:29:22.227Z info: Received a GET request for /players
+2023-06-20T20:29:24.633Z info: Received a GET request for /players/edit/1
+2023-06-20T20:29:52.883Z info: Received a GET request for /clubs
+2023-06-20T20:29:55.417Z info: Received a GET request for /clubs/edit/1
+2023-06-20T20:30:35.192Z info: Received a GET request for /clubs
+2023-06-20T20:30:36.905Z info: Received a GET request for /clubs/edit/1
+2023-06-20T20:30:36.909Z error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at C:\dev\node\pingcenter\routes\clubRouter.js:31:22
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:421:3)
+2023-06-20T20:30:59.612Z info: Received a GET request for /clubs
+2023-06-20T20:31:01.414Z info: Received a GET request for /clubs/edit/1
+2023-06-20T20:31:47.764Z info: Received a GET request for /clubs
+2023-06-20T20:31:49.172Z info: Received a GET request for /clubs/edit/1
+2023-06-20T20:32:34.119Z info: Received a GET request for /clubs
+2023-06-20T20:32:36.805Z info: Received a GET request for /clubs/edit/1
+2023-06-20T20:33:09.803Z info: Received a GET request for /clubs
+2023-06-20T20:33:11.349Z info: Received a GET request for /clubs/edit/1
+2023-06-20T20:33:14.094Z info: Received a GET request for /clubs/new
+2023-06-20T20:33:14.106Z info: Received a GET request for /clubs/edit/-1
+2023-06-20T20:33:16.210Z info: Received a POST request for /clubs/create/
+2023-06-20T20:33:19.548Z info: Received a POST request for /clubs/create/
+2023-06-20T20:33:19.607Z info: Received a GET request for /clubs/
+2023-06-20T20:33:22.641Z info: Received a DELETE request for /clubs/delete/7
+2023-06-20T20:33:22.666Z info: Received a GET request for /clubs/
+2023-06-20T20:33:25.073Z info: Received a DELETE request for /clubs/delete/6
+2023-06-20T20:33:25.120Z info: Received a GET request for /clubs/
+2023-06-20T20:33:27.848Z info: Received a GET request for /clubs/players
+2023-06-20T20:33:27.850Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:130:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-20T20:34:35.824Z info: Received a GET request for /clubs/players
+2023-06-20T20:34:35.826Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:130:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-20T20:34:39.429Z info: Received a GET request for /players
+2023-06-20T20:34:41.616Z info: Received a GET request for /players/edit/1
+2023-06-20T20:34:41.623Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00"}
+2023-06-20T20:34:46.088Z info: Received a POST request for /players/edit/1
+2023-06-20T20:34:46.116Z info: Received a GET request for /players/
+2023-06-20T20:34:52.657Z info: Received a GET request for /players/new
+2023-06-20T20:34:52.669Z info: Received a GET request for /players/edit/-1
+2023-06-20T20:34:53.919Z info: Received a POST request for /players/create/
+2023-06-20T20:35:51.250Z info: Received a GET request for /players/new
+2023-06-20T20:35:51.257Z info: Received a GET request for /players/edit/-1
+2023-06-20T20:35:53.415Z info: Received a POST request for /players/create/
+2023-06-20T20:35:57.190Z info: Received a GET request for /players/
+2023-06-20T20:38:25.342Z info: Received a GET request for /players/
+2023-06-20T20:38:26.801Z info: Received a GET request for /players/new
+2023-06-20T20:38:26.812Z info: Received a GET request for /players/edit/-1
+2023-06-20T20:38:28.035Z info: Received a POST request for /players/create/
+2023-06-20T20:38:43.680Z info: Received a POST request for /players/create/
+2023-06-20T20:38:43.746Z info: Received a GET request for /players/
+2023-06-20T20:38:51.472Z info: Received a DELETE request for /player/delete/2
+2023-06-20T20:38:51.474Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:130:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-20T20:38:54.502Z info: Received a DELETE request for /player/delete/2
+2023-06-20T20:38:54.504Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:130:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-20T20:40:35.401Z info: Received a GET request for /players/
+2023-06-20T20:40:39.818Z info: Received a DELETE request for /player/delete/2
+2023-06-20T20:40:39.819Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:130:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-20T20:41:52.606Z info: Received a GET request for /players/
+2023-06-20T20:41:55.594Z info: Received a DELETE request for /players/delete/2
+2023-06-20T20:41:55.629Z info: Received a GET request for /players/
+2023-06-20T20:42:45.093Z info: Received a GET request for /players/
+2023-06-20T20:42:46.739Z info: Received a GET request for /players/new
+2023-06-20T20:42:46.748Z info: Received a GET request for /players/edit/-1
+2023-06-20T20:42:49.576Z info: Received a POST request for /players/create/
+2023-06-20T20:42:51.600Z info: Received a POST request for /players/create/
+2023-06-20T20:42:51.626Z info: Received a GET request for /players/
+2023-06-20T20:42:55.154Z info: Received a DELETE request for /players/delete/3
+2023-06-20T20:42:55.176Z info: Received a GET request for /players/

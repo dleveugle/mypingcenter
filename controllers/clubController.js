@@ -1,3 +1,9 @@
+/*
+* CONTROLLER
+*   Model : CLUB
+*/
+
+
 // Imported modules
 var async = require('async');
 const validator = require('express-validator');

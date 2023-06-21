@@ -1,0 +1,30 @@
+.container
+	div
+		input#txtId(type="hidden", class="form-control", value=details.id, name="id" 
+		placeholder="#")
+
+	div.input-group.has-validation
+		div.form-floating.mb-3
+			input#txtFirstName(type="text", class="form-control", value=details.firstname, name="firstname" 
+			placeholder="#" autofocus/)
+			label.form-label(for="txtFirstName") #{__('PlayerFirstName')}
+			div#invalid-firstname.invalid-feedback
+
+	div.form-floating.mb-3
+		input#txtLastName(type="text", class="form-control" value=details.lastname name="lastname"
+		placeholder="#")
+		label.form-label(for="txtLastName") #{__('PlayerLastName')}
+		div#invalid-lastname.invalid-feedback
+
+	div.form-floating.mb-3
+		input#txtBirthDate(type="text", class="form-control" value=details.birthdate name="birthdate"
+		placeholder="#")
+		label.form-label(for="txtBirthDate") #{__('PlayerBirthDate')}
+		div#invalid-birthdate.invalid-feedback
+
+	div.form-floating.mb-3
+		input#txtClub(type="text", class="form-control" value=details.clubid name="clubid"
+		placeholder="#")
+		label.form-label(for="txtClub") #{__('PlayerClub')}
+		div#invalid-clubid.invalid-feedback
+

@@ -5,31 +5,35 @@ block content
   .card.border-0
     .card-header.border-0.bg-transparent
       #table-buttons.inline 
-      button.addButton(type=button class="btn btn-primary btn-sm" onclick="newClub()"  
-                  data-toggle="tooltip" data-bs-placement="bottom" title=__('CreatingClub') )  #{__('NewClub')}
+      button.addButton(type=button class="btn btn-primary btn-sm" onclick="newPlayer()"  
+                  data-toggle="tooltip" data-bs-placement="bottom" title=__('CreatingPlayer') )  #{__('NewPlayer')}
 
     .card-body.border-0.striped
       table#pingTable.table.table-striped.table-hover
         thead 
           tr
             th(scope="col") #
-            th(scope="col") #{__('ClubShortDescription')}
-            th(scope="col") #{__('ClubName')}
+            th(scope="col") #{__('PlayerFirstName')}
+            th(scope="col") #{__('PlayerLastName')}
+            th(scope="col") #{__('PlayerBirthDate')}
+            th(scope="col") #{__('PlayerClub')}
             th
         tbody 
           each val in list
             tr(class="align-middle")
               th(scope="row") #{val.id}
-              td #{val.shortdesc} 
-              td #{val.longdesc}
+              td #{val.firstname} 
+              td #{val.lastname}
+              td #{moment(val.birthdate).format("DD/MM/YYYY")}
+              td #{val.clubid}
               td  
                 .btn-group.ms-2(role="group")
                   
-                  button.editButton(type=button class="btn btn-primary btn-sm" onclick="editClub("+val.id+")"  
+                  button.editButton(type=button class="btn btn-primary btn-sm" onclick="editPlayer("+val.id+")"  
                   data-toggle="tooltip" data-bs-placement="bottom" title=__('Modify'))  
                     i.bx.bx-edit-alt
                 .btn-group.ms-2(role="group")
-                  button.delButton(type=button class="btn btn-primary btn-sm" onclick="deleteClub("+val.id+")"
+                  button.delButton(type=button class="btn btn-primary btn-sm" onclick="deletePlayer("+val.id+")"
                   data-toggle="tooltip" data-bs-placement="bottom" title=__('Delete'))  
                     i.bx.bx-trash-alt
 
@@ -51,16 +55,16 @@ block content
           $(this).find("input:visible:first").select().focus();
         });
 
-        // edit a club
-        function editClub(id){
+        // edit a player
+        function editPlayer(id){
           $('#modalFormHeaderImage').attr('class', 'bx bx-edit-alt bx-sm');
-          $('#modalFormTitle').html('#{__('EditingClub')}');
-          $('#modalFormForm').attr('action', '/clubs/edit/'+ id);
+          $('#modalFormTitle').html('#{__('EditingPlayer')}');
+          $('#modalFormForm').attr('action', '/players/edit/'+ id);
           $('#modalFormForm').attr('method', 'POST');
           
           $.ajax({
             type: 'GET',
-            url: '/clubs/edit/'+ id
+            url: '/players/edit/'+ id
           })
           .done(function(data, id){
               $("#modalFormBody").html(data);
@@ -68,15 +72,15 @@ block content
           });
         }
 
-        // create a new club
-        function newClub(){
+        // create a new player
+        function newPlayer(){
           $('#modalFormHeaderImage').attr('class', 'bx bx-edit-alt bx-sm');
-          $('#modalFormTitle').html('#{__('CreatingClub')}');
-          $('#modalFormForm').attr('action', '/clubs/create/');
+          $('#modalFormTitle').html('#{__('CreatingPlayer')}');
+          $('#modalFormForm').attr('action', '/players/create/');
           $('#modalFormForm').attr('method', 'POST');
           $.ajax({
             type: 'GET',
-            url: '/clubs/new'
+            url: '/players/new'
           })
           .done(function(data){
               $("#modalFormBody").html(data);
@@ -84,14 +88,14 @@ block content
           });
         }
 
-        // delete a club
-        function deleteClub(id){
+        // delete a player
+        function deletePlayer(id){
           $.ajax({
             type: 'DELETE',
-            url: '/clubs/delete/'+ id
+            url: '/players/delete/'+ id
           })
           .done(()=>{
-            window.location.href="/clubs/";
+            window.location.href="/players/";
           })
         }
        
@@ -105,7 +109,7 @@ block content
               data: datastring,
               dataType: "json",
               success: function(data) {
-                  window.location.href="/clubs/";
+                  window.location.href="/players/";
               },
               error: function(error) {
                 error.responseJSON.forEach((e)=> {

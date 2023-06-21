@@ -1,22 +1,26 @@
 /*
 * ROUTER
 */
+
+// import modules
 var express = require('express');
 var router = express.Router();
 const { body, validationResult } = global.Utils.requireNodeModule('express-validator');
-const clubController = global.Utils.requireControllers('clubController');
+const playerController = global.Utils.requireControllers('playerController');
 const services = global.Utils.requireServices();
+
+
 
 
 /**
  * GET clubs listing. 
  */ 
 router.get('/', function(req, res, next){
-  clubController.clubs_list()
+    playerController.players_list()
       .then(results => {
-          res.render('clubs/clubsList', {
-                breadcrumb: 'CLUBS',
-                title: 'CLUBS', 
+          res.render('players/playersList', {
+                breadcrumb: 'PLAYERS',
+                title: 'PLAYERS', 
                 list: results
           });
       })
@@ -24,48 +28,47 @@ router.get('/', function(req, res, next){
 });
 
 /**
- * GET club detail
+ * GET player detail
  * @param {number} id
  */
 router.get('/edit/:id', function(req, res, next){
-    console.log(req.params);
     if (req.params.id == -1){
-        clubController.club_new()
+        playerController.player_new()
             .then(results => {
-                res.render('clubs/clubEdit', {
-                    breadcrumb: ['CLUBS','EDIT'],
+                res.render('players/playerEdit', {
+                    breadcrumb: ['PLAYERS','EDIT'],
                     details: results
                 });
             })
-            .catch((err)=>{
-                console.log("Error : "+ err);
-               next(err)});
+            .catch((err)=>{next(err)});
     }
     else{
-        clubController.club_details(req.params.id)
+        playerController.player_details(req.params.id)
             .then(results => {
-                res.render('clubs/clubEdit', {
-                    breadcrumb: ['CLUBS','EDIT'],
+                services.logger.info("Player found : " + JSON.stringify(results));
+                res.render('players/playerEdit', {
+                    breadcrumb: ['PLAYERS','EDIT'],
                     details: results
                 });
             })
-            .catch(next);
+            .catch((err)=>{next(err)});
     }
 });
 
+// route for new player
 router.get('/new',function(req, res, next){
     res.redirect('edit/-1');
 })
 
 /**
- * POST club edit
+ * POST player edit
  */
-router.post('/edit/:id',  [
-    body('shortdesc').not().isEmpty().withMessage((value, { req, location, path }) => {
-        return req.__('MSG_ClubShortDescriptionIsMandatory', { value, location, path });
+router.post('/edit/:id', [
+    body('firstname').not().isEmpty().withMessage((value, { req, location, path }) => {
+        return req.__('MSG_PlayerFirstNameIsMandatory', { value, location, path });
     }),
-    body('longdesc').not().isEmpty().withMessage((value, { req, location, path }) => {
-        return req.__('MSG_ClubLongDescriptionIsMandatory', { value, location, path });
+    body('lastname').not().isEmpty().withMessage((value, { req, location, path }) => {
+        return req.__('MSG_PlayerLastNameIsMandatory', { value, location, path });
     })
 ]
 , function(req, res, next){
@@ -73,11 +76,11 @@ router.post('/edit/:id',  [
     if (!errors.isEmpty()) {
         return res.status(422).jsonp(errors.array());
       } else {
-        clubController.club_update(req)
+        playerController.player_update(req)
         .then(res.status(200).jsonp({}))
         .catch((err)=>{
             services.logger.error(err);
-           next(err)});
+            next(err)});
       }
 });
 
@@ -85,11 +88,11 @@ router.post('/edit/:id',  [
  * 
  */
 router.post('/create', [
-    body('shortdesc').not().isEmpty().withMessage((value, { req, location, path }) => {
-        return req.__('MSG_ClubShortDescriptionIsMandatory', { value, location, path });
+    body('firstname').not().isEmpty().withMessage((value, { req, location, path }) => {
+        return req.__('MSG_PlayerFirstNameIsMandatory', { value, location, path });
     }),
-    body('longdesc').not().isEmpty().withMessage((value, { req, location, path }) => {
-        return req.__('MSG_ClubLongDescriptionIsMandatory', { value, location, path });
+    body('lastname').not().isEmpty().withMessage((value, { req, location, path }) => {
+        return req.__('MSG_PlayerLastNameIsMandatory', { value, location, path });
     })
 ],
 function(req, res, next)
@@ -98,9 +101,9 @@ function(req, res, next)
     if (!errors.isEmpty()) {
         return res.status(422).jsonp(errors.array());
       } else {
-        clubController.club_create(req)
+        playerController.player_create(req)
         .then(()=>{
-            req.flash('success', req.__('MSG_ClubCreated'))
+            req.flash('success', req.__('MSG_PlayerCreated'))
             res.status(200).jsonp({})
         })
         .catch((err)=>{
@@ -115,9 +118,9 @@ function(req, res, next)
  */
 router.delete('/delete/:id',
     function(req, res, next) {
-        clubController.club_delete(req.params.id)
+        playerController.player_delete(req.params.id)
         .then(()=> {
-            req.flash('success', req.__('MSG_ClubDeleted'));
+            req.flash('success', req.__('MSG_PlayerDeleted'));
             res.status(200).jsonp({})
         })
         .catch((err)=>{
