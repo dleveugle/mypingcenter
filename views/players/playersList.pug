@@ -5,8 +5,7 @@ block content
   .card.border-0
     .card-header.border-0.bg-transparent
       #table-buttons.inline 
-      button.addButton(type=button class="btn btn-primary btn-lg" onclick="newPlayer()"  
-                  data-toggle="tooltip" data-bs-placement="bottom" title=__('CreatingPlayer') )  #{__('NewPlayer')}
+      +_newButton("newPlayer()", __('CreatingPlayer'), __('NewPlayer'))
 
     .card-body.border-0.striped
       table#pingTable.table.table-striped.table-hover
@@ -28,14 +27,9 @@ block content
               td #{val.clubid}
               td.text-center
                 .btn-group.ms-2(role="group")
-                  
-                  button.editButton(type=button class="btn btn-primary btn-sm" onclick="editPlayer("+val.id+")"  
-                  data-toggle="tooltip" data-bs-placement="bottom" title=__('Modify'))  
-                    i.bx.bx-edit-alt
+                  +_editButton("editPlayer("+val.id+")")
                 .btn-group.ms-2(role="group")
-                  button.delButton(type=button class="btn btn-primary btn-sm" onclick="deletePlayer("+val.id+")"
-                  data-toggle="tooltip" data-bs-placement="bottom" title=__('Delete'))  
-                    i.bx.bx-trash-alt
+                   +_deleteButton("deletePlayer("+val.id+")")
 
           
       include /includes/modalform.pug

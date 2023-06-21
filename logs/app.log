@@ -763,3 +763,37 @@ Cannot read properties of undefined (reading 'birthdate')
 2023-06-21T19:50:05.150Z info: Received a GET request for /players/
 2023-06-21T19:50:06.990Z info: Received a GET request for /clubs
 2023-06-21T19:50:10.501Z info: Received a GET request for /clubs/edit/1
+2023-06-21T19:52:03.668Z info: Received a GET request for /clubs
+2023-06-21T19:52:06.037Z info: Received a GET request for /clubs/edit/1
+2023-06-21T19:52:21.752Z info: Received a GET request for /players
+2023-06-21T19:52:23.154Z info: Received a GET request for /players/edit/1
+2023-06-21T19:52:23.162Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"2023-06-11 01:00:00"}
+2023-06-21T19:55:05.077Z info: Received a GET request for /players
+2023-06-21T19:55:06.528Z info: Received a GET request for /players/edit/1
+2023-06-21T19:55:06.536Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"2023-06-11 01:00:00"}
+2023-06-21T19:55:14.614Z info: Received a GET request for /players
+2023-06-21T19:55:16.205Z info: Received a GET request for /players/edit/1
+2023-06-21T19:55:16.214Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"2023-06-11 01:00:00"}
+2023-06-21T19:56:56.107Z info: Received a GET request for /players
+2023-06-21T19:56:58.467Z info: Received a GET request for /players
+2023-06-21T19:57:00.057Z info: Received a GET request for /players/edit/1
+2023-06-21T19:57:00.067Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"2023-06-11 01:00:00"}
+2023-06-21T19:57:39.576Z info: Received a GET request for /players
+2023-06-21T19:57:41.643Z info: Received a GET request for /players
+2023-06-21T19:57:43.242Z info: Received a GET request for /players/edit/1
+2023-06-21T19:57:43.248Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"2023-06-11 01:00:00"}
+2023-06-21T19:58:40.354Z info: Received a GET request for /players
+2023-06-21T19:58:42.141Z info: Received a GET request for /players/edit/1
+2023-06-21T19:58:42.148Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"2023-06-11 01:00:00"}
+2023-06-21T19:59:08.090Z info: Received a GET request for /players
+2023-06-21T19:59:09.475Z info: Received a GET request for /players/edit/1
+2023-06-21T19:59:09.482Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"2023-06-11 01:00:00"}
+2023-06-21T20:10:17.162Z info: Received a GET request for /players/edit/1
+2023-06-21T20:10:17.181Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"2023-06-11 01:00:00"}
+2023-06-21T20:10:26.293Z info: Received a GET request for /players/edit/1
+2023-06-21T20:10:26.298Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"2023-06-11 01:00:00"}
+2023-06-21T20:13:13.029Z info: Received a GET request for /players/edit/1
+2023-06-21T20:13:13.036Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"2023-06-11 01:00:00"}
+2023-06-21T20:13:28.779Z info: Received a GET request for /players
+2023-06-21T20:13:30.041Z info: Received a GET request for /players/edit/1
+2023-06-21T20:13:30.045Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"2023-06-11 01:00:00"}
