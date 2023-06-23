@@ -48,6 +48,9 @@ module.exports =  function(){
         requireServices: function() {
             return require(`${this.servicesDir}`);
         },
+        getDb: function(){
+            return require(`${this.modelsDir}`);
+        },
         _: () => {return _();}
 
 

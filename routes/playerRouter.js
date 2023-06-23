@@ -18,6 +18,7 @@ const services = global.Utils.requireServices();
 router.get('/', function(req, res, next){
     playerController.players_list()
       .then(results => {
+            services.logger.info(JSON.stringify(results));
           res.render('players/playersList', {
                 breadcrumb: 'PLAYERS',
                 title: 'PLAYERS', 
@@ -31,29 +32,8 @@ router.get('/', function(req, res, next){
  * GET player detail
  * @param {number} id
  */
-router.get('/edit/:id', function(req, res, next){
-    if (req.params.id == -1){
-        playerController.player_new()
-            .then(results => {
-                res.render('players/playerEdit', {
-                    breadcrumb: ['PLAYERS','EDIT'],
-                    details: results
-                });
-            })
-            .catch((err)=>{next(err)});
-    }
-    else{
-        playerController.player_details(req.params.id)
-            .then(results => {
-                services.logger.info("Player found : " + JSON.stringify(results));
-                res.render('players/playerEdit', {
-                    breadcrumb: ['PLAYERS','EDIT'],
-                    details: results
-                });
-            })
-            .catch((err)=>{next(err)});
-    }
-});
+
+router.get('/edit/:id', playerController.player_details_get);
 
 // route for new player
 router.get('/new',function(req, res, next){

@@ -24,7 +24,7 @@ block content
               td #{val.firstname} 
               td #{val.lastname}
               td #{moment(val.birthdate).format("DD/MM/YYYY")}
-              td #{val.clubid}
+              td #{val.club ? val.club.shortdesc : ''}
               td.text-center
                 .btn-group.ms-2(role="group")
                   +_editButton("editPlayer("+val.id+")")

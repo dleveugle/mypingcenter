@@ -18,6 +18,7 @@ module.exports = (sequelize, DataTypes)  => {
             allowNull: true
         }
       });
+      console.log('player belongs to');
     }
 };
   Player.init({

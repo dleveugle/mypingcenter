@@ -8,12 +8,12 @@
 var async = require('async');
 const validator = require('express-validator');
 
-const Club = global.Utils.requireDataModel('club');
+const db = global.Utils.getDb();
 
 // Display list of all Clubs.
 exports.clubs_list = function () {
     return new Promise((resolve, reject) => {
-        Club.findAll({
+        db['club'].findAll({
             order: [['ID', 'ASC']]
             })
             .then(data => resolve(data));
@@ -23,14 +23,14 @@ exports.clubs_list = function () {
 // Get club details by pk
 exports.club_details = function(id) {
     return new Promise((resolve, reject) => {
-        Club.findByPk(id)
+        db['club'].findByPk(id)
             .then(data => resolve(data));
     });
 };
 
 exports.club_update = function(req, res, next) {
     return new Promise((resolve, reject) =>{
-        Club.update({
+        db['club'].update({
             shortdesc: req.body.shortdesc,
             longdesc: req.body.longdesc
         }, {
@@ -46,7 +46,7 @@ exports.club_update = function(req, res, next) {
 
 exports.club_delete = function(id) {
     return new Promise((resolve, reject)=> {
-        Club.destroy({where:{id: id}})
+        db['club'].destroy({where:{id: id}})
             .then(data => resolve(data),
             error => reject(error));
     });
@@ -54,7 +54,7 @@ exports.club_delete = function(id) {
 
 exports.club_create = function(req, res, next) {
     return new Promise((resolve, reject) =>{
-        Club.create({
+        db['club'].create({
             shortdesc: req.body.shortdesc,
             longdesc: req.body.longdesc
         })
@@ -66,7 +66,7 @@ exports.club_create = function(req, res, next) {
 
 exports.club_new = function(req, res, next) {
     return new Promise((resolve, reject) =>{
-        resolve(Club.build())
+        resolve(db['club'].build())
     });
 };
 

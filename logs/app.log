@@ -797,3 +797,324 @@ Cannot read properties of undefined (reading 'birthdate')
 2023-06-21T20:13:28.779Z info: Received a GET request for /players
 2023-06-21T20:13:30.041Z info: Received a GET request for /players/edit/1
 2023-06-21T20:13:30.045Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"2023-06-11 01:00:00"}
+2023-06-22T18:54:39.636Z info: Received a GET request for /players
+2023-06-22T18:54:39.646Z error: ReferenceError: Club is not defined
+    at C:\dev\node\pingcenter\controllers\playerController.js:18:24
+    at new Promise (<anonymous>)
+    at exports.players_list (C:\dev\node\pingcenter\controllers\playerController.js:14:12)
+    at C:\dev\node\pingcenter\routes\playerRouter.js:19:22
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+2023-06-22T18:55:01.342Z info: Received a GET request for /players
+2023-06-22T18:55:01.353Z error: ReferenceError: club is not defined
+    at C:\dev\node\pingcenter\controllers\playerController.js:18:24
+    at new Promise (<anonymous>)
+    at exports.players_list (C:\dev\node\pingcenter\controllers\playerController.js:14:12)
+    at C:\dev\node\pingcenter\routes\playerRouter.js:19:22
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+2023-06-22T18:55:15.049Z info: Received a GET request for /players
+2023-06-22T18:57:21.734Z info: Received a GET request for /players
+2023-06-22T19:01:59.910Z info: Received a GET request for /players
+2023-06-22T19:02:53.468Z info: Received a GET request for /players
+2023-06-22T19:06:52.764Z info: Received a GET request for /players
+2023-06-22T19:09:11.244Z info: Received a GET request for /players
+2023-06-22T19:13:58.941Z info: Received a GET request for /players
+2023-06-22T19:19:28.631Z info: Received a GET request for /players
+2023-06-22T19:19:28.662Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":null,"club":null}]
+2023-06-22T19:19:29.089Z error: TypeError: C:\dev\node\pingcenter\views\players\playersList.pug:27
+    25|               td #{val.lastname}
+    26|               td #{moment(val.birthdate).format("DD/MM/YYYY")}
+  > 27|               td #{val.Club.shortdesc}
+    28|               td.text-center
+    29|                 .btn-group.ms-2(role="group")
+    30|                   +_editButton("editPlayer("+val.id+")")
+
+Cannot read properties of undefined (reading 'shortdesc')
+    at eval (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:384:66)
+    at eval (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:441:4)
+    at template (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:853:7)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:454:38)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:444:21)
+    at exports.__express [as engine] (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:493:11)
+    at View.render (C:\dev\node\pingcenter\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\dev\node\pingcenter\node_modules\express\lib\application.js:657:10)
+    at Function.render (C:\dev\node\pingcenter\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (C:\dev\node\pingcenter\node_modules\express\lib\response.js:1039:7)
+2023-06-22T19:22:06.595Z info: Received a GET request for /clubs
+2023-06-22T19:22:09.556Z info: Received a GET request for /clubs/new
+2023-06-22T19:22:09.569Z info: Received a GET request for /clubs/edit/-1
+2023-06-22T19:22:12.496Z info: Received a POST request for /clubs/create/
+2023-06-22T19:22:12.546Z info: Received a GET request for /clubs/
+2023-06-22T19:22:19.974Z info: Received a DELETE request for /clubs/delete/3
+2023-06-22T19:22:20.003Z info: Received a GET request for /clubs/
+2023-06-22T19:22:22.517Z info: Received a GET request for /players
+2023-06-22T19:22:22.537Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":null,"club":null}]
+2023-06-22T19:22:22.701Z error: TypeError: C:\dev\node\pingcenter\views\players\playersList.pug:27
+    25|               td #{val.lastname}
+    26|               td #{moment(val.birthdate).format("DD/MM/YYYY")}
+  > 27|               td #{val.Club.shortdesc}
+    28|               td.text-center
+    29|                 .btn-group.ms-2(role="group")
+    30|                   +_editButton("editPlayer("+val.id+")")
+
+Cannot read properties of undefined (reading 'shortdesc')
+    at eval (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:384:66)
+    at eval (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:441:4)
+    at template (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:853:7)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:454:38)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:444:21)
+    at exports.__express [as engine] (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:493:11)
+    at View.render (C:\dev\node\pingcenter\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\dev\node\pingcenter\node_modules\express\lib\application.js:657:10)
+    at Function.render (C:\dev\node\pingcenter\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (C:\dev\node\pingcenter\node_modules\express\lib\response.js:1039:7)
+2023-06-22T19:24:49.232Z info: Received a GET request for /players
+2023-06-22T19:24:49.255Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":null,"club":null}]
+2023-06-22T19:24:49.671Z error: TypeError: C:\dev\node\pingcenter\views\players\playersList.pug:27
+    25|               td #{val.lastname}
+    26|               td #{moment(val.birthdate).format("DD/MM/YYYY")}
+  > 27|               td (#{val.club} ? #{val.club.shortdesc} : '')
+    28|               td.text-center
+    29|                 .btn-group.ms-2(role="group")
+    30|                   +_editButton("editPlayer("+val.id+")")
+
+Cannot read properties of null (reading 'shortdesc')
+    at eval (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:390:66)
+    at eval (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:457:4)
+    at template (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:869:7)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:454:38)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:444:21)
+    at exports.__express [as engine] (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:493:11)
+    at View.render (C:\dev\node\pingcenter\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\dev\node\pingcenter\node_modules\express\lib\application.js:657:10)
+    at Function.render (C:\dev\node\pingcenter\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (C:\dev\node\pingcenter\node_modules\express\lib\response.js:1039:7)
+2023-06-22T19:27:08.966Z info: Received a GET request for /players
+2023-06-22T19:27:08.996Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":null,"club":null}]
+2023-06-22T19:27:09.192Z error: TypeError: C:\dev\node\pingcenter\views\players\playersList.pug:27
+    25|               td #{val.lastname}
+    26|               td #{moment(val.birthdate).format("DD/MM/YYYY")}
+  > 27|               td (#{val.club}!= null ? #{val.club.shortdesc} : '')
+    28|               td.text-center
+    29|                 .btn-group.ms-2(role="group")
+    30|                   +_editButton("editPlayer("+val.id+")")
+
+Cannot read properties of null (reading 'shortdesc')
+    at eval (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:390:66)
+    at eval (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:457:4)
+    at template (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:869:7)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:454:38)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:444:21)
+    at exports.__express [as engine] (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:493:11)
+    at View.render (C:\dev\node\pingcenter\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\dev\node\pingcenter\node_modules\express\lib\application.js:657:10)
+    at Function.render (C:\dev\node\pingcenter\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (C:\dev\node\pingcenter\node_modules\express\lib\response.js:1039:7)
+2023-06-22T19:27:38.758Z info: Received a GET request for /players
+2023-06-22T19:27:38.770Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":null,"club":null}]
+2023-06-22T19:27:54.784Z info: Received a GET request for /players
+2023-06-22T19:27:54.822Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":null,"club":null}]
+2023-06-22T19:28:17.578Z info: Received a GET request for /players
+2023-06-22T19:28:17.609Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":null,"club":null}]
+2023-06-22T19:28:30.960Z info: Received a GET request for /players
+2023-06-22T19:28:30.972Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":null,"club":null}]
+2023-06-22T19:28:55.343Z info: Received a GET request for /players
+2023-06-22T19:28:55.353Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":null,"club":null}]
+2023-06-22T19:29:04.810Z info: Received a GET request for /players
+2023-06-22T19:29:04.832Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":null,"club":null}]
+2023-06-22T19:29:07.611Z info: Received a GET request for /players/edit/1
+2023-06-22T19:29:07.623Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":null}
+2023-06-22T19:29:14.451Z info: Received a POST request for /players/edit/1
+2023-06-22T19:29:14.487Z info: Received a GET request for /players/
+2023-06-22T19:29:14.498Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":null,"club":null}]
+2023-06-22T19:29:32.735Z info: Received a GET request for /players/edit/1
+2023-06-22T19:29:32.749Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":null}
+2023-06-22T19:29:35.921Z info: Received a POST request for /players/edit/1
+2023-06-22T19:29:35.950Z info: Received a GET request for /players/
+2023-06-22T19:29:35.963Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":null,"club":null}]
+2023-06-22T19:32:29.395Z info: Received a GET request for /players/
+2023-06-22T19:32:29.417Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":null,"club":null}]
+2023-06-22T19:32:29.949Z info: Received a GET request for /players/edit/1
+2023-06-22T19:32:29.985Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":null}
+2023-06-22T19:32:31.417Z info: Received a GET request for /players/edit/1
+2023-06-22T19:32:31.423Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":null}
+2023-06-22T19:32:34.609Z info: Received a POST request for /players/edit/1
+2023-06-22T19:32:34.617Z info: {"id":"1","firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13","clubid":"1"}
+2023-06-22T19:32:34.641Z info: Received a GET request for /players/
+2023-06-22T19:32:34.653Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":null,"club":null}]
+2023-06-22T19:34:49.261Z info: Received a GET request for /players/
+2023-06-22T19:34:49.285Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":null,"club":null}]
+2023-06-22T19:34:51.025Z info: Received a GET request for /players/edit/1
+2023-06-22T19:34:51.039Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":null}
+2023-06-22T19:34:53.860Z info: Received a POST request for /players/edit/1
+2023-06-22T19:34:53.869Z info: {"id":"1","firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13","clubid":"1"}
+2023-06-22T19:34:53.895Z info: Received a GET request for /players/
+2023-06-22T19:34:53.911Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-22T19:35:16.597Z info: Received a GET request for /players/edit/1
+2023-06-22T19:35:16.612Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1}
+2023-06-22T19:36:16.437Z info: Received a GET request for /players/
+2023-06-22T19:36:16.454Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-22T19:36:17.644Z info: Received a GET request for /players/edit/1
+2023-06-22T19:36:17.651Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1}
+2023-06-22T19:37:52.240Z info: Received a GET request for /players/
+2023-06-22T19:37:52.268Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-22T19:37:54.252Z info: Received a GET request for /players/edit/1
+2023-06-22T19:37:54.269Z info: Player found : {"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}
+2023-06-22T19:50:36.803Z info: Received a GET request for /players/
+2023-06-22T19:50:36.834Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-22T19:50:42.140Z info: Received a GET request for /players/edit/1
+2023-06-22T19:50:42.150Z error: TypeError: Cannot read properties of undefined (reading 'then')
+    at C:\dev\node\pingcenter\routes\playerRouter.js:48:13
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+2023-06-22T19:51:31.212Z info: Received a GET request for /players/
+2023-06-22T19:51:31.234Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-22T19:51:32.981Z info: Received a GET request for /players/edit/1
+2023-06-22T19:51:32.987Z error: TypeError: Cannot read properties of undefined (reading 'then')
+    at C:\dev\node\pingcenter\routes\playerRouter.js:48:13
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+2023-06-22T19:53:07.617Z info: Received a GET request for /players/
+2023-06-22T19:53:07.648Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-22T19:53:09.203Z info: Received a GET request for /players/edit/1
+2023-06-23T19:44:29.868Z info: Received a GET request for /
+2023-06-23T19:44:29.872Z error: This is an error message
+2023-06-23T19:44:29.873Z warn: This is a warning message
+2023-06-23T19:44:29.874Z info: This is an info message
+2023-06-23T19:44:31.699Z info: Received a GET request for /favicon.ico
+2023-06-23T19:44:31.705Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:130:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-23T19:44:33.496Z info: Received a GET request for /players
+2023-06-23T19:44:33.527Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-23T19:44:35.237Z info: Received a GET request for /players/edit/1
+2023-06-23T19:44:35.247Z error: ReferenceError: resolve is not defined
+    at C:\dev\node\pingcenter\controllers\playerController.js:40:19
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-06-23T20:03:27.181Z info: Received a GET request for /players
+2023-06-23T20:03:27.225Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-23T20:03:29.164Z info: Received a GET request for /players/edit/1
+2023-06-23T20:08:15.653Z info: Received a GET request for /players
+2023-06-23T20:08:15.697Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-23T20:08:17.024Z info: Received a GET request for /players/edit/1
+2023-06-23T20:08:47.515Z info: Received a GET request for /players
+2023-06-23T20:08:47.545Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-23T20:08:49.031Z info: Received a GET request for /players/edit/1
+2023-06-23T20:08:49.035Z error: undefined
+2023-06-23T20:10:06.365Z info: Received a GET request for /players
+2023-06-23T20:10:06.410Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-23T20:10:07.901Z info: Received a GET request for /players/edit/1
+2023-06-23T20:10:28.034Z info: Received a GET request for /players
+2023-06-23T20:10:28.058Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-23T20:10:29.260Z info: Received a GET request for /players/edit/1
+2023-06-23T20:10:29.267Z error: undefined
+2023-06-23T20:12:16.896Z info: Received a GET request for /players
+2023-06-23T20:12:16.929Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-23T20:12:18.384Z info: Received a GET request for /players/edit/1
+2023-06-23T20:12:18.393Z error: undefined
+2023-06-23T20:12:56.962Z info: Received a GET request for /players
+2023-06-23T20:12:56.988Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-23T20:12:58.219Z info: Received a GET request for /players/edit/1
+2023-06-23T20:12:58.225Z info: undefined
+2023-06-23T20:12:58.227Z error: undefined
+2023-06-23T20:15:12.235Z info: Received a GET request for /players
+2023-06-23T20:15:12.269Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-23T20:15:14.207Z info: Received a GET request for /players/edit/1
+2023-06-23T20:15:14.212Z info: undefined
+2023-06-23T20:15:14.214Z error: undefined
+2023-06-23T20:29:50.231Z info: Received a GET request for /players
+2023-06-23T20:29:50.276Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-23T20:29:51.565Z info: Received a GET request for /players/edit/1
+2023-06-23T20:29:51.571Z info: undefined
+2023-06-23T20:29:51.574Z error: undefined
+2023-06-23T20:31:28.765Z info: Received a GET request for /players
+2023-06-23T20:31:28.798Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-23T20:31:30.205Z info: Received a GET request for /players/edit/1
+2023-06-23T20:31:30.210Z info: coucou !!!
+2023-06-23T20:31:30.211Z info: undefined
+2023-06-23T20:31:30.212Z error: undefined
+2023-06-23T20:32:29.320Z info: Received a GET request for /players
+2023-06-23T20:32:29.355Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-23T20:32:30.635Z info: Received a GET request for /players/edit/1
+2023-06-23T20:32:30.641Z info: coucou !!!
+2023-06-23T20:32:30.642Z info: undefined
+2023-06-23T20:32:30.644Z error: undefined
+2023-06-23T20:34:03.512Z info: Received a GET request for /players
+2023-06-23T20:34:03.549Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-23T20:34:04.929Z info: Received a GET request for /players/edit/1
+2023-06-23T20:34:04.935Z info: coucou !!!
+2023-06-23T20:34:04.936Z info: undefined
+2023-06-23T20:34:04.939Z error: undefined
+2023-06-23T20:35:44.044Z info: Received a GET request for /players
+2023-06-23T20:35:44.078Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-23T20:35:46.379Z info: Received a GET request for /players/edit/1
+2023-06-23T20:35:46.386Z info: coucou !!!
+2023-06-23T20:35:46.387Z info: undefined
+2023-06-23T20:35:46.389Z error: undefined
+2023-06-23T20:37:31.928Z info: Received a GET request for /players
+2023-06-23T20:37:31.948Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-23T20:37:33.684Z info: Received a GET request for /players/edit/1
+2023-06-23T20:37:33.690Z info: coucou !!!: undefined
+2023-06-23T20:37:33.691Z info: undefined
+2023-06-23T20:37:33.693Z error: undefined
+2023-06-23T20:44:14.802Z info: Received a GET request for /players
+2023-06-23T20:44:14.873Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-23T20:44:16.525Z info: Received a GET request for /players/edit/1
+2023-06-23T20:45:16.316Z info: Received a GET request for /players
+2023-06-23T20:45:16.353Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-23T20:45:18.242Z info: Received a GET request for /players/edit/1
+2023-06-23T20:45:18.262Z info: {"clubs":[{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"},{"id":2,"shortdesc":"SENE TT","longdesc":"SENE TT"}],"player":{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}}
+2023-06-23T20:47:05.350Z info: Received a GET request for /players
+2023-06-23T20:47:05.369Z info: [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-06-23T20:47:06.799Z info: Received a GET request for /players/edit/1
+2023-06-23T20:47:06.813Z info: {"clubs":[{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"},{"id":2,"shortdesc":"SENE TT","longdesc":"SENE TT"}],"player":{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","clubId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}}
+2023-06-23T20:47:06.840Z error: TypeError: C:\dev\node\pingcenter\views\players\playerEdit.pug:8
+    6| 	div.input-group.has-validation
+    7| 		div.form-floating.mb-3
+  > 8| 			input#txtFirstName(type="text", class="form-control", value=data.player.firstname, name="firstname" 
+    9| 			placeholder="#")
+    10| 			label.form-label(for="txtFirstName") #{__('PlayerFirstName')}
+    11| 			div#invalid-firstname.invalid-feedback
+
+Cannot read properties of undefined (reading 'player')
+    at eval (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:18:126)
+    at template (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:55:7)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:454:38)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:444:21)
+    at exports.__express [as engine] (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:493:11)
+    at View.render (C:\dev\node\pingcenter\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\dev\node\pingcenter\node_modules\express\lib\application.js:657:10)
+    at Function.render (C:\dev\node\pingcenter\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (C:\dev\node\pingcenter\node_modules\express\lib\response.js:1039:7)
+    at C:\dev\node\pingcenter\controllers\playerController.js:57:17

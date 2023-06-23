@@ -1,29 +1,29 @@
 .container
 	div
-		input#txtId(type="hidden", class="form-control", value=details.id, name="id" 
+		input#txtId(type="hidden", class="form-control", value=data.player.id, name="id" 
 		placeholder="#")
 
 	div.input-group.has-validation
 		div.form-floating.mb-3
-			input#txtFirstName(type="text", class="form-control", value=details.firstname, name="firstname" 
+			input#txtFirstName(type="text", class="form-control", value=data.player.firstname, name="firstname" 
 			placeholder="#")
 			label.form-label(for="txtFirstName") #{__('PlayerFirstName')}
 			div#invalid-firstname.invalid-feedback
 
 	div.form-floating.mb-3
-		input#txtLastName(type="text", class="form-control" value=details.lastname name="lastname"
+		input#txtLastName(type="text", class="form-control" value=data.player.lastname name="lastname"
 		placeholder="#")
 		label.form-label(for="txtLastName") #{__('PlayerLastName')}
 		div#invalid-lastname.invalid-feedback
 
 	div.form-floating.mb-3
-		input#txtBirthDate(type="date", class="form-control" data-bs-date-format="dd-mm-yyyy" value=moment(details.birthdate).format("YYYY-MM-DD") name="birthdate"
+		input#txtBirthDate(type="date", class="form-control" data-bs-date-format="dd-mm-yyyy" value=moment(data.player.birthdate).format("YYYY-MM-DD") name="birthdate"
 		placeholder="#" )
 		label.form-label(for="txtBirthDate") #{__('PlayerBirthDate')}
 		div#invalid-birthdate.invalid-feedback
 
 	div.form-floating.mb-3
-		input#txtClub(type="text", class="form-control" value=details.clubid name="clubid"
+		input#txtClub(type="text", class="form-control" value=(data.player.club ? data.player.club.shortdesc : '') name="clubid"
 		placeholder="#")
 		label.form-label(for="txtClub") #{__('PlayerClub')}
 		div#invalid-clubid.invalid-feedback

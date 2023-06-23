@@ -7,34 +7,71 @@
 // Imported modules
 var async = require('async');
 const validator = require('express-validator');
-const Player = global.Utils.requireDataModel('player');
+const db = global.Utils.getDb();
+const services = global.Utils.requireServices();
 
 // Display list of all ...
 exports.players_list = function () {
     return new Promise((resolve, reject) => {
-        Player.findAll({
-            order: [['ID', 'ASC']]
-            })
-            .then(data => resolve(data));
+        db['player'].findAll({
+            order: [['ID', 'ASC']],
+            include: [{
+                model: db['club']
+            }]
+        })
+        .then(data => resolve(data));
     });
 };
 
-// Get details by pk
-exports.player_details = function(id) {
-    return new Promise((resolve, reject) => {
-        Player.findByPk(id)
-            .then(data => resolve(data));
-    });
-};
+
+exports.player_details_get = function(req, res, next){
+    if (req.params.id == -1){
+        db['player']
+        .build()
+        .exec(function(err, results){
+            if(err) {return next(err);}
+            res.render('players/playerEdit', {
+                breadcrumb: ['PLAYERS','EDIT'],
+                details: results
+            });
+        });
+    }
+    else{
+        async.parallel({
+            clubs: function (callback){
+               db['club'].findAll()
+               .then(data => {callback(null, data);});
+            },
+            player: function(callback){
+                db['player'].findByPk(req.params.id,{
+                    include: [{
+                        model: db['club']
+                    }]
+                })
+                .then(data => {callback(null,data);});
+                
+            }
+        })
+        .then(results => {
+            services.logger.info(JSON.stringify(results));
+            res.render('players/playerEdit', {
+                breadcrumb: ['PLAYERS','EDIT'],
+                data: results
+            })},
+            err => {return next(err);}
+        )
+    }
+}
 
 // update model
 exports.player_update = function(req, res, next) {
     return new Promise((resolve, reject) =>{
-        Player.update({
+        services.logger.info(JSON.stringify(req.body));
+        db['player'].update({
             firstname: req.body.firstname,
             lastname: req.body.lastname,
             birthdate: req.body.birthdate,
-            clubid: req.body.clubid
+            clubId: req.body.clubid
         }, {
             where: {
                 id: req.params.id
@@ -49,7 +86,7 @@ exports.player_update = function(req, res, next) {
 // delete model
 exports.player_delete = function(id) {
     return new Promise((resolve, reject)=> {
-        Player.destroy({where:{id: id}})
+        db['player'].destroy({where:{id: id}})
             .then(data => resolve(data),
             error => reject(error));
     });
@@ -58,7 +95,7 @@ exports.player_delete = function(id) {
 // create model
 exports.player_create = function(req, res, next) {
     return new Promise((resolve, reject) =>{
-        Player.create({
+        db['player'].create({
             firstname: req.body.firstname,
             lastname: req.body.lastname,
             birthdate: req.body.birthdate,
@@ -70,10 +107,4 @@ exports.player_create = function(req, res, next) {
     });
 };
 
-// Instantiate model
-exports.player_new = function(req, res, next) {
-    return new Promise((resolve, reject) =>{
-        resolve(Player.build())
-    });
-};
 
