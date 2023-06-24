@@ -1427,3 +1427,70 @@ Cannot read properties of undefined (reading 'id')
 2023-06-24T11:06:23.671Z info: Received a GET request for /
 2023-06-24T11:07:01.974Z info: Received a GET request for /
 2023-06-24T11:07:01.977Z debug: Request params : {}
+2023-06-24T11:10:09.536Z info: Received a GET request for /
+2023-06-24T11:10:09.539Z info: Request params: {}
+2023-06-24T11:10:21.240Z info: Received a GET request for /clubs
+2023-06-24T11:10:21.242Z info: Request params: {}
+2023-06-24T11:10:27.984Z info: Received a GET request for /clubs/edit/1
+2023-06-24T11:10:27.985Z info: Request params: {}
+2023-06-24T11:10:41.785Z info: Received a GET request for /players
+2023-06-24T11:10:41.786Z info: Request params: {}
+2023-06-24T11:10:41.789Z error: TypeError: Cannot read properties of undefined (reading '_d')
+    at exports.players_list (C:\dev\node\pingcenter\controllers\playerController.js:15:20)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-24T11:21:45.955Z info: Received a GET request for /players
+2023-06-24T11:21:45.958Z info: Request params: {}
+2023-06-24T11:21:45.963Z error: TypeError: Cannot read properties of undefined (reading '_d')
+    at exports.players_list (C:\dev\node\pingcenter\controllers\playerController.js:16:20)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-24T11:24:48.403Z info: Received a GET request for /players
+2023-06-24T11:24:48.407Z debug: Player controller called for players list
+2023-06-24T11:24:48.406Z info: Request params: {}
+2023-06-24T11:24:50.331Z info: Received a GET request for /players/edit/1
+2023-06-24T11:24:50.333Z debug: Player controller called for details of player 
+2023-06-24T11:24:50.332Z info: Request params: {}
+2023-06-24T11:24:50.334Z info: Request params: {
+  "id": "1"
+}
+2023-06-24T11:24:50.354Z debug: Results sent back {
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    }
+  ],
+  "player": {
+    "id": 1,
+    "firstname": "Damien",
+    "lastname": "LEVEUGLE",
+    "birthdate": "1969-12-13 01:00:00",
+    "clubId": 1,
+    "club": {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    }
+  }
+}

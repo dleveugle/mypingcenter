@@ -9,44 +9,21 @@ const { body, validationResult } = global.Utils.requireNodeModule('express-valid
 const playerController = global.Utils.requireControllers('playerController');
 const services = global.Utils.requireServices();
 
-
-
-
 /**
- * GET clubs listing. 
+ * GET 
  */ 
 // player list route
 router.get('/', playerController.players_list);
-
 // edit player route
 router.get('/edit/:id', playerController.player_details_get);
-
 // route for new player
 router.get('/new',function(req, res, next){res.redirect('edit/-1');});
 
+
 /**
- * POST player edit
+ * POST
  */
-router.post('/edit/:id', [
-    body('firstname').not().isEmpty().withMessage((value, { req, location, path }) => {
-        return req.__('MSG_PlayerFirstNameIsMandatory', { value, location, path });
-    }),
-    body('lastname').not().isEmpty().withMessage((value, { req, location, path }) => {
-        return req.__('MSG_PlayerLastNameIsMandatory', { value, location, path });
-    })
-]
-, function(req, res, next){
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-        return res.status(422).jsonp(errors.array());
-      } else {
-        playerController.player_update(req)
-        .then(res.status(200).jsonp({}))
-        .catch((err)=>{
-            services.logger.error(err);
-            next(err)});
-      }
-});
+router.post('/edit/:id', playerController.player_update);
 
 /**
  * 

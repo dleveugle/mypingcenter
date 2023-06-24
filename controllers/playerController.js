@@ -9,10 +9,12 @@ var async = require('async');
 const validator = require('express-validator');
 const db = global.Utils.getDb();
 const services = global.Utils.requireServices();
+const logger = new services.logger('app');
+const { body, validationResult } = global.Utils.requireNodeModule('express-validator');
 
 // Display list of all ...
 exports.players_list = function (req, res, next) {
-    services.mylog._d('Player controller called for players list');
+    logger._d('Player controller called for players list');
     db['player'].findAll({
         order: [['ID', 'ASC']],
         include: [{
@@ -37,8 +39,8 @@ exports.players_list = function (req, res, next) {
  * @param {*} next 
  */
 exports.player_details_get = function(req, res, next){
-    services.logd('Player controller called for details of player ');
-    services.logger.debug('Request params : '+ JSON.stringify(req.params,' ', 4));
+    logger._d('Player controller called for details of player ');
+    logger._iRequestParams(req);
     if (req.params.id == -1){
         db['player']
         .build()
@@ -67,7 +69,7 @@ exports.player_details_get = function(req, res, next){
             }
         })
         .then(results => {
-            services.logger.info(JSON.stringify(results));
+            logger._d(`Results sent back ${JSON.stringify(results,' ', 2)}`);
             res.render('players/playerEdit', {
                 breadcrumb: ['PLAYERS','EDIT'],
                 data: results
@@ -77,25 +79,36 @@ exports.player_details_get = function(req, res, next){
     }
 }
 
+
 // update model
-exports.player_update = function(req, res, next) {
-    return new Promise((resolve, reject) =>{
-        services.logger.info(JSON.stringify(req.body));
-        db['player'].update({
-            firstname: req.body.firstname,
-            lastname: req.body.lastname,
-            birthdate: req.body.birthdate,
-            clubId: req.body.clubid
-        }, {
-            where: {
-                id: req.params.id
-            }
-        })
-        .then(
-            data => resolve(data),
-            error => reject(error));
-    });
-};
+exports.player_update = [
+    body('firstname').not().isEmpty().withMessage((value, { req, location, path }) => {
+        return req.__('MSG_PlayerFirstNameIsMandatory', { value, location, path });
+    }),
+    body('lastname').not().isEmpty().withMessage((value, { req, location, path }) => {
+        return req.__('MSG_PlayerLastNameIsMandatory', { value, location, path });
+    }),
+    (req, res, next) => {
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(422).jsonp(errors.array());
+        }
+        else {
+            db['player'].update({
+                firstname: req.body.firstname,
+                lastname: req.body.lastname,
+                birthdate: req.body.birthdate,
+                clubId: req.body.clubid
+            }, {
+                where: {
+                    id: req.params.id
+                }
+            })
+            .then(res.status(200).jsonp({}))
+            .catch(err =>  {next(err);})
+        } 
+    }
+];
 
 // delete model
 exports.player_delete = function(id) {
