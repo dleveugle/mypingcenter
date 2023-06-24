@@ -4,7 +4,7 @@ const { createLogger, format, transports } = require('winston');
 
 module.exports = createLogger({
             // Log only if level is less than (meaning more severe) or equal to this
-            level: "info",
+            level: "debug",
             // Use timestamp and printf to create a standard log format
             format: format.combine(
             format.timestamp(),

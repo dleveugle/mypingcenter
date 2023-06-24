@@ -7,6 +7,7 @@ const flash = require('connect-flash');
 
 const i18n = require('i18n');
 var services = require('./services'); // i18n & logger
+const logger = new services.logger('app');
 
 /**
  * Load utilities
@@ -110,10 +111,10 @@ app.use((req, res, next) => {
 //***************************************************************************************
 
 // Routers
-console.log(global.Utils);
 app.use((req, res, next) => {
   // Log an info message for each incoming request
-  services.logger.info(`Received a ${req.method} request for ${req.url}`);
+  logger._i(`Received a ${req.method} request for ${req.url}`);
+  logger._iRequestParams(req);
   next();
 });
 app.use('/', global.Utils.requireRoutes('index'));
@@ -135,7 +136,7 @@ app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
-  services.logger.error(err.stack);
+  logger._e(err.stack);
   // render the error page
   res.status(err.status || 500);
   res.render('error');

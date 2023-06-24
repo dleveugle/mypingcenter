@@ -15,30 +15,14 @@ const services = global.Utils.requireServices();
 /**
  * GET clubs listing. 
  */ 
-router.get('/', function(req, res, next){
-    playerController.players_list()
-      .then(results => {
-            services.logger.info(JSON.stringify(results));
-          res.render('players/playersList', {
-                breadcrumb: 'PLAYERS',
-                title: 'PLAYERS', 
-                list: results
-          });
-      })
-      .catch(next);
-});
+// player list route
+router.get('/', playerController.players_list);
 
-/**
- * GET player detail
- * @param {number} id
- */
-
+// edit player route
 router.get('/edit/:id', playerController.player_details_get);
 
 // route for new player
-router.get('/new',function(req, res, next){
-    res.redirect('edit/-1');
-})
+router.get('/new',function(req, res, next){res.redirect('edit/-1');});
 
 /**
  * POST player edit

@@ -11,20 +11,34 @@ const db = global.Utils.getDb();
 const services = global.Utils.requireServices();
 
 // Display list of all ...
-exports.players_list = function () {
-    return new Promise((resolve, reject) => {
-        db['player'].findAll({
-            order: [['ID', 'ASC']],
-            include: [{
-                model: db['club']
-            }]
-        })
-        .then(data => resolve(data));
-    });
+exports.players_list = function (req, res, next) {
+    services.mylog._d('Player controller called for players list');
+    db['player'].findAll({
+        order: [['ID', 'ASC']],
+        include: [{
+            model: db['club']
+        }]
+    })
+    .then(results =>{
+        res.render('players/playersList', {
+            breadcrumb: 'PLAYERS',
+            title: 'PLAYERS', 
+            data: results
+        });
+    },
+        err => {next(err);}
+    );
 };
 
-
+/**
+ * Getting details of...
+ * @param {*} req 
+ * @param {*} res 
+ * @param {*} next 
+ */
 exports.player_details_get = function(req, res, next){
+    services.logd('Player controller called for details of player ');
+    services.logger.debug('Request params : '+ JSON.stringify(req.params,' ', 4));
     if (req.params.id == -1){
         db['player']
         .build()
