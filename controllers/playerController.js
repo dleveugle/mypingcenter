@@ -14,7 +14,7 @@ const { body, validationResult } = global.Utils.requireNodeModule('express-valid
 
 // Display list of all ...
 exports.players_list = function (req, res, next) {
-    logger._d('Player controller called for players list');
+    logger._Controller('Player', 'players_list', req);
     db['player'].findAll({
         order: [['ID', 'ASC']],
         include: [{
@@ -32,51 +32,40 @@ exports.players_list = function (req, res, next) {
     );
 };
 
+
 /**
- * Getting details of...
- * @param {*} req 
- * @param {*} res 
- * @param {*} next 
+ * GET PLAYER DETAILS
  */
 exports.player_details_get = function(req, res, next){
-    logger._d('Player controller called for details of player ');
-    logger._iRequestParams(req);
-    if (req.params.id == -1){
-        db['player']
-        .build()
-        .exec(function(err, results){
-            if(err) {return next(err);}
-            res.render('players/playerEdit', {
-                breadcrumb: ['PLAYERS','EDIT'],
-                details: results
-            });
-        });
-    }
-    else{
-        async.parallel({
-            clubs: function (callback){
-               db['club'].findAll()
-               .then(data => {callback(null, data);});
-            },
-            player: function(callback){
+    logger._Controller('Player', 'player_details_get', req);
+    async.parallel({
+        clubs: function (callback){
+            db['club'].findAll()
+            .then(data => {callback(null, data);});
+        },
+        player: function(callback){
+            if(req.params.id == -1) {
+                db['player'].build()
+                callback(null, db['player'].build());
+            }
+            else{
                 db['player'].findByPk(req.params.id,{
                     include: [{
                         model: db['club']
                     }]
                 })
                 .then(data => {callback(null,data);});
-                
             }
-        })
-        .then(results => {
-            logger._d(`Results sent back ${JSON.stringify(results,' ', 2)}`);
-            res.render('players/playerEdit', {
-                breadcrumb: ['PLAYERS','EDIT'],
-                data: results
-            })},
-            err => {return next(err);}
-        )
-    }
+        }
+    })
+    .then(results => {
+        logger._d(`Results sent back ${JSON.stringify(results,' ', 2)}`);
+        res.render('players/playerEdit', {
+            breadcrumb: ['PLAYERS','EDIT'],
+            data: results
+        })},
+        err => {return next(err);}
+    )
 }
 
 
@@ -89,6 +78,7 @@ exports.player_update = [
         return req.__('MSG_PlayerLastNameIsMandatory', { value, location, path });
     }),
     (req, res, next) => {
+        logger._Controller('Player', 'player_update', req);
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
             return res.status(422).jsonp(errors.array());
@@ -110,28 +100,50 @@ exports.player_update = [
     }
 ];
 
-// delete model
-exports.player_delete = function(id) {
-    return new Promise((resolve, reject)=> {
-        db['player'].destroy({where:{id: id}})
-            .then(data => resolve(data),
-            error => reject(error));
-    });
+
+/**
+ * DELETE PLAYER
+ */
+exports.player_delete = function(req, res, next) {
+    logger._Controller('Player', 'player_delete', req);
+    db['player']
+    .destroy({where:{id: req.params.id}})
+    .then(()=> {
+        req.flash('success', req.__('MSG_PlayerDeleted'));
+        res.status(200).jsonp({})
+    })
+    .catch(err => {next(err);})
 };
 
-// create model
-exports.player_create = function(req, res, next) {
-    return new Promise((resolve, reject) =>{
-        db['player'].create({
-            firstname: req.body.firstname,
-            lastname: req.body.lastname,
-            birthdate: req.body.birthdate,
-            clubid: req.body.clubid
-        })
-        .then(
-            data => resolve(data),
-            error => reject(error));
-    });
-};
+/**
+ * Create PLAYER
+ */
+exports.player_create = [
+    body('firstname').not().isEmpty().withMessage((value, { req, location, path }) => {
+        return req.__('MSG_PlayerFirstNameIsMandatory', { value, location, path });
+    }),
+    body('lastname').not().isEmpty().withMessage((value, { req, location, path }) => {
+        return req.__('MSG_PlayerLastNameIsMandatory', { value, location, path });
+    }),
+    function (req, res, next) {
+        logger._Controller('Player', 'player_create', req);
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(422).jsonp(errors.array());
+        } else {
+            db['player'].create({
+                firstname: req.body.firstname,
+                lastname: req.body.lastname,
+                birthdate: req.body.birthdate,
+                clubid: req.body.clubid
+            })
+            .then(() =>{
+                req.flash('success', req.__('MSG_PlayerCreated'))
+                res.status(200).jsonp({})
+            })
+            .catch(err => {next(err);})
+        }
+    }
+];
 
 

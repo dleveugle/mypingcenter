@@ -1494,3 +1494,247 @@ Cannot read properties of undefined (reading 'id')
     }
   }
 }
+2023-06-24T19:30:02.663Z info: Received a GET request for /
+2023-06-24T19:30:02.667Z info: Request params: {}
+2023-06-24T19:30:06.569Z info: Received a GET request for /favicon.ico
+2023-06-24T19:30:06.571Z info: Request params: {}
+2023-06-24T19:30:06.574Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:131:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-24T19:30:08.407Z info: Received a GET request for /players
+2023-06-24T19:30:08.411Z debug: Player controller called for players list
+2023-06-24T19:30:08.409Z info: Request params: {}
+2023-06-24T19:30:10.558Z info: Received a GET request for /players/new
+2023-06-24T19:30:10.559Z info: Request params: {}
+2023-06-24T19:30:10.568Z info: Received a GET request for /players/edit/-1
+2023-06-24T19:30:10.569Z debug: Player controller called for details of player 
+2023-06-24T19:30:10.568Z info: Request params: {}
+2023-06-24T19:30:10.571Z debug: Request params: {
+  "id": "-1"
+}
+2023-06-24T19:30:10.574Z error: TypeError: db.player.build(...).exec is not a function
+    at exports.player_details_get (C:\dev\node\pingcenter\controllers\playerController.js:47:10)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+2023-06-24T19:30:11.450Z info: Received a GET request for /players/new
+2023-06-24T19:30:11.450Z info: Request params: {}
+2023-06-24T19:30:11.458Z info: Received a GET request for /players/edit/-1
+2023-06-24T19:30:11.460Z debug: Player controller called for details of player 
+2023-06-24T19:30:11.459Z info: Request params: {}
+2023-06-24T19:30:11.462Z error: TypeError: db.player.build(...).exec is not a function
+    at exports.player_details_get (C:\dev\node\pingcenter\controllers\playerController.js:47:10)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+2023-06-24T19:30:11.460Z debug: Request params: {
+  "id": "-1"
+}
+2023-06-24T19:34:33.763Z info: Received a GET request for /players
+2023-06-24T19:34:33.768Z debug: Player controller called for players list
+2023-06-24T19:34:33.766Z info: Request params: {}
+2023-06-24T19:34:36.675Z info: Received a GET request for /players/new
+2023-06-24T19:34:36.676Z info: Request params: {}
+2023-06-24T19:34:36.686Z info: Received a GET request for /players/edit/-1
+2023-06-24T19:34:36.688Z debug: Player controller called for details of player 
+2023-06-24T19:34:36.687Z info: Request params: {}
+2023-06-24T19:34:36.692Z error: TypeError: db.player.build(...).exec is not a function
+    at exports.player_details_get (C:\dev\node\pingcenter\controllers\playerController.js:47:10)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+2023-06-24T19:34:36.689Z debug: Request params: {
+  "id": "-1"
+}
+2023-06-24T19:38:13.096Z info: Received a GET request for /players
+2023-06-24T19:38:13.099Z info: Request params: {}
+2023-06-24T19:38:13.101Z error: TypeError: logger._Controller is not a function
+    at exports.players_list (C:\dev\node\pingcenter\controllers\playerController.js:17:12)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-24T19:38:57.066Z info: Received a GET request for /players
+2023-06-24T19:38:57.073Z debug: <Player> controller has been called for <players_list>
+2023-06-24T19:38:57.071Z info: Request params: {}
+2023-06-24T19:38:57.074Z debug: Request params: {}
+2023-06-24T19:38:59.793Z info: Received a GET request for /players/new
+2023-06-24T19:38:59.794Z info: Request params: {}
+2023-06-24T19:38:59.803Z info: Received a GET request for /players/edit/-1
+2023-06-24T19:38:59.806Z debug: <Player> controller has been called for <player_details_get>
+2023-06-24T19:38:59.804Z info: Request params: {}
+2023-06-24T19:38:59.809Z error: TypeError: db.player.build(...).then is not a function
+    at exports.player_details_get (C:\dev\node\pingcenter\controllers\playerController.js:40:10)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+2023-06-24T19:38:59.807Z debug: Request params: {
+  "id": "-1"
+}
+2023-06-24T19:39:42.112Z info: Received a GET request for /clubs
+2023-06-24T19:39:42.113Z info: Request params: {}
+2023-06-24T19:39:43.569Z info: Received a GET request for /clubs/new
+2023-06-24T19:39:43.569Z info: Request params: {}
+2023-06-24T19:39:43.576Z info: Received a GET request for /clubs/edit/-1
+2023-06-24T19:39:43.576Z info: Request params: {}
+2023-06-24T19:42:51.529Z info: Received a GET request for /clubs
+2023-06-24T19:42:51.532Z info: Request params: {}
+2023-06-24T19:42:53.201Z info: Received a GET request for /clubs/new
+2023-06-24T19:42:53.201Z info: Request params: {}
+2023-06-24T19:42:53.212Z info: Received a GET request for /clubs/edit/-1
+2023-06-24T19:42:53.213Z info: Request params: {}
+2023-06-24T19:42:56.112Z info: Received a GET request for /players
+2023-06-24T19:42:56.116Z debug: <Player> controller has been called for <players_list>
+2023-06-24T19:42:56.114Z info: Request params: {}
+2023-06-24T19:42:56.117Z debug: Request params: {}
+2023-06-24T19:42:57.282Z info: Received a GET request for /players/new
+2023-06-24T19:42:57.283Z info: Request params: {}
+2023-06-24T19:42:57.291Z info: Received a GET request for /players/edit/-1
+2023-06-24T19:42:57.292Z debug: <Player> controller has been called for <player_details_get>
+2023-06-24T19:42:57.291Z info: Request params: {}
+2023-06-24T19:42:57.318Z error: TypeError: C:\dev\node\pingcenter\views\players\playerEdit.pug:3
+    1| .container
+    2| 	div
+  > 3| 		input#txtId(type="hidden", class="form-control", value=data.player.id, name="id" 
+    4| 		placeholder="#")
+    5| 
+    6| 	div.input-group.has-validation
+
+Cannot read properties of undefined (reading 'id')
+    at eval (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:12:128)
+    at template (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:55:7)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:454:38)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:444:21)
+    at exports.__express [as engine] (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:493:11)
+    at View.render (C:\dev\node\pingcenter\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\dev\node\pingcenter\node_modules\express\lib\application.js:657:10)
+    at Function.render (C:\dev\node\pingcenter\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (C:\dev\node\pingcenter\node_modules\express\lib\response.js:1039:7)
+    at exports.player_details_get (C:\dev\node\pingcenter\controllers\playerController.js:39:17)
+2023-06-24T19:42:57.293Z debug: Request params: {
+  "id": "-1"
+}
+2023-06-24T19:49:28.772Z info: Received a GET request for /players
+2023-06-24T19:49:28.777Z debug: <Player> controller has been called for <players_list>
+2023-06-24T19:49:28.775Z info: Request params: {}
+2023-06-24T19:49:28.778Z debug: Request params: {}
+2023-06-24T19:49:30.726Z info: Received a GET request for /players/new
+2023-06-24T19:49:30.727Z info: Request params: {}
+2023-06-24T19:49:30.738Z info: Received a GET request for /players/edit/-1
+2023-06-24T19:49:30.740Z debug: <Player> controller has been called for <player_details_get>
+2023-06-24T19:49:30.741Z debug: Request params: {
+  "id": "-1"
+}
+2023-06-24T19:49:30.739Z info: Request params: {}
+2023-06-24T19:49:30.748Z debug: Results sent back {
+  "player": {
+    "id": null
+  },
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    }
+  ]
+}
+2023-06-24T19:49:41.904Z info: Received a POST request for /players/create/
+2023-06-24T19:49:41.905Z info: Request params: {}
+2023-06-24T19:49:43.847Z info: Received a POST request for /players/create/
+2023-06-24T19:49:43.848Z info: Request params: {}
+2023-06-24T19:49:43.852Z error: TypeError: playerController.player_create is not a function
+    at C:\dev\node\pingcenter\routes\playerRouter.js:49:26
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at middleware (C:\dev\node\pingcenter\node_modules\express-validator\src\middlewares\check.js:16:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-06-24T19:49:45.690Z info: Received a POST request for /players/create/
+2023-06-24T19:49:45.691Z info: Request params: {}
+2023-06-24T19:49:45.693Z error: TypeError: playerController.player_create is not a function
+    at C:\dev\node\pingcenter\routes\playerRouter.js:49:26
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at middleware (C:\dev\node\pingcenter\node_modules\express-validator\src\middlewares\check.js:16:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-06-24T19:51:05.124Z info: Received a GET request for /players
+2023-06-24T19:51:05.128Z debug: <Player> controller has been called for <players_list>
+2023-06-24T19:51:05.127Z info: Request params: {}
+2023-06-24T19:51:05.129Z debug: Request params: {}
+2023-06-24T19:51:07.120Z info: Received a GET request for /players/new
+2023-06-24T19:51:07.120Z info: Request params: {}
+2023-06-24T19:51:07.131Z info: Received a GET request for /players/edit/-1
+2023-06-24T19:51:07.133Z debug: <Player> controller has been called for <player_details_get>
+2023-06-24T19:51:07.132Z info: Request params: {}
+2023-06-24T19:51:07.134Z debug: Request params: {
+  "id": "-1"
+}
+2023-06-24T19:51:07.140Z debug: Results sent back {
+  "player": {
+    "id": null
+  },
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    }
+  ]
+}
+2023-06-24T19:51:10.533Z info: Received a POST request for /players/create/
+2023-06-24T19:51:10.533Z info: Request params: {}
+2023-06-24T19:51:10.539Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:131:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at Immediate.next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at Immediate._onImmediate (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15)
+    at process.processImmediate (node:internal/timers:478:21)

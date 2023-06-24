@@ -39,6 +39,13 @@ class MyLogger {
     async _iRequestParams(req){
         this._i(`Request params: ${JSON.stringify(req.params,' ', 2)}`);
     }
+    async _dRequestParams(req){
+        this._d(`Request params: ${JSON.stringify(req.params,' ', 2)}`);
+    }
+    async _Controller(controllerName, action, req) {
+        this._d(`<${controllerName}> controller has been called for <${action}>`);
+        this._dRequestParams(req);
+    }
     setLevel(level) {
         this.logger.level = level;
     }
