@@ -1154,3 +1154,816 @@ Cannot read properties of undefined (reading 'id')
 2023-06-25T19:02:28.427Z debug: <Club> controller has been called for <clubs_list>
 2023-06-25T19:02:28.426Z info: Request params: {}
 2023-06-25T19:02:28.428Z debug: Request params: {}
+2023-06-25T19:17:15.003Z info: Received a GET request for /clubs
+2023-06-25T19:17:15.009Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:17:15.008Z info: Request params: {}
+2023-06-25T19:17:15.012Z error: ReferenceError: sequelize is not defined
+    at exports.clubs_list (C:\dev\node\pingcenter\controllers\clubController.js:21:14)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-25T19:17:15.011Z debug: Request params: {}
+2023-06-25T19:17:49.600Z info: Received a GET request for /clubs
+2023-06-25T19:17:49.605Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:17:49.603Z info: Request params: {}
+2023-06-25T19:17:49.609Z error: ReferenceError: Op is not defined
+    at exports.clubs_list (C:\dev\node\pingcenter\controllers\clubController.js:28:22)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-25T19:17:49.606Z debug: Request params: {}
+2023-06-25T19:18:11.640Z info: Received a GET request for /clubs
+2023-06-25T19:18:11.646Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:18:11.644Z info: Request params: {}
+2023-06-25T19:18:11.651Z error: TypeError: Cannot read properties of undefined (reading 'col')
+    at exports.clubs_list (C:\dev\node\pingcenter\controllers\clubController.js:28:38)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-25T19:18:11.648Z debug: Request params: {}
+2023-06-25T19:18:22.774Z info: Received a GET request for /clubs
+2023-06-25T19:18:22.778Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:18:22.775Z info: Request params: {}
+2023-06-25T19:18:22.781Z error: TypeError: Cannot read properties of undefined (reading 'col')
+    at exports.clubs_list (C:\dev\node\pingcenter\controllers\clubController.js:28:38)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-25T19:18:22.779Z debug: Request params: {}
+2023-06-25T19:18:31.907Z info: Received a GET request for /clubs
+2023-06-25T19:18:31.912Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:18:31.910Z info: Request params: {}
+2023-06-25T19:18:31.924Z error: TypeError: Cannot read properties of undefined (reading 'col')
+    at exports.clubs_list (C:\dev\node\pingcenter\controllers\clubController.js:28:28)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-25T19:18:31.913Z debug: Request params: {}
+2023-06-25T19:21:11.151Z info: Received a GET request for /clubs
+2023-06-25T19:21:11.155Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:21:11.154Z info: Request params: {}
+2023-06-25T19:21:11.173Z error: TypeError: value.split is not a function
+    at MariaDBQueryGenerator._whereParseSingleValueObject (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2013:23)
+    at MariaDBQueryGenerator.whereItemQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1813:21)
+    at C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MariaDBQueryGenerator.whereItemsQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MariaDBQueryGenerator.generateJoin (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1317:24)
+    at MariaDBQueryGenerator.generateInclude (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1191:24)
+    at MariaDBQueryGenerator.selectQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:888:34)
+    at MySQLQueryInterface.select (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at club.findAll (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:1140:47)
+2023-06-25T19:21:11.156Z debug: Request params: {}
+2023-06-25T19:23:27.414Z info: Received a GET request for /clubs
+2023-06-25T19:23:27.420Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:23:27.418Z info: Request params: {}
+2023-06-25T19:23:27.436Z error: TypeError: value.split is not a function
+    at MariaDBQueryGenerator._whereParseSingleValueObject (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2013:23)
+    at MariaDBQueryGenerator.whereItemQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1813:21)
+    at C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MariaDBQueryGenerator.whereItemsQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MariaDBQueryGenerator.generateJoin (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1317:24)
+    at MariaDBQueryGenerator.generateInclude (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1191:24)
+    at MariaDBQueryGenerator.selectQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:888:34)
+    at MySQLQueryInterface.select (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at club.findAll (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:1140:47)
+2023-06-25T19:23:27.421Z debug: Request params: {}
+2023-06-25T19:25:39.238Z info: Received a GET request for /clubs
+2023-06-25T19:25:39.244Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:25:39.242Z info: Request params: {}
+2023-06-25T19:25:39.245Z debug: Request params: {}
+2023-06-25T19:25:39.263Z error: Error
+    at Query.run (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\mariadb\query.js:53:25)
+    at C:\dev\node\pingcenter\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async club.findAll (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:1140:21)
+2023-06-25T19:30:46.379Z info: Received a GET request for /clubs
+2023-06-25T19:30:46.385Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:30:46.383Z info: Request params: {}
+2023-06-25T19:30:46.396Z error: Error: Include unexpected. Element has to be either a Model, an Association or an object.
+    at club._conformInclude (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:323:11)
+    at C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:270:61
+    at Array.map (<anonymous>)
+    at club._conformIncludes (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:270:39)
+    at club._baseMerge (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:622:10)
+    at club._defaultsOptions (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:656:17)
+    at club._injectScope (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:2053:10)
+    at club.findAll (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:1111:10)
+    at exports.clubs_list (C:\dev\node\pingcenter\controllers\clubController.js:19:16)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+2023-06-25T19:30:46.387Z debug: Request params: {}
+2023-06-25T19:31:06.702Z info: Received a GET request for /clubs
+2023-06-25T19:31:06.706Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:31:06.705Z info: Request params: {}
+2023-06-25T19:31:06.718Z error: TypeError: value.split is not a function
+    at MariaDBQueryGenerator._whereParseSingleValueObject (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2013:23)
+    at MariaDBQueryGenerator.whereItemQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1813:21)
+    at C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MariaDBQueryGenerator.whereItemsQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MariaDBQueryGenerator.generateJoin (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1317:24)
+    at MariaDBQueryGenerator.generateInclude (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1191:24)
+    at MariaDBQueryGenerator.selectQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:888:34)
+    at MySQLQueryInterface.select (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at club.findAll (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:1140:47)
+2023-06-25T19:31:06.707Z debug: Request params: {}
+2023-06-25T19:33:47.702Z info: Received a GET request for /clubs
+2023-06-25T19:33:47.707Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:33:47.705Z info: Request params: {}
+2023-06-25T19:33:47.719Z error: TypeError: value.split is not a function
+    at MariaDBQueryGenerator._whereParseSingleValueObject (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2013:23)
+    at MariaDBQueryGenerator.whereItemQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1813:21)
+    at C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MariaDBQueryGenerator.whereItemsQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MariaDBQueryGenerator.generateJoin (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1317:24)
+    at MariaDBQueryGenerator.generateInclude (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1191:24)
+    at MariaDBQueryGenerator.selectQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:888:34)
+    at MySQLQueryInterface.select (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at club.findAll (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:1140:47)
+2023-06-25T19:33:47.707Z debug: Request params: {}
+2023-06-25T19:34:05.577Z info: Received a GET request for /clubs
+2023-06-25T19:34:05.584Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:34:05.582Z info: Request params: {}
+2023-06-25T19:34:05.594Z error: Error: Include unexpected. Element has to be either a Model, an Association or an object.
+    at club._conformInclude (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:323:11)
+    at C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:270:61
+    at Array.map (<anonymous>)
+    at club._conformIncludes (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:270:39)
+    at club._baseMerge (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:622:10)
+    at club._defaultsOptions (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:656:17)
+    at club._injectScope (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:2053:10)
+    at club.findAll (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:1111:10)
+    at exports.clubs_list (C:\dev\node\pingcenter\controllers\clubController.js:19:16)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+2023-06-25T19:34:05.586Z debug: Request params: {}
+2023-06-25T19:34:42.271Z info: Received a GET request for /clubs
+2023-06-25T19:34:42.280Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:34:42.276Z info: Request params: {}
+2023-06-25T19:34:42.342Z error: TypeError: value.split is not a function
+    at MariaDBQueryGenerator._whereParseSingleValueObject (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2013:23)
+    at MariaDBQueryGenerator.whereItemQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1813:21)
+    at C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MariaDBQueryGenerator.whereItemsQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MariaDBQueryGenerator.generateJoin (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1317:24)
+    at MariaDBQueryGenerator.generateInclude (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1191:24)
+    at MariaDBQueryGenerator.selectQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:888:34)
+    at MySQLQueryInterface.select (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at club.findAll (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:1140:47)
+2023-06-25T19:34:42.293Z debug: Request params: {}
+2023-06-25T19:35:26.882Z info: Received a GET request for /clubs
+2023-06-25T19:35:26.886Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:35:26.884Z info: Request params: {}
+2023-06-25T19:35:26.903Z error: TypeError: value.split is not a function
+    at MariaDBQueryGenerator._whereParseSingleValueObject (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2013:23)
+    at MariaDBQueryGenerator.whereItemQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1813:21)
+    at C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MariaDBQueryGenerator.whereItemsQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MariaDBQueryGenerator.generateJoin (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1317:24)
+    at MariaDBQueryGenerator.generateInclude (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1191:24)
+    at MariaDBQueryGenerator.selectQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:888:34)
+    at MySQLQueryInterface.select (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at club.findAll (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:1140:47)
+2023-06-25T19:35:26.887Z debug: Request params: {}
+2023-06-25T19:37:05.257Z info: Received a GET request for /clubs
+2023-06-25T19:37:05.264Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:37:05.262Z info: Request params: {}
+2023-06-25T19:37:05.287Z error: TypeError: value.split is not a function
+    at MariaDBQueryGenerator._whereParseSingleValueObject (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2013:23)
+    at MariaDBQueryGenerator.whereItemQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1813:21)
+    at C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MariaDBQueryGenerator.whereItemsQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MariaDBQueryGenerator.generateJoin (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1317:24)
+    at MariaDBQueryGenerator.generateInclude (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1191:24)
+    at MariaDBQueryGenerator.selectQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:888:34)
+    at MySQLQueryInterface.select (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at club.findAll (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:1140:47)
+2023-06-25T19:37:05.265Z debug: Request params: {}
+2023-06-25T19:38:20.155Z info: Received a GET request for /clubs
+2023-06-25T19:38:20.161Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:38:20.159Z info: Request params: {}
+2023-06-25T19:38:20.186Z error: TypeError: value.split is not a function
+    at MariaDBQueryGenerator._whereParseSingleValueObject (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2013:23)
+    at MariaDBQueryGenerator.whereItemQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1813:21)
+    at C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MariaDBQueryGenerator.whereItemsQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MariaDBQueryGenerator.generateJoin (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1317:24)
+    at MariaDBQueryGenerator.generateInclude (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1191:24)
+    at MariaDBQueryGenerator.selectQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:888:34)
+    at MySQLQueryInterface.select (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at club.findAll (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:1140:47)
+2023-06-25T19:38:20.162Z debug: Request params: {}
+2023-06-25T19:39:35.493Z info: Received a GET request for /clubs
+2023-06-25T19:39:35.500Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:39:35.498Z info: Request params: {}
+2023-06-25T19:39:35.519Z error: TypeError: value.split is not a function
+    at MariaDBQueryGenerator._whereParseSingleValueObject (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2013:23)
+    at MariaDBQueryGenerator.whereItemQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1813:21)
+    at C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MariaDBQueryGenerator.whereItemsQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MariaDBQueryGenerator.generateJoin (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1317:24)
+    at MariaDBQueryGenerator.generateInclude (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1191:24)
+    at MariaDBQueryGenerator.selectQuery (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-generator.js:888:34)
+    at MySQLQueryInterface.select (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at club.findAll (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:1140:47)
+2023-06-25T19:39:35.502Z debug: Request params: {}
+2023-06-25T19:39:58.738Z info: Received a GET request for /clubs
+2023-06-25T19:39:58.743Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:39:58.741Z info: Request params: {}
+2023-06-25T19:39:58.744Z debug: Request params: {}
+2023-06-25T19:46:12.385Z info: Received a GET request for /clubs
+2023-06-25T19:46:12.390Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:46:12.388Z info: Request params: {}
+2023-06-25T19:46:12.393Z error: ReferenceError: id is not defined
+    at exports.clubs_list (C:\dev\node\pingcenter\controllers\clubController.js:21:13)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-25T19:46:12.391Z debug: Request params: {}
+2023-06-25T19:46:42.428Z info: Received a GET request for /clubs
+2023-06-25T19:46:42.434Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:46:42.432Z info: Request params: {}
+2023-06-25T19:46:42.435Z debug: Request params: {}
+2023-06-25T19:47:34.671Z info: Received a GET request for /clubs
+2023-06-25T19:47:34.677Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:47:34.676Z info: Request params: {}
+2023-06-25T19:47:34.678Z debug: Request params: {}
+2023-06-25T19:54:00.845Z info: Received a GET request for /clubs
+2023-06-25T19:54:00.852Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:54:00.850Z info: Request params: {}
+2023-06-25T19:54:00.853Z debug: Request params: {}
+2023-06-25T19:54:00.883Z error: Error
+    at Query.run (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\mariadb\query.js:53:25)
+    at C:\dev\node\pingcenter\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async club.findAll (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:1140:21)
+2023-06-25T19:54:17.994Z info: Received a GET request for /clubs
+2023-06-25T19:54:18.000Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:54:17.998Z info: Request params: {}
+2023-06-25T19:54:18.001Z debug: Request params: {}
+2023-06-25T19:55:02.423Z info: Received a GET request for /clubs
+2023-06-25T19:55:02.427Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:55:02.426Z info: Request params: {}
+2023-06-25T19:55:02.429Z debug: Request params: {}
+2023-06-25T19:55:35.249Z info: Received a GET request for /clubs
+2023-06-25T19:55:35.253Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:55:35.252Z info: Request params: {}
+2023-06-25T19:55:35.254Z debug: Request params: {}
+2023-06-25T19:59:35.068Z info: Received a GET request for /clubs
+2023-06-25T19:59:35.077Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:59:35.072Z info: Request params: {}
+2023-06-25T19:59:35.078Z debug: Request params: {}
+2023-06-25T20:00:00.749Z info: Received a GET request for /clubs
+2023-06-25T20:00:00.755Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:00:00.753Z info: Request params: {}
+2023-06-25T20:00:00.756Z debug: Request params: {}
+2023-06-25T20:00:00.772Z error: Error
+    at Query.run (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\mariadb\query.js:53:25)
+    at C:\dev\node\pingcenter\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async club.findAll (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:1140:21)
+2023-06-25T20:02:45.923Z info: Received a GET request for /clubs
+2023-06-25T20:02:45.933Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:02:45.932Z info: Request params: {}
+2023-06-25T20:02:45.934Z debug: Request params: {}
+2023-06-25T20:02:45.961Z error: Error
+    at Query.run (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\mariadb\query.js:53:25)
+    at C:\dev\node\pingcenter\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async club.findAll (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:1140:21)
+2023-06-25T20:03:06.551Z info: Received a GET request for /clubs
+2023-06-25T20:03:06.557Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:03:06.554Z info: Request params: {}
+2023-06-25T20:03:06.558Z debug: Request params: {}
+2023-06-25T20:03:06.589Z error: Error
+    at Query.run (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\mariadb\query.js:53:25)
+    at C:\dev\node\pingcenter\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (C:\dev\node\pingcenter\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async club.findAll (C:\dev\node\pingcenter\node_modules\sequelize\lib\model.js:1140:21)
+2023-06-25T20:03:14.099Z info: Received a GET request for /clubs
+2023-06-25T20:03:14.103Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:03:14.102Z info: Request params: {}
+2023-06-25T20:03:14.104Z debug: Request params: {}
+2023-06-25T20:04:20.498Z info: Received a GET request for /clubs
+2023-06-25T20:04:20.505Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:04:20.504Z info: Request params: {}
+2023-06-25T20:04:20.506Z debug: Request params: {}
+2023-06-25T20:05:14.897Z info: Received a GET request for /clubs
+2023-06-25T20:05:14.904Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:05:14.902Z info: Request params: {}
+2023-06-25T20:05:14.905Z debug: Request params: {}
+2023-06-25T20:05:14.926Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "n_players": 1
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "n_players": 0
+  },
+  {
+    "id": 4,
+    "shortdesc": "fdfs",
+    "longdesc": "vdvdd",
+    "n_players": 1
+  }
+]
+2023-06-25T20:07:26.870Z info: Received a GET request for /clubs
+2023-06-25T20:07:26.874Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:07:26.871Z info: Request params: {}
+2023-06-25T20:07:26.875Z debug: Request params: {}
+2023-06-25T20:07:26.891Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "n_players": 1
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "n_players": 0
+  },
+  {
+    "id": 4,
+    "shortdesc": "fdfs",
+    "longdesc": "vdvdd",
+    "n_players": 1
+  }
+]
+2023-06-25T20:07:27.079Z info: Received a GET request for /clubs
+2023-06-25T20:07:27.082Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:07:27.081Z info: Request params: {}
+2023-06-25T20:07:27.082Z debug: Request params: {}
+2023-06-25T20:07:27.092Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "n_players": 1
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "n_players": 0
+  },
+  {
+    "id": 4,
+    "shortdesc": "fdfs",
+    "longdesc": "vdvdd",
+    "n_players": 1
+  }
+]
+2023-06-25T20:07:28.323Z info: Received a GET request for /clubs
+2023-06-25T20:07:28.326Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:07:28.325Z info: Request params: {}
+2023-06-25T20:07:28.327Z debug: Request params: {}
+2023-06-25T20:07:28.336Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "n_players": 1
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "n_players": 0
+  },
+  {
+    "id": 4,
+    "shortdesc": "fdfs",
+    "longdesc": "vdvdd",
+    "n_players": 1
+  }
+]
+2023-06-25T20:07:54.245Z info: Received a GET request for /clubs
+2023-06-25T20:07:54.251Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:07:54.252Z debug: Request params: {}
+2023-06-25T20:07:54.249Z info: Request params: {}
+2023-06-25T20:07:54.273Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "n_players": 1
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "n_players": 0
+  },
+  {
+    "id": 4,
+    "shortdesc": "fdfs",
+    "longdesc": "vdvdd",
+    "n_players": 1
+  }
+]
+2023-06-25T20:07:56.597Z info: Received a GET request for /clubs
+2023-06-25T20:07:56.599Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:07:56.598Z info: Request params: {}
+2023-06-25T20:07:56.600Z debug: Request params: {}
+2023-06-25T20:07:56.610Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "n_players": 1
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "n_players": 0
+  },
+  {
+    "id": 4,
+    "shortdesc": "fdfs",
+    "longdesc": "vdvdd",
+    "n_players": 1
+  }
+]
+2023-06-25T20:08:32.082Z info: Received a GET request for /clubs
+2023-06-25T20:08:32.086Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:08:32.085Z info: Request params: {}
+2023-06-25T20:08:32.087Z debug: Request params: {}
+2023-06-25T20:08:32.103Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT"
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT"
+  },
+  {
+    "id": 4,
+    "shortdesc": "fdfs",
+    "longdesc": "vdvdd"
+  }
+]
+2023-06-25T20:09:19.684Z info: Received a GET request for /clubs
+2023-06-25T20:09:19.688Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:09:19.687Z info: Request params: {}
+2023-06-25T20:09:19.689Z debug: Request params: {}
+2023-06-25T20:09:19.707Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 1
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  },
+  {
+    "id": 4,
+    "shortdesc": "fdfs",
+    "longdesc": "vdvdd",
+    "nbplayers": 1
+  }
+]
+2023-06-25T20:10:40.618Z info: Received a GET request for /clubs
+2023-06-25T20:10:40.621Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:10:40.619Z info: Request params: {}
+2023-06-25T20:10:40.622Z debug: Request params: {}
+2023-06-25T20:10:40.651Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 1
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  },
+  {
+    "id": 4,
+    "shortdesc": "fdfs",
+    "longdesc": "vdvdd",
+    "nbplayers": 1
+  }
+]
+2023-06-25T20:13:22.348Z info: Received a GET request for /clubs
+2023-06-25T20:13:22.355Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:13:22.353Z info: Request params: {}
+2023-06-25T20:13:22.356Z debug: Request params: {}
+2023-06-25T20:13:22.394Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 1
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  },
+  {
+    "id": 4,
+    "shortdesc": "fdfs",
+    "longdesc": "vdvdd",
+    "nbplayers": 1
+  }
+]
+2023-06-25T20:14:19.669Z info: Received a GET request for /clubs
+2023-06-25T20:14:19.678Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:14:19.672Z info: Request params: {}
+2023-06-25T20:14:19.681Z debug: Request params: {}
+2023-06-25T20:14:19.708Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 1
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  },
+  {
+    "id": 4,
+    "shortdesc": "fdfs",
+    "longdesc": "vdvdd",
+    "nbplayers": 1
+  }
+]
+2023-06-25T20:14:30.648Z info: Received a GET request for /clubs
+2023-06-25T20:14:30.656Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:14:30.657Z debug: Request params: {}
+2023-06-25T20:14:30.652Z info: Request params: {}
+2023-06-25T20:14:30.675Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 1
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  },
+  {
+    "id": 4,
+    "shortdesc": "fdfs",
+    "longdesc": "vdvdd",
+    "nbplayers": 1
+  }
+]
+2023-06-25T20:21:47.363Z info: Received a GET request for /clubs
+2023-06-25T20:21:47.365Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:21:47.364Z info: Request params: {}
+2023-06-25T20:21:47.366Z debug: Request params: {}
+2023-06-25T20:21:47.385Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 1
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  },
+  {
+    "id": 4,
+    "shortdesc": "fdfs",
+    "longdesc": "vdvdd",
+    "nbplayers": 1
+  }
+]
+2023-06-25T20:22:02.655Z info: Received a GET request for /clubs
+2023-06-25T20:22:02.658Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:22:02.657Z info: Request params: {}
+2023-06-25T20:22:02.659Z debug: Request params: {}
+2023-06-25T20:22:02.670Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 1
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  },
+  {
+    "id": 4,
+    "shortdesc": "fdfs",
+    "longdesc": "vdvdd",
+    "nbplayers": 1
+  }
+]
+2023-06-25T20:22:02.795Z error: TypeError: C:\dev\node\pingcenter\views\clubs\clubsList.pug:6
+    4|  
+    5|   each val in list
+  > 6|     span= val.nbplayers.toint()  
+    7|   .card.border-0
+    8|     .card-header.border-0.bg-transparent
+    9|       #table-buttons.inline 
+
+Cannot read properties of undefined (reading 'toint')
+    at eval (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:317:71)
+    at eval (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:330:4)
+    at template (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:870:7)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:454:38)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:444:21)
+    at exports.__express [as engine] (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:493:11)
+    at View.render (C:\dev\node\pingcenter\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\dev\node\pingcenter\node_modules\express\lib\application.js:657:10)
+    at Function.render (C:\dev\node\pingcenter\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (C:\dev\node\pingcenter\node_modules\express\lib\response.js:1039:7)
+2023-06-25T20:28:37.547Z info: Received a GET request for /clubs
+2023-06-25T20:28:37.549Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:28:37.548Z info: Request params: {}
+2023-06-25T20:28:37.550Z debug: Request params: {}
+2023-06-25T20:28:37.567Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 1
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  },
+  {
+    "id": 4,
+    "shortdesc": "fdfs",
+    "longdesc": "vdvdd",
+    "nbplayers": 1
+  }
+]
+2023-06-25T20:29:02.815Z info: Received a GET request for /clubs
+2023-06-25T20:29:02.816Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:29:02.815Z info: Request params: {}
+2023-06-25T20:29:02.817Z debug: Request params: {}
+2023-06-25T20:29:02.831Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 1
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  },
+  {
+    "id": 4,
+    "shortdesc": "fdfs",
+    "longdesc": "vdvdd",
+    "nbplayers": 1
+  }
+]
+2023-06-25T20:29:12.994Z info: Received a GET request for /clubs
+2023-06-25T20:29:12.996Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:29:12.995Z info: Request params: {}
+2023-06-25T20:29:12.997Z debug: Request params: {}
+2023-06-25T20:29:13.017Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 1
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  },
+  {
+    "id": 4,
+    "shortdesc": "fdfs",
+    "longdesc": "vdvdd",
+    "nbplayers": 1
+  }
+]
+2023-06-25T20:29:24.588Z info: Received a GET request for /clubs
+2023-06-25T20:29:24.595Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:29:24.594Z info: Request params: {}
+2023-06-25T20:29:24.597Z debug: Request params: {}
+2023-06-25T20:29:24.615Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 1
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  },
+  {
+    "id": 4,
+    "shortdesc": "fdfs",
+    "longdesc": "vdvdd",
+    "nbplayers": 1
+  }
+]
+2023-06-25T20:29:40.400Z info: Received a GET request for /clubs
+2023-06-25T20:29:40.403Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T20:29:40.401Z info: Request params: {}
+2023-06-25T20:29:40.405Z debug: Request params: {}
+2023-06-25T20:29:40.416Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 1
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  },
+  {
+    "id": 4,
+    "shortdesc": "fdfs",
+    "longdesc": "vdvdd",
+    "nbplayers": 1
+  }
+]

@@ -17,9 +17,21 @@ const { body, validationResult } = global.Utils.requireNodeModule('express-valid
 exports.clubs_list = function (req, res, next) {
     logger._Controller('Club', 'clubs_list', req);
     db['club'].findAll({
-        order: [['ID', 'ASC']]
+        attributes: {
+            include: [
+                [db.Sequelize.fn('COUNT', db.Sequelize.col('players.id')), 'nbplayers']
+            ]
+        },
+        include: {
+            model: db['player'],
+            attributes: [],
+            required: false,
+        },
+        group: ['club.id'],
+        order: [['id', 'ASC']]
     })
     .then(results => {
+        logger._d(`Results sent back ${JSON.stringify(results,' ', 2)}`);
         res.render('clubs/clubsList', {
             breadcrumb: 'CLUBS',
             title: 'CLUBS', 

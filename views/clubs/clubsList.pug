@@ -1,7 +1,7 @@
 extends ../layout
 
 block content
-
+ 
   .card.border-0
     .card-header.border-0.bg-transparent
       #table-buttons.inline 
@@ -14,6 +14,7 @@ block content
             th(scope="col") #
             th(scope="col") #{__('ClubShortDescription')}
             th(scope="col") #{__('ClubName')}
+            th.text-center(scope="col") #{__('NumberOfPlayers')}
             th
         tbody 
           each val in list
@@ -21,6 +22,7 @@ block content
               th(scope="row") #{val.id}
               td #{val.shortdesc} 
               td #{val.longdesc}
+              td.text-center= val.nbplayers
               td.text-center  
                 .btn-group.ms-2(role="group")
                   +_editButton("editClub("+val.id+")")

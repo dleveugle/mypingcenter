@@ -28,7 +28,10 @@ module.exports = (sequelize, DataTypes)  => {
     longdesc: {
         type: DataTypes.STRING(200),
         allowNull: false
-      }
+    },
+    nbplayers: {
+      type: DataTypes.VIRTUAL
+    }
   }, {
     sequelize,
     timestamps: false,

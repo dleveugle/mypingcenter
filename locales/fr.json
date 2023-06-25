@@ -28,5 +28,6 @@
  "MSG_PlayerDeleted": "Joueur supprimé",
  "MSG_SelectAnOption": "Choisir une option",
  "MSG_ClubUpdated": "Club mis à jour",
- "MSG_PlayerUpdated": "Joueur mis à jour"
+ "MSG_PlayerUpdated": "Joueur mis à jour",
+ "NumberOfPlayers": "Nb de joueurs"
 }
