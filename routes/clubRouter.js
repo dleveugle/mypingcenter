@@ -1,128 +1,28 @@
 /*
-* ROUTER
+* ROUTER <CLUB>
 */
 var express = require('express');
 var router = express.Router();
-const { body, validationResult } = global.Utils.requireNodeModule('express-validator');
 const clubController = global.Utils.requireControllers('clubController');
-const services = global.Utils.requireServices();
 
 
 /**
- * GET clubs listing. 
+ * GET 
  */ 
-router.get('/', function(req, res, next){
-  clubController.clubs_list()
-      .then(results => {
-          res.render('clubs/clubsList', {
-                breadcrumb: 'CLUBS',
-                title: 'CLUBS', 
-                list: results
-          });
-      })
-      .catch(next);
-});
+router.get('/', clubController.clubs_list);
+router.get('/edit/:id', clubController.club_details);
+router.get('/new',function(req, res, next){ res.redirect('edit/-1');});
 
 /**
- * GET club detail
- * @param {number} id
+ * POST 
  */
-router.get('/edit/:id', function(req, res, next){
-    console.log(req.params);
-    if (req.params.id == -1){
-        clubController.club_new()
-            .then(results => {
-                res.render('clubs/clubEdit', {
-                    breadcrumb: ['CLUBS','EDIT'],
-                    details: results
-                });
-            })
-            .catch((err)=>{
-                console.log("Error : "+ err);
-               next(err)});
-    }
-    else{
-        clubController.club_details(req.params.id)
-            .then(results => {
-                res.render('clubs/clubEdit', {
-                    breadcrumb: ['CLUBS','EDIT'],
-                    details: results
-                });
-            })
-            .catch(next);
-    }
-});
-
-router.get('/new',function(req, res, next){
-    res.redirect('edit/-1');
-})
+router.post('/edit/:id', clubController.club_update);
+router.post('/create', clubController.club_create);
 
 /**
- * POST club edit
+ * DELETE 
  */
-router.post('/edit/:id',  [
-    body('shortdesc').not().isEmpty().withMessage((value, { req, location, path }) => {
-        return req.__('MSG_ClubShortDescriptionIsMandatory', { value, location, path });
-    }),
-    body('longdesc').not().isEmpty().withMessage((value, { req, location, path }) => {
-        return req.__('MSG_ClubLongDescriptionIsMandatory', { value, location, path });
-    })
-]
-, function(req, res, next){
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-        return res.status(422).jsonp(errors.array());
-      } else {
-        clubController.club_update(req)
-        .then(res.status(200).jsonp({}))
-        .catch((err)=>{
-            services.logger.error(err);
-           next(err)});
-      }
-});
-
-/**
- * 
- */
-router.post('/create', [
-    body('shortdesc').not().isEmpty().withMessage((value, { req, location, path }) => {
-        return req.__('MSG_ClubShortDescriptionIsMandatory', { value, location, path });
-    }),
-    body('longdesc').not().isEmpty().withMessage((value, { req, location, path }) => {
-        return req.__('MSG_ClubLongDescriptionIsMandatory', { value, location, path });
-    })
-],
-function(req, res, next)
-{
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-        return res.status(422).jsonp(errors.array());
-      } else {
-        clubController.club_create(req)
-        .then(()=>{
-            req.flash('success', req.__('MSG_ClubCreated'))
-            res.status(200).jsonp({})
-        })
-        .catch((err)=>{
-            services.logger.error(err);
-           next(err)});
-      } 
-});
-
-
-/**
- * DELETE a club by id
- */
-router.delete('/delete/:id',
-    function(req, res, next) {
-        clubController.club_delete(req.params.id)
-        .then(()=> {
-            req.flash('success', req.__('MSG_ClubDeleted'));
-            res.status(200).jsonp({})
-        })
-        .catch((err)=>{
-            services.logger.error(err);
-           next(err)});
-});
+router.delete('/delete/:id', clubController.club_delete);
+    
 
 module.exports = router;

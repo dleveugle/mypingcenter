@@ -3,70 +3,127 @@
 *   Model : CLUB
 */
 
-
 // Imported modules
 var async = require('async');
 const validator = require('express-validator');
-
 const db = global.Utils.getDb();
+const services = global.Utils.requireServices();
+const logger = new services.logger('app');
+const { body, validationResult } = global.Utils.requireNodeModule('express-validator');
 
-// Display list of all Clubs.
-exports.clubs_list = function () {
-    return new Promise((resolve, reject) => {
-        db['club'].findAll({
-            order: [['ID', 'ASC']]
-            })
-            .then(data => resolve(data));
-    });
+/**
+ * GET CLUB LIST
+ */
+exports.clubs_list = function (req, res, next) {
+    logger._Controller('Club', 'clubs_list', req);
+    db['club'].findAll({
+        order: [['ID', 'ASC']]
+    })
+    .then(results => {
+        res.render('clubs/clubsList', {
+            breadcrumb: 'CLUBS',
+            title: 'CLUBS', 
+            list: results
+        });
+    })
+    .catch(err =>  {next(err);})
 };
 
-// Get club details by pk
-exports.club_details = function(id) {
-    return new Promise((resolve, reject) => {
-        db['club'].findByPk(id)
-            .then(data => resolve(data));
-    });
-};
 
-exports.club_update = function(req, res, next) {
-    return new Promise((resolve, reject) =>{
-        db['club'].update({
-            shortdesc: req.body.shortdesc,
-            longdesc: req.body.longdesc
-        }, {
-            where: {
-                id: req.params.id
+/**
+ * GET CLUB DETAILS
+ */
+exports.club_details = function(req, res, next) {
+    logger._Controller('Club', 'club_details', req);
+    async.parallel({
+        club: function(callback){
+            if(req.params.id == -1){
+                callback(null, db['club'].build());
             }
-        })
-        .then(
-            data => resolve(data),
-            error => reject(error));
-    });
+            else {
+                data = db['club'].findByPk(req.params.id)
+                .then(data => {callback(null,data);});
+            }
+        }
+    })
+    .then(results => {
+        logger._d(`Results sent back ${JSON.stringify(results,' ', 2)}`);
+        res.render('clubs/clubEdit', {
+            breadcrumb: ['CLUBS','EDIT'],
+            data: results
+        })},
+        err => {return next(err);}
+    )
 };
 
-exports.club_delete = function(id) {
-    return new Promise((resolve, reject)=> {
-        db['club'].destroy({where:{id: id}})
-            .then(data => resolve(data),
-            error => reject(error));
-    });
+/**
+ * UPDATE CLUB DETAILS
+ */
+exports.club_update =  [
+    body('shortdesc').not().isEmpty().withMessage((value, { req, location, path }) => {
+        return req.__('MSG_ClubShortDescriptionIsMandatory', { value, location, path });
+    }),
+    body('longdesc').not().isEmpty().withMessage((value, { req, location, path }) => {
+        return req.__('MSG_ClubLongDescriptionIsMandatory', { value, location, path });
+    }), 
+    (req, res, next) => {
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(422).jsonp(errors.array());
+        } else {
+            db['club'].update({
+                shortdesc: req.body.shortdesc,
+                longdesc: req.body.longdesc
+            }, {
+                where: {
+                    id: req.params.id
+                }
+            })
+            .then(() => {
+                req.flash('success', req.__('MSG_ClubUpdated'));
+                res.status(200).jsonp({});
+            })
+            .catch(err =>  {next(err);})
+        }
+    }
+];
+
+/**
+ * DELETE CLUB
+ */
+exports.club_delete = function(req, res, next) {
+    db['club'].destroy({where:{id: id}})
+    .then(()=> {
+        req.flash('success', req.__('MSG_ClubDeleted'));
+        res.status(200).jsonp({})
+    })
+    .catch(err =>  {next(err);})
 };
 
-exports.club_create = function(req, res, next) {
-    return new Promise((resolve, reject) =>{
-        db['club'].create({
-            shortdesc: req.body.shortdesc,
-            longdesc: req.body.longdesc
-        })
-        .then(
-            data => resolve(data),
-            error => reject(error));
-    });
-};
-
-exports.club_new = function(req, res, next) {
-    return new Promise((resolve, reject) =>{
-        resolve(db['club'].build())
-    });
-};
-
+/**
+ * CREATE CLUB
+ */
+exports.club_create = [
+    body('shortdesc').not().isEmpty().withMessage((value, { req, location, path }) => {
+        return req.__('MSG_ClubShortDescriptionIsMandatory', { value, location, path });
+    }),
+    body('longdesc').not().isEmpty().withMessage((value, { req, location, path }) => {
+        return req.__('MSG_ClubLongDescriptionIsMandatory', { value, location, path });
+    }),
+    (req, res, next) => {
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(422).jsonp(errors.array());
+        } else {
+            db['club'].create({
+                shortdesc: req.body.shortdesc,
+                longdesc: req.body.longdesc
+            })
+            .then(()=>{
+                req.flash('success', req.__('MSG_ClubCreated'))
+                res.status(200).jsonp({})
+            })
+            .catch(err =>  {next(err);})
+        }
+    }
+];

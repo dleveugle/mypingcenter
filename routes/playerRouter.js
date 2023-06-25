@@ -17,14 +17,11 @@ router.get('/edit/:id', playerController.player_details_get);
 // route for new player
 router.get('/new',function(req, res, next){res.redirect('edit/-1');});
 
-/**
- * CREATE
- */
-router.post('/create', playerController.player_create);
 
 /**
  * POST
  */
+router.post('/create', playerController.player_create);
 router.post('/edit/:id', playerController.player_update);
 
 /**

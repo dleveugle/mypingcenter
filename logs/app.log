@@ -806,3 +806,161 @@ Cannot read properties of undefined (reading 'id')
     "club": null
   }
 }
+2023-06-25T18:09:57.262Z info: Received a GET request for /players/
+2023-06-25T18:09:57.267Z debug: <Player> controller has been called for <players_list>
+2023-06-25T18:09:57.265Z info: Request params: {}
+2023-06-25T18:09:57.268Z debug: Request params: {}
+2023-06-25T18:09:59.578Z info: Received a GET request for /players/edit/3
+2023-06-25T18:09:59.581Z debug: <Player> controller has been called for <player_details_get>
+2023-06-25T18:09:59.579Z info: Request params: {}
+2023-06-25T18:09:59.583Z debug: Request params: {
+  "id": "3"
+}
+2023-06-25T18:09:59.605Z debug: Results sent back {
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    }
+  ],
+  "player": {
+    "id": 3,
+    "firstname": "fds",
+    "lastname": "dfds",
+    "birthdate": "2023-06-25 01:00:00",
+    "clubId": null,
+    "club": null
+  }
+}
+2023-06-25T18:10:05.063Z info: Received a POST request for /players/edit/3
+2023-06-25T18:10:05.069Z debug: <Player> controller has been called for <player_update>
+2023-06-25T18:10:05.064Z info: Request params: {}
+2023-06-25T18:10:05.071Z debug: Request params: {
+  "id": "3"
+}
+2023-06-25T18:10:05.100Z info: Received a GET request for /players/
+2023-06-25T18:10:05.103Z debug: <Player> controller has been called for <players_list>
+2023-06-25T18:10:05.101Z info: Request params: {}
+2023-06-25T18:10:05.104Z debug: Request params: {}
+2023-06-25T18:10:08.648Z info: Received a GET request for /players/new
+2023-06-25T18:10:08.649Z info: Request params: {}
+2023-06-25T18:10:08.660Z info: Received a GET request for /players/edit/-1
+2023-06-25T18:10:08.662Z debug: <Player> controller has been called for <player_details_get>
+2023-06-25T18:10:08.661Z info: Request params: {}
+2023-06-25T18:10:08.663Z debug: Request params: {
+  "id": "-1"
+}
+2023-06-25T18:10:08.668Z debug: Results sent back {
+  "player": {
+    "id": null
+  },
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    }
+  ]
+}
+2023-06-25T18:10:11.042Z info: Received a POST request for /players/create/
+2023-06-25T18:10:11.045Z debug: <Player> controller has been called for <player_create>
+2023-06-25T18:10:11.042Z info: Request params: {}
+2023-06-25T18:10:11.046Z debug: Request params: {}
+2023-06-25T18:10:16.259Z info: Received a POST request for /players/create/
+2023-06-25T18:10:16.262Z debug: <Player> controller has been called for <player_create>
+2023-06-25T18:10:16.260Z info: Request params: {}
+2023-06-25T18:10:16.263Z debug: Request params: {}
+2023-06-25T18:10:18.051Z info: Received a POST request for /players/create/
+2023-06-25T18:10:18.055Z debug: <Player> controller has been called for <player_create>
+2023-06-25T18:10:18.053Z info: Request params: {}
+2023-06-25T18:10:18.056Z debug: Request params: {}
+2023-06-25T18:10:18.091Z info: Received a GET request for /players/
+2023-06-25T18:10:18.095Z debug: <Player> controller has been called for <players_list>
+2023-06-25T18:10:18.093Z info: Request params: {}
+2023-06-25T18:10:18.096Z debug: Request params: {}
+2023-06-25T18:10:23.686Z info: Received a DELETE request for /players/delete/4
+2023-06-25T18:10:23.688Z debug: <Player> controller has been called for <player_delete>
+2023-06-25T18:10:23.687Z info: Request params: {}
+2023-06-25T18:10:23.689Z debug: Request params: {
+  "id": "4"
+}
+2023-06-25T18:10:23.714Z info: Received a GET request for /players/
+2023-06-25T18:10:23.716Z debug: <Player> controller has been called for <players_list>
+2023-06-25T18:10:23.715Z info: Request params: {}
+2023-06-25T18:10:23.717Z debug: Request params: {}
+2023-06-25T19:00:43.791Z info: Received a GET request for /players/
+2023-06-25T19:00:43.804Z debug: <Player> controller has been called for <players_list>
+2023-06-25T19:00:43.805Z debug: Request params: {}
+2023-06-25T19:00:43.801Z info: Request params: {}
+2023-06-25T19:00:46.619Z info: Received a GET request for /clubs
+2023-06-25T19:00:46.622Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:00:46.620Z info: Request params: {}
+2023-06-25T19:00:46.624Z debug: Request params: {}
+2023-06-25T19:00:49.267Z info: Received a GET request for /clubs/new
+2023-06-25T19:00:49.267Z info: Request params: {}
+2023-06-25T19:00:49.278Z info: Received a GET request for /clubs/edit/-1
+2023-06-25T19:00:49.281Z debug: <Club> controller has been called for <club_details>
+2023-06-25T19:00:49.279Z info: Request params: {}
+2023-06-25T19:00:49.282Z debug: Request params: {
+  "id": "-1"
+}
+2023-06-25T19:00:49.286Z debug: Results sent back {
+  "club": {
+    "id": null
+  }
+}
+2023-06-25T19:00:50.987Z info: Received a POST request for /clubs/create/
+2023-06-25T19:00:50.987Z info: Request params: {}
+2023-06-25T19:00:53.302Z info: Received a POST request for /clubs/create/
+2023-06-25T19:00:53.303Z info: Request params: {}
+2023-06-25T19:00:54.713Z info: Received a POST request for /clubs/create/
+2023-06-25T19:00:54.714Z info: Request params: {}
+2023-06-25T19:00:54.764Z info: Received a GET request for /clubs/
+2023-06-25T19:00:54.765Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:00:54.764Z info: Request params: {}
+2023-06-25T19:00:54.766Z debug: Request params: {}
+2023-06-25T19:00:57.884Z info: Received a GET request for /clubs/edit/4
+2023-06-25T19:00:57.886Z debug: <Club> controller has been called for <club_details>
+2023-06-25T19:00:57.885Z info: Request params: {}
+2023-06-25T19:00:57.887Z debug: Request params: {
+  "id": "4"
+}
+2023-06-25T19:00:57.890Z error: ReferenceError: id is not defined
+    at club (C:\dev\node\pingcenter\controllers\clubController.js:44:44)
+    at C:\dev\node\pingcenter\node_modules\async\dist\async.js:3674:28
+    at replenish (C:\dev\node\pingcenter\node_modules\async\dist\async.js:446:21)
+    at C:\dev\node\pingcenter\node_modules\async\dist\async.js:451:13
+    at eachOfLimit$1 (C:\dev\node\pingcenter\node_modules\async\dist\async.js:477:34)
+    at awaitable (C:\dev\node\pingcenter\node_modules\async\dist\async.js:211:32)
+    at eachOfGeneric (C:\dev\node\pingcenter\node_modules\async\dist\async.js:512:16)
+    at eachOf (C:\dev\node\pingcenter\node_modules\async\dist\async.js:626:16)
+    at awaitable (C:\dev\node\pingcenter\node_modules\async\dist\async.js:211:32)
+    at C:\dev\node\pingcenter\node_modules\async\dist\async.js:3673:9
+2023-06-25T19:00:59.056Z info: Received a GET request for /clubs/edit/4
+2023-06-25T19:00:59.058Z debug: <Club> controller has been called for <club_details>
+2023-06-25T19:00:59.057Z info: Request params: {}
+2023-06-25T19:00:59.060Z error: ReferenceError: id is not defined
+    at club (C:\dev\node\pingcenter\controllers\clubController.js:44:44)
+    at C:\dev\node\pingcenter\node_modules\async\dist\async.js:3674:28
+    at replenish (C:\dev\node\pingcenter\node_modules\async\dist\async.js:446:21)
+    at C:\dev\node\pingcenter\node_modules\async\dist\async.js:451:13
+    at eachOfLimit$1 (C:\dev\node\pingcenter\node_modules\async\dist\async.js:477:34)
+    at awaitable (C:\dev\node\pingcenter\node_modules\async\dist\async.js:211:32)
+    at eachOfGeneric (C:\dev\node\pingcenter\node_modules\async\dist\async.js:512:16)
+    at eachOf (C:\dev\node\pingcenter\node_modules\async\dist\async.js:626:16)
+    at awaitable (C:\dev\node\pingcenter\node_modules\async\dist\async.js:211:32)
+    at C:\dev\node\pingcenter\node_modules\async\dist\async.js:3673:9
+2023-06-25T19:00:59.058Z debug: Request params: {
+  "id": "4"
+}

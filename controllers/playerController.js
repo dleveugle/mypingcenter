@@ -45,7 +45,6 @@ exports.player_details_get = function(req, res, next){
         },
         player: function(callback){
             if(req.params.id == -1) {
-                db['player'].build()
                 callback(null, db['player'].build());
             }
             else{
