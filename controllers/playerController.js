@@ -93,7 +93,10 @@ exports.player_update = [
                     id: req.params.id
                 }
             })
-            .then(res.status(200).jsonp({}))
+            .then(() => {
+                req.flash('success', req.__('MSG_PlayerUpdated'));
+                res.status(200).jsonp({});
+            })
             .catch(err =>  {next(err);})
         } 
     }
@@ -115,7 +118,7 @@ exports.player_delete = function(req, res, next) {
 };
 
 /**
- * Create PLAYER
+ * CREATE PLAYER
  */
 exports.player_create = [
     // Validation rules

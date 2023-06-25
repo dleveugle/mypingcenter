@@ -964,3 +964,193 @@ Cannot read properties of undefined (reading 'id')
 2023-06-25T19:00:59.058Z debug: Request params: {
   "id": "4"
 }
+2023-06-25T19:01:40.077Z info: Received a GET request for /clubs/
+2023-06-25T19:01:40.083Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:01:40.081Z info: Request params: {}
+2023-06-25T19:01:40.084Z debug: Request params: {}
+2023-06-25T19:01:41.593Z info: Received a GET request for /clubs/edit/4
+2023-06-25T19:01:41.597Z debug: <Club> controller has been called for <club_details>
+2023-06-25T19:01:41.595Z info: Request params: {}
+2023-06-25T19:01:41.598Z debug: Request params: {
+  "id": "4"
+}
+2023-06-25T19:01:41.611Z debug: Results sent back {
+  "club": {
+    "id": 4,
+    "shortdesc": "fdfd",
+    "longdesc": "fds"
+  }
+}
+2023-06-25T19:01:43.968Z info: Received a POST request for /clubs/edit/4
+2023-06-25T19:01:43.968Z info: Request params: {}
+2023-06-25T19:01:46.172Z info: Received a POST request for /clubs/edit/4
+2023-06-25T19:01:46.173Z info: Request params: {}
+2023-06-25T19:01:46.212Z info: Received a GET request for /clubs/
+2023-06-25T19:01:46.215Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:01:46.214Z info: Request params: {}
+2023-06-25T19:01:46.215Z debug: Request params: {}
+2023-06-25T19:01:52.011Z info: Received a GET request for /players
+2023-06-25T19:01:52.013Z debug: <Player> controller has been called for <players_list>
+2023-06-25T19:01:52.012Z info: Request params: {}
+2023-06-25T19:01:52.014Z debug: Request params: {}
+2023-06-25T19:01:53.701Z info: Received a GET request for /players/edit/3
+2023-06-25T19:01:53.703Z debug: <Player> controller has been called for <player_details_get>
+2023-06-25T19:01:53.702Z info: Request params: {}
+2023-06-25T19:01:53.703Z debug: Request params: {
+  "id": "3"
+}
+2023-06-25T19:01:53.719Z debug: Results sent back {
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    },
+    {
+      "id": 4,
+      "shortdesc": "fdfs",
+      "longdesc": "fds"
+    }
+  ],
+  "player": {
+    "id": 3,
+    "firstname": "fds",
+    "lastname": "dfds",
+    "birthdate": "2023-06-25 01:00:00",
+    "clubId": null,
+    "club": null
+  }
+}
+2023-06-25T19:01:57.003Z info: Received a POST request for /players/edit/3
+2023-06-25T19:01:57.006Z debug: <Player> controller has been called for <player_update>
+2023-06-25T19:01:57.004Z info: Request params: {}
+2023-06-25T19:01:57.007Z debug: Request params: {
+  "id": "3"
+}
+2023-06-25T19:01:57.037Z info: Received a GET request for /players/
+2023-06-25T19:01:57.039Z debug: <Player> controller has been called for <players_list>
+2023-06-25T19:01:57.038Z info: Request params: {}
+2023-06-25T19:01:57.040Z debug: Request params: {}
+2023-06-25T19:02:00.602Z info: Received a GET request for /players/new
+2023-06-25T19:02:00.602Z info: Request params: {}
+2023-06-25T19:02:00.613Z info: Received a GET request for /players/edit/-1
+2023-06-25T19:02:00.614Z debug: <Player> controller has been called for <player_details_get>
+2023-06-25T19:02:00.613Z info: Request params: {}
+2023-06-25T19:02:00.615Z debug: Request params: {
+  "id": "-1"
+}
+2023-06-25T19:02:00.621Z debug: Results sent back {
+  "player": {
+    "id": null
+  },
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    },
+    {
+      "id": 4,
+      "shortdesc": "fdfs",
+      "longdesc": "fds"
+    }
+  ]
+}
+2023-06-25T19:02:05.666Z info: Received a POST request for /players/create/
+2023-06-25T19:02:05.669Z debug: <Player> controller has been called for <player_create>
+2023-06-25T19:02:05.667Z info: Request params: {}
+2023-06-25T19:02:05.670Z debug: Request params: {}
+2023-06-25T19:02:05.704Z info: Received a GET request for /players/
+2023-06-25T19:02:05.706Z debug: <Player> controller has been called for <players_list>
+2023-06-25T19:02:05.705Z info: Request params: {}
+2023-06-25T19:02:05.707Z debug: Request params: {}
+2023-06-25T19:02:09.691Z info: Received a DELETE request for /players/delete/5
+2023-06-25T19:02:09.693Z debug: <Player> controller has been called for <player_delete>
+2023-06-25T19:02:09.692Z info: Request params: {}
+2023-06-25T19:02:09.694Z debug: Request params: {
+  "id": "5"
+}
+2023-06-25T19:02:09.723Z info: Received a GET request for /players/
+2023-06-25T19:02:09.725Z debug: <Player> controller has been called for <players_list>
+2023-06-25T19:02:09.724Z info: Request params: {}
+2023-06-25T19:02:09.726Z debug: Request params: {}
+2023-06-25T19:02:13.384Z info: Received a GET request for /players/edit/3
+2023-06-25T19:02:13.386Z debug: <Player> controller has been called for <player_details_get>
+2023-06-25T19:02:13.385Z info: Request params: {}
+2023-06-25T19:02:13.386Z debug: Request params: {
+  "id": "3"
+}
+2023-06-25T19:02:13.402Z debug: Results sent back {
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    },
+    {
+      "id": 4,
+      "shortdesc": "fdfs",
+      "longdesc": "fds"
+    }
+  ],
+  "player": {
+    "id": 3,
+    "firstname": "fds",
+    "lastname": "dfds",
+    "birthdate": "2023-06-25 01:00:00",
+    "clubId": 4,
+    "club": {
+      "id": 4,
+      "shortdesc": "fdfs",
+      "longdesc": "fds"
+    }
+  }
+}
+2023-06-25T19:02:18.049Z info: Received a POST request for /players/edit/3
+2023-06-25T19:02:18.054Z debug: <Player> controller has been called for <player_update>
+2023-06-25T19:02:18.050Z info: Request params: {}
+2023-06-25T19:02:18.055Z debug: Request params: {
+  "id": "3"
+}
+2023-06-25T19:02:18.098Z info: Received a GET request for /players/
+2023-06-25T19:02:18.099Z debug: <Player> controller has been called for <players_list>
+2023-06-25T19:02:18.098Z info: Request params: {}
+2023-06-25T19:02:18.100Z debug: Request params: {}
+2023-06-25T19:02:23.276Z info: Received a GET request for /clubs
+2023-06-25T19:02:23.278Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:02:23.277Z info: Request params: {}
+2023-06-25T19:02:23.278Z debug: Request params: {}
+2023-06-25T19:02:25.242Z info: Received a GET request for /clubs/edit/4
+2023-06-25T19:02:25.244Z debug: <Club> controller has been called for <club_details>
+2023-06-25T19:02:25.243Z info: Request params: {}
+2023-06-25T19:02:25.245Z debug: Request params: {
+  "id": "4"
+}
+2023-06-25T19:02:25.252Z debug: Results sent back {
+  "club": {
+    "id": 4,
+    "shortdesc": "fdfs",
+    "longdesc": "fds"
+  }
+}
+2023-06-25T19:02:28.391Z info: Received a POST request for /clubs/edit/4
+2023-06-25T19:02:28.392Z info: Request params: {}
+2023-06-25T19:02:28.425Z info: Received a GET request for /clubs/
+2023-06-25T19:02:28.427Z debug: <Club> controller has been called for <clubs_list>
+2023-06-25T19:02:28.426Z info: Request params: {}
+2023-06-25T19:02:28.428Z debug: Request params: {}
