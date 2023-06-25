@@ -25,5 +25,6 @@
  "PlayerClub": "Club du joueur",
  "EditingPlayer": "Modifier joueur",
  "MSG_PlayerCreated": "Joueur créé",
- "MSG_PlayerDeleted": "Joueur supprimé"
+ "MSG_PlayerDeleted": "Joueur supprimé",
+ "MSG_SelectAnOption": "Choisir une option"
 }

@@ -23,8 +23,11 @@
 		div#invalid-birthdate.invalid-feedback
 
 	div.form-floating.mb-3
-		input#txtClub(type="text", class="form-control" value=(data.player.club ? data.player.club.shortdesc : '') name="clubid"
-		placeholder="#")
-		label.form-label(for="txtClub") #{__('PlayerClub')}
+		select#selClub(class="form-select" name="clubid" placeholder="#")
+			option(disabled selected=!data.player.clubId ) #{__('MSG_SelectAnOption')}
+			each val in data.clubs
+				option(value=val.id selected=val.id==data.player.clubId )= val.shortdesc
+		label.form-label(for="selClub") #{__('PlayerClub')}
 		div#invalid-clubid.invalid-feedback
+
 

@@ -119,6 +119,7 @@ exports.player_delete = function(req, res, next) {
  * Create PLAYER
  */
 exports.player_create = [
+    // Validation rules
     body('firstname').not().isEmpty().withMessage((value, { req, location, path }) => {
         return req.__('MSG_PlayerFirstNameIsMandatory', { value, location, path });
     }),

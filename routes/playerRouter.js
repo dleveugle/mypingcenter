@@ -32,8 +32,4 @@ router.post('/edit/:id', playerController.player_update);
  */
 router.delete('/delete/:id', playerController.player_delete);
 
-
-
-
-
 module.exports = router;
