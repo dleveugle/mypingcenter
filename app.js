@@ -67,6 +67,8 @@ app.use(function(req, res, next) {
       return i18n.__.apply(req, arguments);
   };
   res.locals.moment = require('moment');
+  var path = req.url.split('/');
+  res.locals.path = path[1] ? path[1] : '';
   next();
 });
 
@@ -110,11 +112,16 @@ app.use((req, res, next) => {
 });
 //***************************************************************************************
 
+
+
+
+
 // Routers
 app.use((req, res, next) => {
   // Log an info message for each incoming request
   logger._i(`Received a ${req.method} request for ${req.url}`);
   logger._iRequestParams(req);
+  
   next();
 });
 app.use('/', global.Utils.requireRoutes('index'));

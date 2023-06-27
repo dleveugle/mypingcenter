@@ -6,12 +6,12 @@
                 span(class="nav_logo-name") #{__('MyApplication')}
 
             #nav_list   
-                a(class="nav_link active"  href="/clubs")
+                a(class="nav_link" class={"active": path === 'clubs'} href="/clubs")
                     i(class="bx bx-building-house nav_icon")
                     span(class="nav_name")   #{__('Clubs')}
 
             #nav_list   
-                a(class="nav_link" href="/players")
+                a(class="nav_link" class={"active": path === 'players'} href="/players")
                     i(class="bx bx-user nav_icon")
                     span(class="nav_name")   #{__('Players')}
 

@@ -2724,3 +2724,437 @@ Cannot read properties of undefined (reading 'toint')
     at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:376:14)
     at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:421:3)
     at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+2023-06-27T19:12:17.586Z info: Received a GET request for /clubs/
+2023-06-27T19:12:17.591Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T19:12:17.589Z info: Request params: {}
+2023-06-27T19:12:17.592Z debug: Request params: {}
+2023-06-27T19:12:17.611Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  },
+  {
+    "id": 3,
+    "shortdesc": "cdcdsc",
+    "longdesc": "cdcds",
+    "nbplayers": 0
+  }
+]
+2023-06-27T19:12:20.702Z info: Received a DELETE request for /clubs/delete/3
+2023-06-27T19:12:20.703Z info: Request params: {}
+2023-06-27T19:12:20.730Z info: Received a GET request for /clubs/
+2023-06-27T19:12:20.734Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T19:12:20.732Z info: Request params: {}
+2023-06-27T19:12:20.736Z debug: Request params: {}
+2023-06-27T19:12:20.744Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T19:12:43.941Z info: Received a GET request for /clubs/
+2023-06-27T19:12:43.945Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T19:12:43.943Z info: Request params: {}
+2023-06-27T19:12:43.945Z debug: Request params: {}
+2023-06-27T19:12:43.956Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T19:12:46.379Z info: Received a GET request for /clubs/new
+2023-06-27T19:12:46.380Z info: Request params: {}
+2023-06-27T19:12:46.390Z info: Received a GET request for /clubs/edit/-1
+2023-06-27T19:12:46.392Z debug: <Club> controller has been called for <club_details>
+2023-06-27T19:12:46.391Z info: Request params: {}
+2023-06-27T19:12:46.392Z debug: Request params: {
+  "id": "-1"
+}
+2023-06-27T19:12:46.395Z debug: Results sent back {
+  "club": {
+    "id": null
+  }
+}
+2023-06-27T19:12:48.624Z info: Received a POST request for /clubs/create/
+2023-06-27T19:12:48.625Z info: Request params: {}
+2023-06-27T19:12:48.664Z info: Received a GET request for /clubs/
+2023-06-27T19:12:48.666Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T19:12:48.664Z info: Request params: {}
+2023-06-27T19:12:48.667Z debug: Request params: {}
+2023-06-27T19:12:48.680Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  },
+  {
+    "id": 4,
+    "shortdesc": "gfdgfd",
+    "longdesc": "gfgfd",
+    "nbplayers": 0
+  }
+]
+2023-06-27T19:13:05.966Z info: Received a GET request for /clubs/
+2023-06-27T19:13:05.968Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T19:13:05.967Z info: Request params: {}
+2023-06-27T19:13:05.970Z debug: Request params: {}
+2023-06-27T19:13:05.984Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  },
+  {
+    "id": 4,
+    "shortdesc": "gfdgfd",
+    "longdesc": "gfgfd",
+    "nbplayers": 0
+  }
+]
+2023-06-27T19:13:07.824Z info: Received a DELETE request for /clubs/delete/4
+2023-06-27T19:13:07.824Z info: Request params: {}
+2023-06-27T19:13:07.847Z info: Received a GET request for /clubs/
+2023-06-27T19:13:07.849Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T19:13:07.848Z info: Request params: {}
+2023-06-27T19:13:07.850Z debug: Request params: {}
+2023-06-27T19:13:07.857Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T19:13:27.404Z info: Received a GET request for /clubs/new
+2023-06-27T19:13:27.405Z info: Request params: {}
+2023-06-27T19:13:27.412Z info: Received a GET request for /clubs/edit/-1
+2023-06-27T19:13:27.414Z debug: <Club> controller has been called for <club_details>
+2023-06-27T19:13:27.413Z info: Request params: {}
+2023-06-27T19:13:27.414Z debug: Request params: {
+  "id": "-1"
+}
+2023-06-27T19:13:27.416Z debug: Results sent back {
+  "club": {
+    "id": null
+  }
+}
+2023-06-27T19:13:29.681Z info: Received a POST request for /clubs/create/
+2023-06-27T19:13:29.682Z info: Request params: {}
+2023-06-27T19:13:29.717Z info: Received a GET request for /clubs/
+2023-06-27T19:13:29.718Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T19:13:29.717Z info: Request params: {}
+2023-06-27T19:13:29.718Z debug: Request params: {}
+2023-06-27T19:13:29.722Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  },
+  {
+    "id": 5,
+    "shortdesc": "bvbvcb",
+    "longdesc": "bvbvc",
+    "nbplayers": 0
+  }
+]
+2023-06-27T19:13:41.618Z info: Received a GET request for /clubs/
+2023-06-27T19:13:41.619Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T19:13:41.619Z info: Request params: {}
+2023-06-27T19:13:41.620Z debug: Request params: {}
+2023-06-27T19:13:41.633Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  },
+  {
+    "id": 5,
+    "shortdesc": "bvbvcb",
+    "longdesc": "bvbvc",
+    "nbplayers": 0
+  }
+]
+2023-06-27T19:13:43.110Z info: Received a DELETE request for /clubs/delete/5
+2023-06-27T19:13:43.110Z info: Request params: {}
+2023-06-27T19:13:43.130Z info: Received a GET request for /clubs/
+2023-06-27T19:13:43.132Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T19:13:43.131Z info: Request params: {}
+2023-06-27T19:13:43.132Z debug: Request params: {}
+2023-06-27T19:13:43.141Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T19:13:53.378Z info: Received a GET request for /players
+2023-06-27T19:13:53.380Z debug: <Player> controller has been called for <players_list>
+2023-06-27T19:13:53.379Z info: Request params: {}
+2023-06-27T19:13:53.381Z debug: Request params: {}
+2023-06-27T19:13:57.019Z info: Received a GET request for /players/edit/3
+2023-06-27T19:13:57.020Z debug: <Player> controller has been called for <player_details_get>
+2023-06-27T19:13:57.019Z info: Request params: {}
+2023-06-27T19:13:57.021Z debug: Request params: {
+  "id": "3"
+}
+2023-06-27T19:13:57.034Z debug: Results sent back {
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    }
+  ],
+  "player": {
+    "id": 3,
+    "firstname": "Christophe",
+    "lastname": "COUTURE",
+    "birthdate": null,
+    "ranking": 983,
+    "clubId": 1,
+    "club": {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    }
+  }
+}
+2023-06-27T19:14:08.150Z info: Received a GET request for /players/edit/1
+2023-06-27T19:14:08.151Z debug: <Player> controller has been called for <player_details_get>
+2023-06-27T19:14:08.150Z info: Request params: {}
+2023-06-27T19:14:08.152Z debug: Request params: {
+  "id": "1"
+}
+2023-06-27T19:14:08.169Z debug: Results sent back {
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    }
+  ],
+  "player": {
+    "id": 1,
+    "firstname": "Damien",
+    "lastname": "LEVEUGLE",
+    "birthdate": "1969-12-13 01:00:00",
+    "ranking": 931,
+    "clubId": 1,
+    "club": {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    }
+  }
+}
+2023-06-27T19:14:10.680Z info: Received a POST request for /players/edit/1
+2023-06-27T19:14:10.683Z debug: <Player> controller has been called for <player_update>
+2023-06-27T19:14:10.681Z info: Request params: {}
+2023-06-27T19:14:10.684Z debug: Request params: {
+  "id": "1"
+}
+2023-06-27T19:14:10.719Z info: Received a GET request for /players/
+2023-06-27T19:14:10.720Z debug: <Player> controller has been called for <players_list>
+2023-06-27T19:14:10.719Z info: Request params: {}
+2023-06-27T19:14:10.720Z debug: Request params: {}
+2023-06-27T19:32:04.192Z info: Received a GET request for /players/
+2023-06-27T19:32:04.194Z debug: <Player> controller has been called for <players_list>
+2023-06-27T19:32:04.193Z info: Request params: {}
+2023-06-27T19:32:04.194Z debug: Request params: {}
+2023-06-27T19:32:05.930Z info: Received a GET request for /clubs
+2023-06-27T19:32:05.931Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T19:32:05.930Z info: Request params: {}
+2023-06-27T19:32:05.932Z debug: Request params: {}
+2023-06-27T19:32:05.939Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T19:32:08.901Z info: Received a GET request for /players
+2023-06-27T19:32:08.902Z debug: <Player> controller has been called for <players_list>
+2023-06-27T19:32:08.901Z info: Request params: {}
+2023-06-27T19:32:08.904Z debug: Request params: {}
+2023-06-27T19:39:34.065Z info: Received a GET request for /players
+2023-06-27T19:39:34.074Z debug: <Player> controller has been called for <players_list>
+2023-06-27T19:39:34.071Z info: Request params: {}
+2023-06-27T19:39:34.076Z debug: Request params: {}
+2023-06-27T19:39:38.341Z info: Received a GET request for /players/edit/10
+2023-06-27T19:39:38.344Z debug: <Player> controller has been called for <player_details_get>
+2023-06-27T19:39:38.343Z info: Request params: {}
+2023-06-27T19:39:38.346Z debug: Request params: {
+  "id": "10"
+}
+2023-06-27T19:39:38.363Z debug: Results sent back {
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    }
+  ],
+  "player": {
+    "id": 10,
+    "firstname": "Benjamin",
+    "lastname": "VILAIN",
+    "birthdate": null,
+    "ranking": 762,
+    "clubId": 1,
+    "club": {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    }
+  }
+}
+2023-06-27T19:42:42.008Z info: Received a GET request for /players
+2023-06-27T19:42:42.014Z debug: <Player> controller has been called for <players_list>
+2023-06-27T19:42:42.012Z info: Request params: {}
+2023-06-27T19:42:42.015Z debug: Request params: {}
+2023-06-27T19:42:54.470Z info: Received a GET request for /
+2023-06-27T19:42:54.471Z info: Request params: {}
+2023-06-27T19:47:44.879Z info: Received a GET request for /
+2023-06-27T19:47:44.880Z info: Request params: {}
+2023-06-27T19:47:49.890Z info: Received a GET request for /clubs
+2023-06-27T19:47:49.893Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T19:47:49.891Z info: Request params: {}
+2023-06-27T19:47:49.894Z debug: Request params: {}
+2023-06-27T19:47:49.913Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T19:48:18.968Z info: Received a GET request for /clubs
+2023-06-27T19:48:18.970Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T19:48:18.968Z info: Request params: {}
+2023-06-27T19:48:18.970Z debug: Request params: {}
+2023-06-27T19:48:18.984Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T19:48:19.107Z error: TypeError: C:\dev\node\pingcenter\views\includes\sidebar.pug:4
+    2|     nav.nav 
+    3|         div 
+  > 4|             #{appSettings.path}
+    5|             a(class="nav_logo" href="#")
+    6|                 i(class="bx bx-layer nav_logo-icon") 
+    7|                 span(class="nav_logo-name") #{__('MyApplication')}
+
+Cannot read properties of undefined (reading 'path')
+    at eval (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:269:47)
+    at template (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:847:7)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:454:38)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:444:21)
+    at exports.__express [as engine] (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:493:11)
+    at View.render (C:\dev\node\pingcenter\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\dev\node\pingcenter\node_modules\express\lib\application.js:657:10)
+    at Function.render (C:\dev\node\pingcenter\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (C:\dev\node\pingcenter\node_modules\express\lib\response.js:1039:7)
+    at C:\dev\node\pingcenter\controllers\clubController.js:35:13
