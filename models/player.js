@@ -38,6 +38,10 @@ module.exports = (sequelize, DataTypes)  => {
       },
     birthdate: {
         type: DataTypes.DATE
+    },
+    ranking: {
+      type: DataTypes.INTEGER,
+      defaultValue: 500
     }
   }, {
     sequelize,
