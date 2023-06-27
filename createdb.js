@@ -83,17 +83,17 @@ db.sequelize.sync({ force: true })
     console.log('Creating PLAYERS ...');
     async.series([
       function(callback){playerCreate(null, 'Damien', 'LEVEUGLE', new Date('1969-12-13'), 1, 931, callback);},
-      function(callback){playerCreate(null, 'Stéphane', 'JULLIOT', null, 1, null, callback);},
-      function(callback){playerCreate(null, 'Christophe', 'COUTURE', null, 1, null, callback)},
-      function(callback){playerCreate(null, 'David', 'WAUTHIER', null, 1, null, callback)},
-      function(callback){playerCreate(null, 'Frédéric', 'LAMOUR', null, 1, null, callback)},
-      function(callback){playerCreate(null, 'Nicolas', 'DELOMEZ', null, 1, null, callback)},
-      function(callback){playerCreate(null, 'Guy', 'COLOMBEL', null, 1, null, callback)},
-      function(callback){playerCreate(null, 'Luc', 'BAUDAIS', null, 1, null, callback)},
-      function(callback){playerCreate(null, 'Clément', 'VILAIN', null, 1, null, callback)},
-      function(callback){playerCreate(null, 'Benjamin', 'VILAIN', null, 1, null, callback)},
-      function(callback){playerCreate(null, 'Dominique', 'PERON', null, 1, null, callback)},
-      function(callback){playerCreate(null, 'Rémi', 'SAIL', null, 1, null, callback)}
+      function(callback){playerCreate(null, 'Stéphane', 'JULLIOT', null, 1, 591, callback);},
+      function(callback){playerCreate(null, 'Christophe', 'COUTURE', null, 1, 983, callback)},
+      function(callback){playerCreate(null, 'David', 'WAUTHIER', null, 1, 1102, callback)},
+      function(callback){playerCreate(null, 'Frédéric', 'LAMOUR', null, 1, 502, callback)},
+      function(callback){playerCreate(null, 'Nicolas', 'DELOMEZ', null, 1, 879, callback)},
+      function(callback){playerCreate(null, 'Guy', 'COLOMBEL', null, 1, 917, callback)},
+      function(callback){playerCreate(null, 'Luc', 'BAUDAIS', null, 1, 872, callback)},
+      function(callback){playerCreate(null, 'Clément', 'VILAIN', null, 1, 867, callback)},
+      function(callback){playerCreate(null, 'Benjamin', 'VILAIN', null, 1, 762, callback)},
+      function(callback){playerCreate(null, 'Dominique', 'PERON', null, 1, 932, callback)},
+      function(callback){playerCreate(null, 'Rémi', 'SAIL', null, 1, 1105, callback)}
         
     ], 
     cb

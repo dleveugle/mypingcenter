@@ -30,6 +30,11 @@ a{
 
 div.flash-message{
   opacity: 0;
+  position: fixed;
+  overflow: hidden;
+  z-index: 2400;
+  right: 3rem;
+  top: 3rem !important;
 }
 
 div.form-floating label {

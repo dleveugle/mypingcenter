@@ -104,7 +104,7 @@ exports.club_update =  [
  * DELETE CLUB
  */
 exports.club_delete = function(req, res, next) {
-    db['club'].destroy({where:{id: id}})
+    db['club'].destroy({where:{id: req.params.id}})
     .then(()=> {
         req.flash('success', req.__('MSG_ClubDeleted'));
         res.status(200).jsonp({})
