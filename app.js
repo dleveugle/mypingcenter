@@ -127,6 +127,7 @@ app.use((req, res, next) => {
 app.use('/', global.Utils.requireRoutes('index'));
 app.use('/clubs', global.Utils.requireRoutes('clubRouter'));
 app.use('/players', global.Utils.requireRoutes('playerRouter'));
+app.use('/params', global.Utils.requireRoutes('paramsRouter'));
 
 /**
  * Database 

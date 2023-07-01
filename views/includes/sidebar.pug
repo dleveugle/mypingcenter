@@ -1,5 +1,5 @@
 .l-navbar#nav-bar
-    nav.nav 
+    nav.nav-side 
         div 
             a(class="nav_logo" href="#")
                 i(class="bx bx-layer nav_logo-icon") 
@@ -14,4 +14,9 @@
                 a(class="nav_link" class={"active": path === 'players'} href="/players")
                     i(class="bx bx-user nav_icon")
                     span(class="nav_name")   #{__('Players')}
+
+            #nav_list   
+                a(class="nav_link" class={"active": path === 'params'} href="/params")
+                    i(class="bx bx-cog nav_icon")
+                    span(class="nav_name")   #{__('Parameters')}
 

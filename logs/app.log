@@ -3158,3 +3158,523 @@ Cannot read properties of undefined (reading 'path')
     at Function.render (C:\dev\node\pingcenter\node_modules\express\lib\application.js:609:3)
     at ServerResponse.render (C:\dev\node\pingcenter\node_modules\express\lib\response.js:1039:7)
     at C:\dev\node\pingcenter\controllers\clubController.js:35:13
+2023-06-27T19:51:47.733Z info: Received a GET request for /clubs
+2023-06-27T19:51:47.739Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T19:51:47.738Z info: Request params: {}
+2023-06-27T19:51:47.740Z debug: Request params: {}
+2023-06-27T19:51:47.766Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T19:51:52.034Z info: Received a GET request for /clubs
+2023-06-27T19:51:52.038Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T19:51:52.035Z info: Request params: {}
+2023-06-27T19:51:52.039Z debug: Request params: {}
+2023-06-27T19:51:52.045Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T19:52:28.573Z info: Received a GET request for /clubs
+2023-06-27T19:52:28.574Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T19:52:28.574Z info: Request params: {}
+2023-06-27T19:52:28.575Z debug: Request params: {}
+2023-06-27T19:52:28.592Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T19:52:51.729Z info: Received a GET request for /clubs
+2023-06-27T19:52:51.730Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T19:52:51.729Z info: Request params: {}
+2023-06-27T19:52:51.731Z debug: Request params: {}
+2023-06-27T19:52:51.745Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T19:55:56.145Z info: Received a GET request for /clubs
+2023-06-27T19:55:56.148Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T19:55:56.146Z info: Request params: {}
+2023-06-27T19:55:56.149Z debug: Request params: {}
+2023-06-27T19:55:56.167Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T19:55:56.233Z error: Error: C:\dev\node\pingcenter\views\includes\sidebar.pug:9:50
+    7| 
+    8|             #nav_list   
+  > 9|                 a(class="nav_link" + " " + {path == "clubs" ? "active" : ""} href="/clubs")
+--------------------------------------------------------^
+    10|                     i(class="bx bx-building-house nav_icon")
+    11|                     span(class="nav_name")   #{__('Clubs')}
+    12| 
+
+Syntax Error: Unexpected token
+    at makeError (C:\dev\node\pingcenter\node_modules\pug-error\index.js:34:13)
+    at Lexer.error (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:62:15)
+    at Lexer.assertExpression (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:96:12)
+    at Lexer.attributeValue (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1428:10)
+    at Lexer.attribute (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1275:30)
+    at Lexer.attrs (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1454:20)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.advance (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1686:12)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.getTokens (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1706:12)
+2023-06-27T19:56:15.080Z info: Received a GET request for /clubs
+2023-06-27T19:56:15.082Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T19:56:15.081Z info: Request params: {}
+2023-06-27T19:56:15.083Z debug: Request params: {}
+2023-06-27T19:56:15.092Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T19:56:15.151Z error: Error: C:\dev\node\pingcenter\views\includes\sidebar.pug:9:75
+    7| 
+    8|             #nav_list   
+  > 9|                 a(class="nav_link" + " " + path == "clubs" ? "active" : ""} href="/clubs")
+---------------------------------------------------------------------------------^
+    10|                     i(class="bx bx-building-house nav_icon")
+    11|                     span(class="nav_name")   #{__('Clubs')}
+    12| 
+
+Mismatched Bracket: }
+    at makeError (C:\dev\node\pingcenter\node_modules\pug-error\index.js:34:13)
+    at Lexer.error (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:62:15)
+    at Lexer.bracketExpression (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:281:14)
+    at Lexer.attrs (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1445:24)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.advance (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1686:12)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.getTokens (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1706:12)
+    at lex (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:12:42)
+    at Object.lex (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:104:9)
+2023-06-27T19:56:23.320Z info: Received a GET request for /clubs
+2023-06-27T19:56:23.322Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T19:56:23.321Z info: Request params: {}
+2023-06-27T19:56:23.324Z debug: Request params: {}
+2023-06-27T19:56:23.332Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T19:56:23.379Z error: Error: C:\dev\node\pingcenter\views\includes\sidebar.pug:14:50
+    12| 
+    13|             #nav_list   
+  > 14|                 a(class="nav_link" + " " + {path == "players" ? "active" : ""}href="/players")
+---------------------------------------------------------^
+    15|                     i(class="bx bx-user nav_icon")
+    16|                     span(class="nav_name")   #{__('Players')}
+    17| 
+
+Syntax Error: Unexpected token
+    at makeError (C:\dev\node\pingcenter\node_modules\pug-error\index.js:34:13)
+    at Lexer.error (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:62:15)
+    at Lexer.assertExpression (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:96:12)
+    at Lexer.attributeValue (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1428:10)
+    at Lexer.attribute (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1275:30)
+    at Lexer.attrs (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1454:20)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.advance (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1686:12)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.getTokens (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1706:12)
+2023-06-27T19:56:35.341Z info: Received a GET request for /clubs
+2023-06-27T19:56:35.343Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T19:56:35.342Z info: Request params: {}
+2023-06-27T19:56:35.344Z debug: Request params: {}
+2023-06-27T19:56:35.356Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T19:59:10.883Z info: Received a GET request for /clubs
+2023-06-27T19:59:10.885Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T19:59:10.884Z info: Request params: {}
+2023-06-27T19:59:10.885Z debug: Request params: {}
+2023-06-27T19:59:10.901Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T19:59:10.946Z error: Error: C:\dev\node\pingcenter\views\includes\sidebar.pug:9:38
+    7| 
+    8|             #nav_list   
+  > 9|                 a(class="nav_link" + #{path == "clubs" ? "active" : ""} href="/clubs")
+--------------------------------------------^
+    10|                     i(class="bx bx-building-house nav_icon")
+    11|                     span(class="nav_name")   #{__('Clubs')}
+    12| 
+
+Syntax Error: Unexpected character '#'
+    at makeError (C:\dev\node\pingcenter\node_modules\pug-error\index.js:34:13)
+    at Lexer.error (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:62:15)
+    at Lexer.assertExpression (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:96:12)
+    at Lexer.attributeValue (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1428:10)
+    at Lexer.attribute (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1275:30)
+    at Lexer.attrs (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1454:20)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.advance (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1686:12)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.getTokens (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1706:12)
+2023-06-27T20:00:47.342Z info: Received a GET request for /clubs
+2023-06-27T20:00:47.343Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T20:00:47.342Z info: Request params: {}
+2023-06-27T20:00:47.344Z debug: Request params: {}
+2023-06-27T20:00:47.356Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T20:00:47.408Z error: Error: C:\dev\node\pingcenter\views\includes\sidebar.pug:14:38
+    12| 
+    13|             #nav_list   
+  > 14|                 a(class="nav_link" + #{path == "players" ? " active" : ""} href="/players")
+---------------------------------------------^
+    15|                     i(class="bx bx-user nav_icon")
+    16|                     span(class="nav_name")   #{__('Players')}
+    17| 
+
+Syntax Error: Unexpected character '#'
+    at makeError (C:\dev\node\pingcenter\node_modules\pug-error\index.js:34:13)
+    at Lexer.error (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:62:15)
+    at Lexer.assertExpression (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:96:12)
+    at Lexer.attributeValue (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1428:10)
+    at Lexer.attribute (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1275:30)
+    at Lexer.attrs (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1454:20)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.advance (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1686:12)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.getTokens (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1706:12)
+2023-06-27T20:01:04.599Z info: Received a GET request for /clubs
+2023-06-27T20:01:04.600Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T20:01:04.599Z info: Request params: {}
+2023-06-27T20:01:04.601Z debug: Request params: {}
+2023-06-27T20:01:04.613Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T20:02:12.961Z info: Received a GET request for /clubs
+2023-06-27T20:02:12.963Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T20:02:12.964Z debug: Request params: {}
+2023-06-27T20:02:12.962Z info: Request params: {}
+2023-06-27T20:02:12.980Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T20:02:13.031Z error: Error: C:\dev\node\pingcenter\views\includes\sidebar.pug:9:37
+    7| 
+    8|             #nav_list   
+  > 9|                 a(class="nav_link"+ if(path=="clubs") "active" href="/clubs")
+-------------------------------------------^
+    10|                     i(class="bx bx-building-house nav_icon")
+    11|                     span(class="nav_name")   #{__('Clubs')}
+    12| 
+
+Syntax Error: Unexpected token
+    at makeError (C:\dev\node\pingcenter\node_modules\pug-error\index.js:34:13)
+    at Lexer.error (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:62:15)
+    at Lexer.assertExpression (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:96:12)
+    at Lexer.attributeValue (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1428:10)
+    at Lexer.attribute (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1275:30)
+    at Lexer.attrs (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1454:20)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.advance (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1686:12)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.getTokens (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1706:12)
+2023-06-27T20:04:31.912Z info: Received a GET request for /clubs
+2023-06-27T20:04:31.913Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T20:04:31.913Z info: Request params: {}
+2023-06-27T20:04:31.914Z debug: Request params: {}
+2023-06-27T20:04:31.924Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T20:04:34.895Z info: Received a GET request for /clubs
+2023-06-27T20:04:34.896Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T20:04:34.895Z info: Request params: {}
+2023-06-27T20:04:34.897Z debug: Request params: {}
+2023-06-27T20:04:34.904Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T20:06:26.441Z info: Received a GET request for /clubs
+2023-06-27T20:06:26.443Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T20:06:26.442Z info: Request params: {}
+2023-06-27T20:06:26.443Z debug: Request params: {}
+2023-06-27T20:06:26.457Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T20:06:37.741Z info: Received a GET request for /clubs
+2023-06-27T20:06:37.742Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T20:06:37.742Z info: Request params: {}
+2023-06-27T20:06:37.743Z debug: Request params: {}
+2023-06-27T20:06:37.756Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T20:07:01.930Z info: Received a GET request for /clubs
+2023-06-27T20:07:01.932Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T20:07:01.931Z info: Request params: {}
+2023-06-27T20:07:01.933Z debug: Request params: {}
+2023-06-27T20:07:01.943Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T20:07:03.576Z info: Received a GET request for /players
+2023-06-27T20:07:03.577Z debug: <Player> controller has been called for <players_list>
+2023-06-27T20:07:03.577Z info: Request params: {}
+2023-06-27T20:07:03.578Z debug: Request params: {}
+2023-06-27T20:07:05.736Z info: Received a GET request for /clubs
+2023-06-27T20:07:05.737Z debug: <Club> controller has been called for <clubs_list>
+2023-06-27T20:07:05.737Z info: Request params: {}
+2023-06-27T20:07:05.738Z debug: Request params: {}
+2023-06-27T20:07:05.745Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-06-27T20:07:13.740Z info: Received a GET request for /
+2023-06-27T20:07:13.741Z info: Request params: {}
+2023-06-27T20:08:29.653Z info: Received a GET request for /
+2023-06-27T20:08:29.654Z info: Request params: {}
+2023-06-27T20:15:05.748Z info: Received a GET request for /
+2023-06-27T20:15:05.749Z info: Request params: {}
+2023-06-27T20:15:07.142Z info: Received a GET request for /params
+2023-06-27T20:15:07.143Z info: Request params: {}
+2023-06-27T20:15:07.144Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:138:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-27T20:16:39.620Z info: Received a GET request for /params
+2023-06-27T20:16:39.621Z info: Request params: {}
+2023-06-27T20:16:39.622Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:138:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-27T20:16:43.441Z info: Received a GET request for /params
+2023-06-27T20:16:43.441Z info: Request params: {}
+2023-06-27T20:16:43.442Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:138:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-27T20:17:32.113Z info: Received a GET request for /params
+2023-06-27T20:17:32.117Z debug: <Params> controller has been called for <params_list>
+2023-06-27T20:17:32.116Z info: Request params: {}
+2023-06-27T20:17:32.119Z debug: Request params: {}
+2023-06-27T20:17:32.123Z error: ReferenceError: __ is not defined
+    at exports.params_list (C:\dev\node\pingcenter\controllers\paramsController.js:16:21)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-06-27T20:18:13.828Z info: Received a GET request for /params
+2023-06-27T20:18:13.833Z debug: <Params> controller has been called for <params_list>
+2023-06-27T20:18:13.832Z info: Request params: {}
+2023-06-27T20:18:13.835Z debug: Request params: {}
+2023-06-27T20:24:27.079Z info: Received a GET request for /params
+2023-06-27T20:24:27.084Z debug: <Params> controller has been called for <params_list>
+2023-06-27T20:24:27.081Z info: Request params: {}
+2023-06-27T20:24:27.085Z debug: Request params: {}
+2023-06-27T20:24:58.158Z info: Received a GET request for /params
+2023-06-27T20:24:58.161Z debug: <Params> controller has been called for <params_list>
+2023-06-27T20:24:58.160Z info: Request params: {}
+2023-06-27T20:24:58.163Z debug: Request params: {}
