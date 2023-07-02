@@ -1,11 +1,12 @@
 extends ../layout
 
 block content
+  -var model='player'
 
   .card.border-0
     .card-header.border-0.bg-transparent
       #table-buttons.inline 
-      +_newButton("newPlayer()", __('CreatingPlayer'), __('NewPlayer'))
+        +_newButton( "newModel()", __(_.camelCase("creating-"+ model)), __(_.camelCase("new-"+ model)))
 
     .card-body.border-0.striped
       table#pingTable.table.table-striped.table-hover
@@ -14,8 +15,8 @@ block content
             //th(scope="col") #
             th(scope="col") #{__('PlayerFirstName')}
             th(scope="col") #{__('PlayerLastName')}
-            th(scope="col") #{__('PlayerRanking')}
-            th(scope="col") #{__('PlayerClub')}
+            th.text-center(scope="col") #{__('PlayerRanking')}
+            th.text-center(scope="col") #{__('PlayerClub')}
             th
         tbody 
           each val in data
@@ -27,92 +28,15 @@ block content
               td.text-center #{val.club ? val.club.shortdesc : ''}
               td.text-center
                 .btn-group.ms-2(role="group")
-                  +_editButton("editPlayer("+val.id+")")
+                  +_editButton("editModel("+val.id+")")
                 .btn-group.ms-2(role="group")
-                   +_deleteButton("deletePlayer("+val.id+")")
+                   +_deleteButton("deleteModel("+val.id+")")
 
           
       include /includes/modalform.pug
               
 
 
-      script.
-        // when modal form is shown
-        $(".modal").on('shown.bs.modal', function () {
-          // redirect keypress event of input to submit button
-          $("#modalFormBody input:visible").on("keypress", function(event) {
-            if (event.key === "Enter") {
-              event.preventDefault();
-              $('#modalFormSubmitButton').click();
-            }
-          });
-          $(this).find("input:visible:first").select().focus();
-        });
-
-        // edit a player
-        function editPlayer(id){
-          $('#modalFormHeaderImage').attr('class', 'bx bx-edit-alt bx-sm');
-          $('#modalFormTitle').html('#{__('EditingPlayer')}');
-          $('#modalFormForm').attr('action', '/players/edit/'+ id);
-          $('#modalFormForm').attr('method', 'POST');
-          
-          $.ajax({
-            type: 'GET',
-            url: '/players/edit/'+ id
-          })
-          .done(function(data, id){
-              $("#modalFormBody").html(data);
-              $('#modalForm').modal('show');
-          });
-        }
-
-        // create a new player
-        function newPlayer(){
-          $('#modalFormHeaderImage').attr('class', 'bx bx-edit-alt bx-sm');
-          $('#modalFormTitle').html('#{__('CreatingPlayer')}');
-          $('#modalFormForm').attr('action', '/players/create/');
-          $('#modalFormForm').attr('method', 'POST');
-          $.ajax({
-            type: 'GET',
-            url: '/players/new'
-          })
-          .done(function(data){
-              $("#modalFormBody").html(data);
-              $('#modalForm').modal('show');
-          });
-        }
-
-        // delete a player
-        function deletePlayer(id){
-          $.ajax({
-            type: 'DELETE',
-            url: '/players/delete/'+ id
-          })
-          .done(()=>{
-            window.location.href="/players/";
-          })
-        }
-       
-
-        $('#modalFormSubmitButton').on('click', function() {
-          var datastring = $("#modalFormForm").serialize();
-          $(".is-invalid:visible").removeClass('is-invalid');
-          $.ajax({
-              type: "POST",
-              url:$("#modalFormForm").attr('action'),
-              data: datastring,
-              dataType: "json",
-              success: function(data) {
-                  window.location.href="/players/";
-              },
-              error: function(error) {
-                error.responseJSON.forEach((e)=> {
-                  $("[name="+e.path+"]").addClass('is-invalid');
-                  $("#invalid-"+e.path).html(e.msg);
-                });
-                $(".is-invalid:visible:first").select().focus();
-              }
-          });
-        });
+        
 
   

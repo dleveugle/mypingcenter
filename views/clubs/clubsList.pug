@@ -1,20 +1,21 @@
 extends ../layout
 
 block content
+  -var model='club'
  
   .card.border-0
     .card-header.border-0.bg-transparent
       #table-buttons.inline 
-      +_newButton("newClub()", __('CreatingClub') , __('NewClub'))
+      +_newButton("newModel()", __(_.camelCase("creating-"+ model)), __(_.camelCase("new-"+ model)))
 
     .card-body.border-0.striped
       table#pingTable.table.table-striped.table-hover
         thead 
           tr
             th(scope="col") #
-            th(scope="col") #{__('ClubShortDescription')}
-            th(scope="col") #{__('ClubName')}
-            th.text-center(scope="col") #{__('NumberOfPlayers')}
+            th(scope="col") #{__('clubShortDescription')}
+            th(scope="col") #{__('clubName')}
+            th.text-center(scope="col") #{__('numberOfPlayers')}
             th
         tbody 
           each val in list
@@ -25,93 +26,10 @@ block content
               td.text-center= val.nbplayers
               td.text-center  
                 .btn-group.ms-2(role="group")
-                  +_editButton("editClub("+val.id+")")
+                  +_editButton("editModel("+val.id+")")
 
                 .btn-group.ms-2(role="group")
-                  +_deleteButton("deleteClub("+val.id+")")
+                  +_deleteButton("deleteModel("+val.id+")")
 
           
       include /includes/modalform.pug
-              
-
-
-      script.
-        // when modal form is shown
-        $(".modal").on('shown.bs.modal', function () {
-          // redirect keypress event of input to submit button
-          $("#modalFormBody input:visible").on("keypress", function(event) {
-            if (event.key === "Enter") {
-              event.preventDefault();
-              $('#modalFormSubmitButton').click();
-            }
-          });
-          $(this).find("input:visible:first").select().focus();
-        });
-
-        // edit a club
-        function editClub(id){
-          $('#modalFormHeaderImage').attr('class', 'bx bx-edit-alt bx-sm');
-          $('#modalFormTitle').html('#{__('EditingClub')}');
-          $('#modalFormForm').attr('action', '/clubs/edit/'+ id);
-          $('#modalFormForm').attr('method', 'POST');
-          
-          $.ajax({
-            type: 'GET',
-            url: '/clubs/edit/'+ id
-          })
-          .done(function(data, id){
-              $("#modalFormBody").html(data);
-              $('#modalForm').modal('show');
-          });
-        }
-
-        // create a new club
-        function newClub(){
-          $('#modalFormHeaderImage').attr('class', 'bx bx-edit-alt bx-sm');
-          $('#modalFormTitle').html('#{__('CreatingClub')}');
-          $('#modalFormForm').attr('action', '/clubs/create/');
-          $('#modalFormForm').attr('method', 'POST');
-          $.ajax({
-            type: 'GET',
-            url: '/clubs/new'
-          })
-          .done(function(data){
-              $("#modalFormBody").html(data);
-              $('#modalForm').modal('show');
-          });
-        }
-
-        // delete a club
-        function deleteClub(id){
-          $.ajax({
-            type: 'DELETE',
-            url: '/clubs/delete/'+ id
-          })
-          .done(()=>{
-            window.location.href="/clubs/";
-          })
-        }
-       
-
-        $('#modalFormSubmitButton').on('click', function() {
-          var datastring = $("#modalFormForm").serialize();
-          $(".is-invalid:visible").removeClass('is-invalid');
-          $.ajax({
-              type: "POST",
-              url:$("#modalFormForm").attr('action'),
-              data: datastring,
-              dataType: "json",
-              success: function(data) {
-                  window.location.href="/clubs/";
-              },
-              error: function(error) {
-                error.responseJSON.forEach((e)=> {
-                  $("[name="+e.path+"]").addClass('is-invalid');
-                  $("#invalid-"+e.path).html(e.msg);
-                });
-                $(".is-invalid:visible:first").select().focus();
-              }
-          });
-        });
-
-  

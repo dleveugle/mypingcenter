@@ -28,6 +28,10 @@ a{
   text-decoration: none
 }
 
+.button-div{
+  padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+}
+
 div.flash-message{
   opacity: 0;
   position: fixed;

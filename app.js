@@ -48,7 +48,9 @@ app.use('/datatables-bs5', express.static(__dirname + '/node_modules/datatables.
 app.use('/datatables-buttons', express.static(__dirname + '/node_modules/datatables.net-buttons/'));
 app.use('/datatables-buttons-bs5', express.static(__dirname + '/node_modules/datatables.net-buttons-bs5/'));
 app.use('/datatables-select-bs5', express.static(__dirname + '/node_modules/datatables.net-select-bs5/'));
+app.use('/services', express.static(__dirname + '/services/'));
 app.use('/jszip', express.static(__dirname + '/node_modules/jszip/dist/'));
+app.use('/lodash', express.static(__dirname + '/node_modules/lodash/'));
 
 
 app.use(session({
@@ -69,6 +71,8 @@ app.use(function(req, res, next) {
   res.locals.moment = require('moment');
   var path = req.url.split('/');
   res.locals.path = path[1] ? path[1] : '';
+  res.locals.url = require('./services/myUrl');
+  res.locals._ = require('lodash');
   next();
 });
 
@@ -111,10 +115,6 @@ app.use((req, res, next) => {
   next();
 });
 //***************************************************************************************
-
-
-
-
 
 // Routers
 app.use((req, res, next) => {

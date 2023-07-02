@@ -6,22 +6,22 @@
                 span(class="nav_logo-name") #{__('MyApplication')}
 
             #nav_list   
-                a(class="nav_link" class={"active": path === 'clubs'} href="/clubs")
+                a(class="nav_link" class={"active": path === 'clubs'} href=url.__url('club'))
                     i(class="bx bx-building-house nav_icon")
                     span(class="nav_name")   #{__('Clubs')}
 
             #nav_list   
-                a(class="nav_link" class={"active": path === 'players'} href="/players")
+                a(class="nav_link" class={"active": path === 'players'} href=url.__url('player'))
                     i(class="bx bx-user nav_icon")
                     span(class="nav_name")   #{__('Players')}
 
             #nav_list   
-                a(class="nav_link" class={"active": path === 'teams'} href="/teams")
+                a(class="nav_link" class={"active": path === 'teams'} href=url.__url('team'))
                     i(class="bx bx-group nav_icon")
                     span(class="nav_name")   #{__('Teams')}
 
             #nav_list   
-                a(class="nav_link" class={"active": path === 'params'} href="/params")
+                a(class="nav_link" class={"active": path === 'params'} href=url.__url('param'))
                     i(class="bx bx-cog nav_icon")
                     span(class="nav_name")   #{__('Parameters')}
 

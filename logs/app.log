@@ -4192,3 +4192,1930 @@ Syntax Error: Unexpected token
     "nbplayers": 0
   }
 ]
+2023-07-02T13:00:57.505Z info: Received a GET request for /
+2023-07-02T13:00:57.510Z info: Request params: {}
+2023-07-02T13:00:58.840Z info: Received a GET request for /favicon.ico
+2023-07-02T13:00:58.841Z info: Request params: {}
+2023-07-02T13:00:58.844Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:139:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-07-02T13:01:00.551Z info: Received a GET request for /players
+2023-07-02T13:01:00.554Z debug: <Player> controller has been called for <players_list>
+2023-07-02T13:01:00.552Z info: Request params: {}
+2023-07-02T13:01:00.555Z debug: Request params: {}
+2023-07-02T13:03:48.009Z info: Received a GET request for /players
+2023-07-02T13:03:48.011Z debug: <Player> controller has been called for <players_list>
+2023-07-02T13:03:48.010Z info: Request params: {}
+2023-07-02T13:03:48.011Z debug: Request params: {}
+2023-07-02T13:03:54.479Z info: Received a GET request for /clubs
+2023-07-02T13:03:54.482Z debug: <Club> controller has been called for <clubs_list>
+2023-07-02T13:03:54.480Z info: Request params: {}
+2023-07-02T13:03:54.483Z debug: Request params: {}
+2023-07-02T13:03:54.498Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-07-02T13:04:19.006Z info: Received a GET request for /clubs
+2023-07-02T13:04:19.008Z debug: <Club> controller has been called for <clubs_list>
+2023-07-02T13:04:19.007Z info: Request params: {}
+2023-07-02T13:04:19.008Z debug: Request params: {}
+2023-07-02T13:04:19.018Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-07-02T13:04:22.162Z info: Received a GET request for /clubs
+2023-07-02T13:04:22.163Z debug: <Club> controller has been called for <clubs_list>
+2023-07-02T13:04:22.163Z info: Request params: {}
+2023-07-02T13:04:22.164Z debug: Request params: {}
+2023-07-02T13:04:22.173Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-07-02T13:04:22.651Z info: Received a GET request for /favicon.ico
+2023-07-02T13:04:22.652Z info: Request params: {}
+2023-07-02T13:04:22.654Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:139:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-07-02T13:04:31.131Z info: Received a GET request for /players
+2023-07-02T13:04:31.133Z debug: <Player> controller has been called for <players_list>
+2023-07-02T13:04:31.132Z info: Request params: {}
+2023-07-02T13:04:31.134Z debug: Request params: {}
+2023-07-02T13:05:44.569Z info: Received a GET request for /players
+2023-07-02T13:05:44.570Z debug: <Player> controller has been called for <players_list>
+2023-07-02T13:05:44.570Z info: Request params: {}
+2023-07-02T13:05:44.571Z debug: Request params: {}
+2023-07-02T13:05:50.893Z info: Received a GET request for /clubs
+2023-07-02T13:05:50.895Z debug: <Club> controller has been called for <clubs_list>
+2023-07-02T13:05:50.894Z info: Request params: {}
+2023-07-02T13:05:50.895Z debug: Request params: {}
+2023-07-02T13:05:50.905Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-07-02T13:07:17.059Z info: Received a GET request for /clubs
+2023-07-02T13:07:17.061Z debug: <Club> controller has been called for <clubs_list>
+2023-07-02T13:07:17.060Z info: Request params: {}
+2023-07-02T13:07:17.063Z debug: Request params: {}
+2023-07-02T13:07:17.075Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-07-02T13:07:35.153Z info: Received a GET request for /params
+2023-07-02T13:07:35.154Z debug: <Params> controller has been called for <params_list>
+2023-07-02T13:07:35.153Z info: Request params: {}
+2023-07-02T13:07:35.155Z debug: Request params: {}
+2023-07-02T13:07:35.164Z debug: Results sent back {
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ]
+}
+2023-07-02T13:11:36.763Z info: Received a GET request for /params
+2023-07-02T13:11:36.764Z debug: <Params> controller has been called for <params_list>
+2023-07-02T13:11:36.763Z info: Request params: {}
+2023-07-02T13:11:36.764Z debug: Request params: {}
+2023-07-02T13:11:36.779Z debug: Results sent back {
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ]
+}
+2023-07-02T13:11:36.845Z error: Error: C:\dev\node\pingcenter\views\params\rolesList.pug:20:1
+    18| 
+    19|           
+  > 20|       include /includes/modalform.pug
+--------^
+    21|               
+
+Inconsistent indentation. Expecting either 0 or 8 spaces/tabs.
+    at makeError (C:\dev\node\pingcenter\node_modules\pug-error\index.js:34:13)
+    at Lexer.error (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:62:15)
+    at Lexer.indent (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1515:18)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.advance (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1688:12)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.getTokens (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1706:12)
+    at lex (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:12:42)
+    at Object.lex (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:104:9)
+    at Function.loadString [as string] (C:\dev\node\pingcenter\node_modules\pug-load\index.js:53:24)
+2023-07-02T13:12:11.759Z info: Received a GET request for /params
+2023-07-02T13:12:11.761Z debug: <Params> controller has been called for <params_list>
+2023-07-02T13:12:11.760Z info: Request params: {}
+2023-07-02T13:12:11.761Z debug: Request params: {}
+2023-07-02T13:12:11.773Z debug: Results sent back {
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ]
+}
+2023-07-02T13:12:11.823Z error: Error: C:\dev\node\pingcenter\views\params\rolesList.pug:9:1
+    7|     tbody 
+    8|         each val in data
+  > 9|         tr(class="align-middle")
+-------^
+    10|             td #{val.shortdesc} 
+    11|             td #{val.longdesc}
+    12|             td.text-center #{val.icon}
+
+expected "indent", but got "newline"
+    at makeError (C:\dev\node\pingcenter\node_modules\pug-error\index.js:34:13)
+    at Parser.error (C:\dev\node\pingcenter\node_modules\pug-parser\index.js:56:15)
+    at Parser.expect (C:\dev\node\pingcenter\node_modules\pug-parser\index.js:140:12)
+    at Parser.block (C:\dev\node\pingcenter\node_modules\pug-parser\index.js:1065:20)
+    at Parser.parseEach (C:\dev\node\pingcenter\node_modules\pug-parser\index.js:787:19)
+    at Parser.parseExpr (C:\dev\node\pingcenter\node_modules\pug-parser\index.js:250:21)
+    at Parser.block (C:\dev\node\pingcenter\node_modules\pug-parser\index.js:1073:25)
+    at Parser.tag (C:\dev\node\pingcenter\node_modules\pug-parser\index.js:1261:24)
+    at Parser.parseTag (C:\dev\node\pingcenter\node_modules\pug-parser\index.js:1126:17)
+    at Parser.parseExpr (C:\dev\node\pingcenter\node_modules\pug-parser\index.js:222:21)
+2023-07-02T13:12:22.060Z info: Received a GET request for /params
+2023-07-02T13:12:22.062Z debug: <Params> controller has been called for <params_list>
+2023-07-02T13:12:22.061Z info: Request params: {}
+2023-07-02T13:12:22.062Z debug: Request params: {}
+2023-07-02T13:12:22.075Z debug: Results sent back {
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ]
+}
+2023-07-02T13:12:40.022Z info: Received a GET request for /params
+2023-07-02T13:12:40.024Z debug: <Params> controller has been called for <params_list>
+2023-07-02T13:12:40.023Z info: Request params: {}
+2023-07-02T13:12:40.024Z debug: Request params: {}
+2023-07-02T13:12:40.034Z debug: Results sent back {
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ]
+}
+2023-07-02T13:12:52.069Z info: Received a GET request for /params
+2023-07-02T13:12:52.070Z debug: <Params> controller has been called for <params_list>
+2023-07-02T13:12:52.069Z info: Request params: {}
+2023-07-02T13:12:52.071Z debug: Request params: {}
+2023-07-02T13:12:52.081Z debug: Results sent back {
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ]
+}
+2023-07-02T13:13:49.799Z info: Received a GET request for /params
+2023-07-02T13:13:49.800Z debug: <Params> controller has been called for <params_list>
+2023-07-02T13:13:49.800Z info: Request params: {}
+2023-07-02T13:13:49.801Z debug: Request params: {}
+2023-07-02T13:13:49.814Z debug: Results sent back {
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ]
+}
+2023-07-02T13:13:49.871Z error: Error: C:\dev\node\pingcenter\views\params\rolesList.pug:22:1
+    20|           
+    21| include /includes/modalform.pug
+  > 22|               
+--------^
+
+Invalid indentation, you can use tabs or spaces but not both
+    at makeError (C:\dev\node\pingcenter\node_modules\pug-error\index.js:34:13)
+    at Lexer.error (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:62:15)
+    at Lexer.indent (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1498:14)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.advance (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1688:12)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.getTokens (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1706:12)
+    at lex (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:12:42)
+    at Object.lex (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:104:9)
+    at Function.loadString [as string] (C:\dev\node\pingcenter\node_modules\pug-load\index.js:53:24)
+2023-07-02T13:14:06.235Z info: Received a GET request for /params
+2023-07-02T13:14:06.237Z debug: <Params> controller has been called for <params_list>
+2023-07-02T13:14:06.236Z info: Request params: {}
+2023-07-02T13:14:06.238Z debug: Request params: {}
+2023-07-02T13:14:06.247Z debug: Results sent back {
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ]
+}
+2023-07-02T13:14:06.302Z error: Error: C:\dev\node\pingcenter\views\params\rolesList.pug:21:1
+    19| 
+    20| include /includes/modalform.pug
+  > 21|               
+--------^
+
+Invalid indentation, you can use tabs or spaces but not both
+    at makeError (C:\dev\node\pingcenter\node_modules\pug-error\index.js:34:13)
+    at Lexer.error (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:62:15)
+    at Lexer.indent (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1498:14)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.advance (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1688:12)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.getTokens (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1706:12)
+    at lex (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:12:42)
+    at Object.lex (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:104:9)
+    at Function.loadString [as string] (C:\dev\node\pingcenter\node_modules\pug-load\index.js:53:24)
+2023-07-02T13:14:13.705Z info: Received a GET request for /params
+2023-07-02T13:14:13.707Z debug: <Params> controller has been called for <params_list>
+2023-07-02T13:14:13.706Z info: Request params: {}
+2023-07-02T13:14:13.708Z debug: Request params: {}
+2023-07-02T13:14:13.711Z debug: Results sent back {
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ]
+}
+2023-07-02T13:14:34.022Z info: Received a GET request for /params
+2023-07-02T13:14:34.023Z debug: <Params> controller has been called for <params_list>
+2023-07-02T13:14:34.023Z info: Request params: {}
+2023-07-02T13:14:34.024Z debug: Request params: {}
+2023-07-02T13:14:34.031Z debug: Results sent back {
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ]
+}
+2023-07-02T13:14:51.024Z info: Received a GET request for /params
+2023-07-02T13:14:51.027Z debug: <Params> controller has been called for <params_list>
+2023-07-02T13:14:51.025Z info: Request params: {}
+2023-07-02T13:14:51.028Z debug: Request params: {}
+2023-07-02T13:14:51.035Z debug: Results sent back {
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ]
+}
+2023-07-02T13:55:54.349Z info: Received a GET request for /players
+2023-07-02T13:55:54.358Z debug: <Player> controller has been called for <players_list>
+2023-07-02T13:55:54.354Z info: Request params: {}
+2023-07-02T13:55:54.359Z debug: Request params: {}
+2023-07-02T13:58:05.389Z info: Received a GET request for /players
+2023-07-02T13:58:05.394Z debug: <Player> controller has been called for <players_list>
+2023-07-02T13:58:05.392Z info: Request params: {}
+2023-07-02T13:58:05.395Z debug: Request params: {}
+2023-07-02T13:58:08.234Z info: Received a GET request for /players/edit/10
+2023-07-02T13:58:08.237Z debug: <Player> controller has been called for <player_details_get>
+2023-07-02T13:58:08.235Z info: Request params: {}
+2023-07-02T13:58:08.238Z debug: Request params: {
+  "id": "10"
+}
+2023-07-02T13:58:08.262Z debug: Results sent back {
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ],
+  "player": {
+    "id": 10,
+    "firstname": "Benjamin",
+    "lastname": "VILAIN",
+    "birthdate": null,
+    "ranking": 762,
+    "clubId": 1,
+    "roleId": null,
+    "role": null
+  }
+}
+2023-07-02T13:58:14.806Z info: Received a GET request for /players/edit/3
+2023-07-02T13:58:14.808Z debug: <Player> controller has been called for <player_details_get>
+2023-07-02T13:58:14.807Z info: Request params: {}
+2023-07-02T13:58:14.809Z debug: Request params: {
+  "id": "3"
+}
+2023-07-02T13:58:14.828Z debug: Results sent back {
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ],
+  "player": {
+    "id": 3,
+    "firstname": "Christophe",
+    "lastname": "COUTURE",
+    "birthdate": null,
+    "ranking": 983,
+    "clubId": 1,
+    "roleId": null,
+    "role": null
+  }
+}
+2023-07-02T14:31:38.599Z info: Received a GET request for /players
+2023-07-02T14:31:38.603Z debug: <Player> controller has been called for <players_list>
+2023-07-02T14:31:38.602Z info: Request params: {}
+2023-07-02T14:31:38.605Z debug: Request params: {}
+2023-07-02T14:33:08.043Z info: Received a GET request for /players
+2023-07-02T14:33:08.048Z debug: <Player> controller has been called for <players_list>
+2023-07-02T14:33:08.048Z debug: Request params: {}
+2023-07-02T14:33:08.046Z info: Request params: {}
+2023-07-02T14:33:23.311Z info: Received a GET request for /players
+2023-07-02T14:33:23.315Z debug: <Player> controller has been called for <players_list>
+2023-07-02T14:33:23.313Z info: Request params: {}
+2023-07-02T14:33:23.316Z debug: Request params: {}
+2023-07-02T14:36:28.826Z info: Received a GET request for /players
+2023-07-02T14:36:28.831Z debug: <Player> controller has been called for <players_list>
+2023-07-02T14:36:28.830Z info: Request params: {}
+2023-07-02T14:36:28.832Z debug: Request params: {}
+2023-07-02T14:41:41.772Z info: Received a GET request for /players
+2023-07-02T14:41:41.784Z debug: <Player> controller has been called for <players_list>
+2023-07-02T14:41:41.778Z info: Request params: {}
+2023-07-02T14:41:41.785Z debug: Request params: {}
+2023-07-02T14:41:45.647Z info: Received a GET request for /players/edit/10
+2023-07-02T14:41:45.650Z debug: <Player> controller has been called for <player_details_get>
+2023-07-02T14:41:45.648Z info: Request params: {}
+2023-07-02T14:41:45.651Z debug: Request params: {
+  "id": "10"
+}
+2023-07-02T14:41:45.682Z debug: Results sent back {
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ],
+  "player": {
+    "id": 10,
+    "firstname": "Benjamin",
+    "lastname": "VILAIN",
+    "birthdate": null,
+    "ranking": 762,
+    "clubId": 1,
+    "roleId": null,
+    "role": null
+  }
+}
+2023-07-02T14:43:29.294Z info: Received a GET request for /players
+2023-07-02T14:43:29.299Z debug: <Player> controller has been called for <players_list>
+2023-07-02T14:43:29.297Z info: Request params: {}
+2023-07-02T14:43:29.299Z debug: Request params: {}
+2023-07-02T14:43:29.624Z error: Error: C:\dev\node\pingcenter\views\includes\sidebar.pug:9:76
+    7| 
+    8|             #nav_list   
+  > 9|                 a(class="nav_link" class={"active": path === 'clubs'} href=#{__url('clubs')})
+----------------------------------------------------------------------------------^
+    10|                     i(class="bx bx-building-house nav_icon")
+    11|                     span(class="nav_name")   #{__('Clubs')}
+    12| 
+
+Syntax Error: Unexpected character '#'
+    at makeError (C:\dev\node\pingcenter\node_modules\pug-error\index.js:34:13)
+    at Lexer.error (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:62:15)
+    at Lexer.assertExpression (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:96:12)
+    at Lexer.attributeValue (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1428:10)
+    at Lexer.attribute (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1275:30)
+    at Lexer.attrs (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1454:20)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.advance (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1686:12)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.getTokens (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1706:12)
+2023-07-02T14:43:47.736Z info: Received a GET request for /players
+2023-07-02T14:43:47.743Z debug: <Player> controller has been called for <players_list>
+2023-07-02T14:43:47.737Z info: Request params: {}
+2023-07-02T14:43:47.744Z debug: Request params: {}
+2023-07-02T14:45:58.646Z info: Received a GET request for /players
+2023-07-02T14:45:58.652Z debug: <Player> controller has been called for <players_list>
+2023-07-02T14:45:58.650Z info: Request params: {}
+2023-07-02T14:45:58.653Z debug: Request params: {}
+2023-07-02T14:46:01.708Z info: Received a GET request for /players/edit/10
+2023-07-02T14:46:01.714Z debug: <Player> controller has been called for <player_details_get>
+2023-07-02T14:46:01.711Z info: Request params: {}
+2023-07-02T14:46:01.715Z debug: Request params: {
+  "id": "10"
+}
+2023-07-02T14:46:01.751Z debug: Results sent back {
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ],
+  "player": {
+    "id": 10,
+    "firstname": "Benjamin",
+    "lastname": "VILAIN",
+    "birthdate": null,
+    "ranking": 762,
+    "clubId": 1,
+    "roleId": null,
+    "role": null
+  }
+}
+2023-07-02T14:48:12.736Z info: Received a GET request for /players/edit/10
+2023-07-02T14:48:12.738Z debug: <Player> controller has been called for <player_details_get>
+2023-07-02T14:48:12.737Z info: Request params: {}
+2023-07-02T14:48:12.739Z debug: Request params: {
+  "id": "10"
+}
+2023-07-02T14:48:12.772Z debug: Results sent back {
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ],
+  "player": {
+    "id": 10,
+    "firstname": "Benjamin",
+    "lastname": "VILAIN",
+    "birthdate": null,
+    "ranking": 762,
+    "clubId": 1,
+    "roleId": null,
+    "role": null
+  }
+}
+2023-07-02T14:48:16.692Z info: Received a GET request for /'/clubs'
+2023-07-02T14:48:16.693Z info: Request params: {}
+2023-07-02T14:48:16.695Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:137:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-07-02T14:49:43.790Z info: Received a GET request for /'/clubs'
+2023-07-02T14:49:43.791Z info: Request params: {}
+2023-07-02T14:49:43.792Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:137:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-07-02T14:49:46.360Z info: Received a GET request for /'/'/clubs'
+2023-07-02T14:49:46.361Z info: Request params: {}
+2023-07-02T14:49:46.362Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:137:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-07-02T14:49:50.147Z info: Received a GET request for /players
+2023-07-02T14:49:50.149Z debug: <Player> controller has been called for <players_list>
+2023-07-02T14:49:50.148Z info: Request params: {}
+2023-07-02T14:49:50.150Z debug: Request params: {}
+2023-07-02T14:49:53.429Z info: Received a GET request for /'/clubs'
+2023-07-02T14:49:53.430Z info: Request params: {}
+2023-07-02T14:49:53.431Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:137:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-07-02T14:50:08.619Z info: Received a GET request for /'/clubs'
+2023-07-02T14:50:08.622Z info: Request params: {}
+2023-07-02T14:50:08.624Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:137:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-07-02T14:50:10.602Z info: Received a GET request for /players
+2023-07-02T14:50:10.606Z debug: <Player> controller has been called for <players_list>
+2023-07-02T14:50:10.603Z info: Request params: {}
+2023-07-02T14:50:10.607Z debug: Request params: {}
+2023-07-02T14:50:12.001Z info: Received a GET request for /clubs
+2023-07-02T14:50:12.003Z debug: <Club> controller has been called for <clubs_list>
+2023-07-02T14:50:12.002Z info: Request params: {}
+2023-07-02T14:50:12.005Z debug: Request params: {}
+2023-07-02T14:50:12.020Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-07-02T14:50:15.693Z info: Received a GET request for /players
+2023-07-02T14:50:15.695Z debug: <Player> controller has been called for <players_list>
+2023-07-02T14:50:15.693Z info: Request params: {}
+2023-07-02T14:50:15.696Z debug: Request params: {}
+2023-07-02T14:50:17.366Z info: Received a GET request for /players/edit/10
+2023-07-02T14:50:17.367Z debug: <Player> controller has been called for <player_details_get>
+2023-07-02T14:50:17.366Z info: Request params: {}
+2023-07-02T14:50:17.368Z debug: Request params: {
+  "id": "10"
+}
+2023-07-02T14:50:17.390Z debug: Results sent back {
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ],
+  "player": {
+    "id": 10,
+    "firstname": "Benjamin",
+    "lastname": "VILAIN",
+    "birthdate": null,
+    "ranking": 762,
+    "clubId": 1,
+    "roleId": null,
+    "role": null
+  }
+}
+2023-07-02T14:51:08.888Z info: Received a GET request for /players
+2023-07-02T14:51:08.891Z debug: <Player> controller has been called for <players_list>
+2023-07-02T14:51:08.889Z info: Request params: {}
+2023-07-02T14:51:08.893Z debug: Request params: {}
+2023-07-02T14:51:10.547Z info: Received a GET request for /playeredit10
+2023-07-02T14:51:10.548Z info: Request params: {}
+2023-07-02T14:51:10.549Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:137:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-07-02T14:52:30.624Z info: Received a GET request for /players
+2023-07-02T14:52:30.631Z debug: <Player> controller has been called for <players_list>
+2023-07-02T14:52:30.629Z info: Request params: {}
+2023-07-02T14:52:30.632Z debug: Request params: {}
+2023-07-02T14:52:32.656Z info: Received a GET request for /player/edit/10
+2023-07-02T14:52:32.657Z info: Request params: {}
+2023-07-02T14:52:32.659Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:137:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-07-02T14:52:59.762Z info: Received a GET request for /players
+2023-07-02T14:52:59.764Z debug: <Player> controller has been called for <players_list>
+2023-07-02T14:52:59.763Z info: Request params: {}
+2023-07-02T14:52:59.765Z debug: Request params: {}
+2023-07-02T14:53:01.781Z info: Received a GET request for /players/edit/10
+2023-07-02T14:53:01.783Z debug: <Player> controller has been called for <player_details_get>
+2023-07-02T14:53:01.781Z info: Request params: {}
+2023-07-02T14:53:01.784Z debug: Request params: {
+  "id": "10"
+}
+2023-07-02T14:53:01.804Z debug: Results sent back {
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ],
+  "player": {
+    "id": 10,
+    "firstname": "Benjamin",
+    "lastname": "VILAIN",
+    "birthdate": null,
+    "ranking": 762,
+    "clubId": 1,
+    "roleId": null,
+    "role": null
+  }
+}
+2023-07-02T14:53:06.977Z info: Received a POST request for /players/edit/10
+2023-07-02T14:53:06.984Z debug: <Player> controller has been called for <player_update>
+2023-07-02T14:53:06.978Z info: Request params: {}
+2023-07-02T14:53:06.985Z debug: Request params: {
+  "id": "10"
+}
+2023-07-02T14:53:07.030Z info: Received a GET request for /players/
+2023-07-02T14:53:07.034Z debug: <Player> controller has been called for <players_list>
+2023-07-02T14:53:07.031Z info: Request params: {}
+2023-07-02T14:53:07.035Z debug: Request params: {}
+2023-07-02T14:53:10.571Z info: Received a GET request for /players/edit/10
+2023-07-02T14:53:10.572Z debug: <Player> controller has been called for <player_details_get>
+2023-07-02T14:53:10.572Z info: Request params: {}
+2023-07-02T14:53:10.573Z debug: Request params: {
+  "id": "10"
+}
+2023-07-02T14:53:10.592Z debug: Results sent back {
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ],
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    }
+  ],
+  "player": {
+    "id": 10,
+    "firstname": "Benjamin",
+    "lastname": "VILAIN",
+    "birthdate": null,
+    "ranking": 762,
+    "clubId": 2,
+    "roleId": null,
+    "role": null
+  }
+}
+2023-07-02T14:53:17.144Z info: Received a POST request for /players/edit/10
+2023-07-02T14:53:17.146Z debug: <Player> controller has been called for <player_update>
+2023-07-02T14:53:17.147Z debug: Request params: {
+  "id": "10"
+}
+2023-07-02T14:53:17.145Z info: Request params: {}
+2023-07-02T14:53:17.176Z info: Received a GET request for /players/
+2023-07-02T14:53:17.177Z debug: <Player> controller has been called for <players_list>
+2023-07-02T14:53:17.176Z info: Request params: {}
+2023-07-02T14:53:17.178Z debug: Request params: {}
+2023-07-02T14:58:22.926Z info: Received a GET request for /players/
+2023-07-02T14:58:22.928Z debug: <Player> controller has been called for <players_list>
+2023-07-02T14:58:22.927Z info: Request params: {}
+2023-07-02T14:58:22.929Z debug: Request params: {}
+2023-07-02T14:58:22.960Z error: Error: C:\dev\node\pingcenter\views\players\playersList.pug:9:22
+    7|     .card-header.border-0.bg-transparent
+    8|       #table-buttons.inline 
+  > 9|         +_newButton(#{"new"+ model}, __('CreatingPlayer'), __('NewPlayer'))
+----------------------------^
+    10| 
+    11|     .card-body.border-0.striped
+    12|       table#pingTable.table.table-striped.table-hover
+
+Syntax Error: Unexpected character '#'
+    at makeError (C:\dev\node\pingcenter\node_modules\pug-error\index.js:34:13)
+    at Lexer.error (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:62:15)
+    at Lexer.assertExpression (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:96:12)
+    at Lexer.call (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:949:16)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.advance (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1674:12)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.getTokens (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1706:12)
+    at lex (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:12:42)
+    at Object.lex (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:104:9)
+2023-07-02T14:58:41.977Z info: Received a GET request for /players/
+2023-07-02T14:58:41.978Z debug: <Player> controller has been called for <players_list>
+2023-07-02T14:58:41.977Z info: Request params: {}
+2023-07-02T14:58:41.979Z debug: Request params: {}
+2023-07-02T15:00:42.848Z info: Received a GET request for /players/
+2023-07-02T15:00:42.850Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:00:42.849Z info: Request params: {}
+2023-07-02T15:00:42.851Z debug: Request params: {}
+2023-07-02T15:04:00.869Z info: Received a GET request for /players/
+2023-07-02T15:04:00.875Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:04:00.878Z debug: Request params: {}
+2023-07-02T15:04:00.873Z info: Request params: {}
+2023-07-02T15:04:01.415Z error: TypeError: C:\dev\node\pingcenter\views\players\playersList.pug:9
+    7|     .card-header.border-0.bg-transparent
+    8|       #table-buttons.inline 
+  > 9|         +_newButton("new"+ _.camelCase(model) + "()", __('CreatingPlayer'), __('NewPlayer'))
+    10| 
+    11|     .card-body.border-0.striped
+    12|       table#pingTable.table.table-striped.table-hover
+
+Cannot read properties of undefined (reading 'camelCase')
+    at eval (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:348:35)
+    at template (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:879:7)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:454:38)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:444:21)
+    at exports.__express [as engine] (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:493:11)
+    at View.render (C:\dev\node\pingcenter\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\dev\node\pingcenter\node_modules\express\lib\application.js:657:10)
+    at Function.render (C:\dev\node\pingcenter\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (C:\dev\node\pingcenter\node_modules\express\lib\response.js:1039:7)
+    at C:\dev\node\pingcenter\controllers\playerController.js:25:13
+2023-07-02T15:04:28.586Z info: Received a GET request for /players/
+2023-07-02T15:04:28.591Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:04:28.589Z info: Request params: {}
+2023-07-02T15:04:28.592Z debug: Request params: {}
+2023-07-02T15:04:28.836Z error: Error: C:\dev\node\pingcenter\views\players\playersList.pug:9:29
+    7|     .card-header.border-0.bg-transparent
+    8|       #table-buttons.inline 
+  > 9|         +_newButton("new"+ #{_.camelCase(model)} + "()", __('CreatingPlayer'), __('NewPlayer'))
+-----------------------------------^
+    10| 
+    11|     .card-body.border-0.striped
+    12|       table#pingTable.table.table-striped.table-hover
+
+Syntax Error: Unexpected character '#'
+    at makeError (C:\dev\node\pingcenter\node_modules\pug-error\index.js:34:13)
+    at Lexer.error (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:62:15)
+    at Lexer.assertExpression (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:96:12)
+    at Lexer.call (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:949:16)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.advance (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1674:12)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.getTokens (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1706:12)
+    at lex (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:12:42)
+    at Object.lex (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:104:9)
+2023-07-02T15:07:09.355Z info: Received a GET request for /players/
+2023-07-02T15:07:09.364Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:07:09.361Z info: Request params: {}
+2023-07-02T15:07:09.366Z debug: Request params: {}
+2023-07-02T15:07:09.666Z error: Error: C:\dev\node\pingcenter\views\players\playersList.pug:9:30
+    7|     .card-header.border-0.bg-transparent
+    8|       #table-buttons.inline 
+  > 9|         +_newButton("new" + #{_.camelCase(model)} + "()", __('CreatingPlayer'), __('NewPlayer'))
+------------------------------------^
+    10| 
+    11|     .card-body.border-0.striped
+    12|       table#pingTable.table.table-striped.table-hover
+
+Syntax Error: Unexpected character '#'
+    at makeError (C:\dev\node\pingcenter\node_modules\pug-error\index.js:34:13)
+    at Lexer.error (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:62:15)
+    at Lexer.assertExpression (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:96:12)
+    at Lexer.call (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:949:16)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.advance (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1674:12)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.getTokens (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1706:12)
+    at lex (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:12:42)
+    at Object.lex (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:104:9)
+2023-07-02T15:07:24.381Z info: Received a GET request for /
+2023-07-02T15:07:24.382Z info: Request params: {}
+2023-07-02T15:09:07.026Z info: Received a GET request for /players/
+2023-07-02T15:09:07.031Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:09:07.030Z info: Request params: {}
+2023-07-02T15:09:07.033Z debug: Request params: {}
+2023-07-02T15:09:07.338Z error: Error: C:\dev\node\pingcenter\views\players\playersList.pug:9:30
+    7|     .card-header.border-0.bg-transparent
+    8|       #table-buttons.inline 
+  > 9|         +_newButton("new" + #{_.camelCase(model)} + "()", __('CreatingPlayer'), __('NewPlayer'))
+------------------------------------^
+    10| 
+    11|     .card-body.border-0.striped
+    12|       table#pingTable.table.table-striped.table-hover
+
+Syntax Error: Unexpected character '#'
+    at makeError (C:\dev\node\pingcenter\node_modules\pug-error\index.js:34:13)
+    at Lexer.error (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:62:15)
+    at Lexer.assertExpression (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:96:12)
+    at Lexer.call (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:949:16)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.advance (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1674:12)
+    at Lexer.callLexerFunction (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1647:23)
+    at Lexer.getTokens (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:1706:12)
+    at lex (C:\dev\node\pingcenter\node_modules\pug-lexer\index.js:12:42)
+    at Object.lex (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:104:9)
+2023-07-02T15:09:25.835Z info: Received a GET request for /players/
+2023-07-02T15:09:25.838Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:09:25.836Z info: Request params: {}
+2023-07-02T15:09:25.839Z debug: Request params: {}
+2023-07-02T15:09:52.355Z info: Received a GET request for /players/
+2023-07-02T15:09:52.360Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:09:52.359Z info: Request params: {}
+2023-07-02T15:09:52.361Z debug: Request params: {}
+2023-07-02T15:10:05.574Z info: Received a GET request for /
+2023-07-02T15:10:05.575Z info: Request params: {}
+2023-07-02T15:11:38.228Z info: Received a GET request for /players/
+2023-07-02T15:11:38.229Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:11:38.228Z info: Request params: {}
+2023-07-02T15:11:38.230Z debug: Request params: {}
+2023-07-02T15:12:24.047Z info: Received a GET request for /players/
+2023-07-02T15:12:24.049Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:12:24.048Z info: Request params: {}
+2023-07-02T15:12:24.050Z debug: Request params: {}
+2023-07-02T15:12:41.808Z info: Received a GET request for /players/
+2023-07-02T15:12:41.810Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:12:41.809Z info: Request params: {}
+2023-07-02T15:12:41.810Z debug: Request params: {}
+2023-07-02T15:12:51.487Z info: Received a GET request for /players/
+2023-07-02T15:12:51.496Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:12:51.494Z info: Request params: {}
+2023-07-02T15:12:51.497Z debug: Request params: {}
+2023-07-02T15:14:02.867Z info: Received a GET request for /players/
+2023-07-02T15:14:02.871Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:14:02.868Z info: Request params: {}
+2023-07-02T15:14:02.873Z debug: Request params: {}
+2023-07-02T15:15:55.292Z info: Received a GET request for /players/
+2023-07-02T15:15:55.294Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:15:55.293Z info: Request params: {}
+2023-07-02T15:15:55.295Z debug: Request params: {}
+2023-07-02T15:18:27.407Z info: Received a GET request for /players/
+2023-07-02T15:18:27.410Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:18:27.408Z info: Request params: {}
+2023-07-02T15:18:27.412Z debug: Request params: {}
+2023-07-02T15:19:15.624Z info: Received a GET request for /
+2023-07-02T15:19:15.625Z info: Request params: {}
+2023-07-02T15:19:46.738Z info: Received a GET request for /players/
+2023-07-02T15:19:46.740Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:19:46.739Z info: Request params: {}
+2023-07-02T15:19:46.740Z debug: Request params: {}
+2023-07-02T15:20:28.427Z info: Received a GET request for /players/
+2023-07-02T15:20:28.429Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:20:28.428Z info: Request params: {}
+2023-07-02T15:20:28.430Z debug: Request params: {}
+2023-07-02T15:21:15.926Z info: Received a GET request for /players/
+2023-07-02T15:21:15.927Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:21:15.927Z info: Request params: {}
+2023-07-02T15:21:15.928Z debug: Request params: {}
+2023-07-02T15:21:31.830Z info: Received a GET request for /
+2023-07-02T15:21:31.830Z info: Request params: {}
+2023-07-02T15:22:32.103Z info: Received a GET request for /players/
+2023-07-02T15:22:32.108Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:22:32.106Z info: Request params: {}
+2023-07-02T15:22:32.110Z debug: Request params: {}
+2023-07-02T15:28:13.028Z info: Received a GET request for /players/
+2023-07-02T15:28:13.035Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:28:13.032Z info: Request params: {}
+2023-07-02T15:28:13.036Z debug: Request params: {}
+2023-07-02T15:29:05.578Z info: Received a GET request for /players/
+2023-07-02T15:29:05.580Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:29:05.578Z info: Request params: {}
+2023-07-02T15:29:05.581Z debug: Request params: {}
+2023-07-02T15:30:23.667Z info: Received a GET request for /players/
+2023-07-02T15:30:23.669Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:30:23.668Z info: Request params: {}
+2023-07-02T15:30:23.670Z debug: Request params: {}
+2023-07-02T15:30:23.824Z error: TypeError: C:\dev\node\pingcenter\views\players\playersList.pug:58
+    56|           $('#modalFormTitle').html('#{__('EditingPlayer')}');
+    57|           $('#modalFormForm').attr('method', 'POST');
+  > 58|           $('#modalFormForm').attr('action', __url(#{_.quote(model)}, 'edit', id));
+    59|           
+    60|           
+    61|           $.ajax({
+
+_.quote is not a function
+    at eval (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:587:59)
+    at template (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:899:7)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:454:38)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:444:21)
+    at exports.__express [as engine] (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:493:11)
+    at View.render (C:\dev\node\pingcenter\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\dev\node\pingcenter\node_modules\express\lib\application.js:657:10)
+    at Function.render (C:\dev\node\pingcenter\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (C:\dev\node\pingcenter\node_modules\express\lib\response.js:1039:7)
+    at C:\dev\node\pingcenter\controllers\playerController.js:25:13
+2023-07-02T15:31:06.012Z info: Received a GET request for /players/
+2023-07-02T15:31:06.014Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:31:06.013Z info: Request params: {}
+2023-07-02T15:31:06.014Z debug: Request params: {}
+2023-07-02T15:31:27.292Z info: Received a GET request for /players/
+2023-07-02T15:31:27.296Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:31:27.294Z info: Request params: {}
+2023-07-02T15:31:27.297Z debug: Request params: {}
+2023-07-02T15:31:48.248Z info: Received a GET request for /players/
+2023-07-02T15:31:48.249Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:31:48.249Z info: Request params: {}
+2023-07-02T15:31:48.250Z debug: Request params: {}
+2023-07-02T15:32:05.956Z info: Received a GET request for /players/
+2023-07-02T15:32:05.958Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:32:05.957Z info: Request params: {}
+2023-07-02T15:32:05.958Z debug: Request params: {}
+2023-07-02T15:32:18.179Z info: Received a GET request for /players/
+2023-07-02T15:32:18.180Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:32:18.179Z info: Request params: {}
+2023-07-02T15:32:18.180Z debug: Request params: {}
+2023-07-02T15:39:46.568Z info: Received a GET request for /players/
+2023-07-02T15:39:46.569Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:39:46.568Z info: Request params: {}
+2023-07-02T15:39:46.569Z debug: Request params: {}
+2023-07-02T15:40:23.141Z info: Received a GET request for /players/edit/10
+2023-07-02T15:40:23.144Z debug: <Player> controller has been called for <player_details_get>
+2023-07-02T15:40:23.142Z info: Request params: {}
+2023-07-02T15:40:23.144Z debug: Request params: {
+  "id": "10"
+}
+2023-07-02T15:40:23.169Z debug: Results sent back {
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ],
+  "player": {
+    "id": 10,
+    "firstname": "Benjamin",
+    "lastname": "VILAIN",
+    "birthdate": null,
+    "ranking": 762,
+    "clubId": 1,
+    "roleId": null,
+    "role": null
+  }
+}
+2023-07-02T15:40:35.940Z info: Received a GET request for /players/
+2023-07-02T15:40:35.942Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:40:35.941Z info: Request params: {}
+2023-07-02T15:40:35.942Z debug: Request params: {}
+2023-07-02T15:40:39.788Z info: Received a GET request for /players/edit/10
+2023-07-02T15:40:39.789Z debug: <Player> controller has been called for <player_details_get>
+2023-07-02T15:40:39.789Z info: Request params: {}
+2023-07-02T15:40:39.790Z debug: Request params: {
+  "id": "10"
+}
+2023-07-02T15:40:39.806Z debug: Results sent back {
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ],
+  "player": {
+    "id": 10,
+    "firstname": "Benjamin",
+    "lastname": "VILAIN",
+    "birthdate": null,
+    "ranking": 762,
+    "clubId": 1,
+    "roleId": null,
+    "role": null
+  }
+}
+2023-07-02T15:45:22.137Z info: Received a GET request for /players/
+2023-07-02T15:45:22.138Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:45:22.138Z info: Request params: {}
+2023-07-02T15:45:22.139Z debug: Request params: {}
+2023-07-02T15:47:11.248Z info: Received a GET request for /players/
+2023-07-02T15:47:11.249Z debug: <Player> controller has been called for <players_list>
+2023-07-02T15:47:11.249Z info: Request params: {}
+2023-07-02T15:47:11.250Z debug: Request params: {}
+2023-07-02T16:12:36.744Z info: Received a GET request for /players/edit/10
+2023-07-02T16:12:36.746Z debug: <Player> controller has been called for <player_details_get>
+2023-07-02T16:12:36.745Z info: Request params: {}
+2023-07-02T16:12:36.746Z debug: Request params: {
+  "id": "10"
+}
+2023-07-02T16:12:36.776Z debug: Results sent back {
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ],
+  "player": {
+    "id": 10,
+    "firstname": "Benjamin",
+    "lastname": "VILAIN",
+    "birthdate": null,
+    "ranking": 762,
+    "clubId": 1,
+    "roleId": null,
+    "role": null
+  }
+}
+2023-07-02T16:13:03.289Z info: Received a POST request for /players/edit/10
+2023-07-02T16:13:03.294Z debug: <Player> controller has been called for <player_update>
+2023-07-02T16:13:03.290Z info: Request params: {}
+2023-07-02T16:13:03.295Z debug: Request params: {
+  "id": "10"
+}
+2023-07-02T16:13:03.343Z info: Received a GET request for /players
+2023-07-02T16:13:03.346Z debug: <Player> controller has been called for <players_list>
+2023-07-02T16:13:03.345Z info: Request params: {}
+2023-07-02T16:13:03.348Z debug: Request params: {}
+2023-07-02T16:13:06.625Z info: Received a GET request for /players/edit/10
+2023-07-02T16:13:06.626Z debug: <Player> controller has been called for <player_details_get>
+2023-07-02T16:13:06.626Z info: Request params: {}
+2023-07-02T16:13:06.627Z debug: Request params: {
+  "id": "10"
+}
+2023-07-02T16:13:06.637Z debug: Results sent back {
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ],
+  "player": {
+    "id": 10,
+    "firstname": "Benjamin",
+    "lastname": "VILAIN",
+    "birthdate": null,
+    "ranking": 762,
+    "clubId": 2,
+    "roleId": null,
+    "role": null
+  }
+}
+2023-07-02T16:13:11.537Z info: Received a POST request for /players/edit/10
+2023-07-02T16:13:11.539Z debug: <Player> controller has been called for <player_update>
+2023-07-02T16:13:11.538Z info: Request params: {}
+2023-07-02T16:13:11.539Z debug: Request params: {
+  "id": "10"
+}
+2023-07-02T16:13:11.566Z info: Received a GET request for /players
+2023-07-02T16:13:11.569Z debug: <Player> controller has been called for <players_list>
+2023-07-02T16:13:11.566Z info: Request params: {}
+2023-07-02T16:13:11.569Z debug: Request params: {}
+2023-07-02T16:24:14.343Z info: Received a GET request for /clubss
+2023-07-02T16:24:14.344Z info: Request params: {}
+2023-07-02T16:24:14.345Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:139:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-07-02T16:25:02.875Z info: Received a GET request for /clubss
+2023-07-02T16:25:02.875Z info: Request params: {}
+2023-07-02T16:25:02.876Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:139:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-07-02T16:25:08.713Z info: Received a GET request for /clubs
+2023-07-02T16:25:08.715Z debug: <Club> controller has been called for <clubs_list>
+2023-07-02T16:25:08.714Z info: Request params: {}
+2023-07-02T16:25:08.715Z debug: Request params: {}
+2023-07-02T16:25:08.733Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-07-02T16:25:11.809Z info: Received a GET request for /clubs/new
+2023-07-02T16:25:11.810Z info: Request params: {}
+2023-07-02T16:25:11.818Z info: Received a GET request for /clubs/edit/-1
+2023-07-02T16:25:11.819Z debug: <Club> controller has been called for <club_details>
+2023-07-02T16:25:11.818Z info: Request params: {}
+2023-07-02T16:25:11.820Z debug: Request params: {
+  "id": "-1"
+}
+2023-07-02T16:25:11.821Z debug: Results sent back {
+  "club": {
+    "id": null
+  }
+}
+2023-07-02T16:25:15.013Z info: Received a POST request for /clubs/create
+2023-07-02T16:25:15.014Z info: Request params: {}
+2023-07-02T16:25:15.052Z info: Received a GET request for /clubs
+2023-07-02T16:25:15.058Z debug: <Club> controller has been called for <clubs_list>
+2023-07-02T16:25:15.053Z info: Request params: {}
+2023-07-02T16:25:15.059Z debug: Request params: {}
+2023-07-02T16:25:15.070Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  },
+  {
+    "id": 3,
+    "shortdesc": "fdfdsf",
+    "longdesc": "fdfsd",
+    "nbplayers": 0
+  }
+]
+2023-07-02T16:25:18.065Z info: Received a GET request for /clubs/edit/3
+2023-07-02T16:25:18.066Z debug: <Club> controller has been called for <club_details>
+2023-07-02T16:25:18.066Z info: Request params: {}
+2023-07-02T16:25:18.067Z debug: Request params: {
+  "id": "3"
+}
+2023-07-02T16:25:18.073Z debug: Results sent back {
+  "club": {
+    "id": 3,
+    "shortdesc": "fdfdsf",
+    "longdesc": "fdfsd"
+  }
+}
+2023-07-02T16:25:22.140Z info: Received a POST request for /clubs/edit/3
+2023-07-02T16:25:22.141Z info: Request params: {}
+2023-07-02T16:25:22.169Z info: Received a GET request for /clubs
+2023-07-02T16:25:22.171Z debug: <Club> controller has been called for <clubs_list>
+2023-07-02T16:25:22.172Z debug: Request params: {}
+2023-07-02T16:25:22.170Z info: Request params: {}
+2023-07-02T16:25:22.178Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  },
+  {
+    "id": 3,
+    "shortdesc": "fdfdsftt",
+    "longdesc": "fdfsd",
+    "nbplayers": 0
+  }
+]
+2023-07-02T16:25:24.824Z info: Received a DELETE request for /clubs/delete/3
+2023-07-02T16:25:24.825Z info: Request params: {}
+2023-07-02T16:25:24.846Z info: Received a GET request for /clubs
+2023-07-02T16:25:24.849Z debug: <Club> controller has been called for <clubs_list>
+2023-07-02T16:25:24.847Z info: Request params: {}
+2023-07-02T16:25:24.850Z debug: Request params: {}
+2023-07-02T16:25:24.857Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-07-02T16:25:30.142Z info: Received a GET request for /player
+2023-07-02T16:25:30.143Z info: Request params: {}
+2023-07-02T16:25:30.144Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:139:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-07-02T16:26:32.114Z info: Received a GET request for /players
+2023-07-02T16:26:32.115Z debug: <Player> controller has been called for <players_list>
+2023-07-02T16:26:32.115Z info: Request params: {}
+2023-07-02T16:26:32.116Z debug: Request params: {}
+2023-07-02T16:26:34.493Z info: Received a GET request for /teams
+2023-07-02T16:26:34.494Z info: Request params: {}
+2023-07-02T16:26:34.495Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:139:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-07-02T16:26:35.682Z info: Received a GET request for /params
+2023-07-02T16:26:35.683Z debug: <Params> controller has been called for <params_list>
+2023-07-02T16:26:35.683Z info: Request params: {}
+2023-07-02T16:26:35.684Z debug: Request params: {}
+2023-07-02T16:26:35.690Z debug: Results sent back {
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ]
+}
+2023-07-02T16:27:33.216Z info: Received a GET request for /params
+2023-07-02T16:27:33.219Z debug: <Params> controller has been called for <params_list>
+2023-07-02T16:27:33.217Z info: Request params: {}
+2023-07-02T16:27:33.219Z debug: Request params: {}
+2023-07-02T16:27:33.226Z debug: Results sent back {
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ]
+}
+2023-07-02T16:28:14.567Z info: Received a GET request for /clubs
+2023-07-02T16:28:14.569Z debug: <Club> controller has been called for <clubs_list>
+2023-07-02T16:28:14.568Z info: Request params: {}
+2023-07-02T16:28:14.570Z debug: Request params: {}
+2023-07-02T16:28:14.585Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-07-02T16:28:27.096Z info: Received a GET request for /clubs
+2023-07-02T16:28:27.098Z debug: <Club> controller has been called for <clubs_list>
+2023-07-02T16:28:27.097Z info: Request params: {}
+2023-07-02T16:28:27.099Z debug: Request params: {}
+2023-07-02T16:28:27.112Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-07-02T16:29:00.779Z info: Received a GET request for /clubs
+2023-07-02T16:29:00.780Z debug: <Club> controller has been called for <clubs_list>
+2023-07-02T16:29:00.780Z info: Request params: {}
+2023-07-02T16:29:00.781Z debug: Request params: {}
+2023-07-02T16:29:00.792Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-07-02T16:29:03.712Z info: Received a GET request for /players
+2023-07-02T16:29:03.715Z debug: <Player> controller has been called for <players_list>
+2023-07-02T16:29:03.714Z info: Request params: {}
+2023-07-02T16:29:03.716Z debug: Request params: {}
+2023-07-02T16:29:41.829Z info: Received a GET request for /players
+2023-07-02T16:29:41.833Z debug: <Player> controller has been called for <players_list>
+2023-07-02T16:29:41.831Z info: Request params: {}
+2023-07-02T16:29:41.834Z debug: Request params: {}
+2023-07-02T16:29:50.475Z info: Received a GET request for /clubs
+2023-07-02T16:29:50.477Z debug: <Club> controller has been called for <clubs_list>
+2023-07-02T16:29:50.476Z info: Request params: {}
+2023-07-02T16:29:50.478Z debug: Request params: {}
+2023-07-02T16:29:50.484Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-07-02T16:29:58.776Z info: Received a GET request for /clubs
+2023-07-02T16:29:58.780Z debug: <Club> controller has been called for <clubs_list>
+2023-07-02T16:29:58.778Z info: Request params: {}
+2023-07-02T16:29:58.781Z debug: Request params: {}
+2023-07-02T16:29:58.800Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-07-02T16:30:06.006Z info: Received a GET request for /clubs/edit/1
+2023-07-02T16:30:06.009Z debug: <Club> controller has been called for <club_details>
+2023-07-02T16:30:06.007Z info: Request params: {}
+2023-07-02T16:30:06.010Z debug: Request params: {
+  "id": "1"
+}
+2023-07-02T16:30:06.022Z debug: Results sent back {
+  "club": {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT"
+  }
+}
+2023-07-02T16:30:19.777Z info: Received a GET request for /clubs/edit/1
+2023-07-02T16:30:19.779Z debug: <Club> controller has been called for <club_details>
+2023-07-02T16:30:19.778Z info: Request params: {}
+2023-07-02T16:30:19.780Z debug: Request params: {
+  "id": "1"
+}
+2023-07-02T16:30:19.791Z debug: Results sent back {
+  "club": {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT"
+  }
+}

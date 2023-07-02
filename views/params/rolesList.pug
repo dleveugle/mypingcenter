@@ -1,16 +1,22 @@
+- var model='role'
+.button-div
+	+_newButton("newModel()", __(_.camelCase("creating-"+ model)), __(_.camelCase("new-"+ model)))
+
 table#pingTable.table.table-striped.table-hover
 	thead 
 		tr
-			th(scope="col") #{__('RoleShortDesc')}
-			th(scope="col") #{__('RoleLongDesc')}
-			th(scope="col") #{__('RoleIcon')}
+			th.text-center(scope="col") #{__('roleShortDesc')}
+			th.text-center(scope="col") #{__('roleLongDesc')}
+			th.text-center(scope="col") #{__('roleIcon')}
 			th
 	tbody 
 		each val in data.roles
 			tr(class="align-middle")
-				td #{val.shortdesc} 
-				td #{val.longdesc}
-				td.text-center #{val.icon}
+				td.text-center #{val.shortdesc} 
+				td.text-center #{val.longdesc}
+				td.text-center
+					i.bx.bx-md.text-primary(class="bx-" + val.icon)
+
 				td.text-center
 					.btn-group.ms-2(role="group")
 						+_editButton("editRole("+val.id+")")
