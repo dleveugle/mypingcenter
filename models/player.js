@@ -18,7 +18,15 @@ module.exports = (sequelize, DataTypes)  => {
             allowNull: true
         }
       });
-      console.log('player belongs to');
+      Player.belongsTo(models.role,
+        {
+          onDelete: 'RESTRICT',
+          onUpdate: 'RESTRICT',
+          foreignKey: {
+            field: 'roleId',
+            allowNull: true
+          }
+        })
     }
 };
   Player.init({

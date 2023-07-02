@@ -2,12 +2,16 @@ extends ../layout
 
 block content
 
-  .card.text-center 
+  .card.text-center
     .card-header 
       ul.nav.nav-pills.card-header-pills
         li.nav-item
-          a.nav-link.active(href="#") Active
+          a.nav-link.active(href="#" data-bs-toggle="pill" data-bs-target="#roles") #{__('Roles')}
         li.nav-item 
-          a.nav-link(href="#") Link
+           a.nav-link(href="#" data-bs-toggle="pill" data-bs-target="#season") #{__('Roles')}
     .card-body 
-      h5 fhsdjkfhsdf
+      div.tab-content
+        div#roles.tab-pane.active(role="tabpanel")
+          h5 fsdfdfsd 
+        div#season.tab-pane(role="tabpanel")
+          h5 season 

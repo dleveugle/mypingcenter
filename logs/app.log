@@ -3678,3 +3678,82 @@ Syntax Error: Unexpected token
 2023-06-27T20:24:58.161Z debug: <Params> controller has been called for <params_list>
 2023-06-27T20:24:58.160Z info: Request params: {}
 2023-06-27T20:24:58.163Z debug: Request params: {}
+2023-07-01T19:00:48.470Z info: Received a GET request for /
+2023-07-01T19:00:48.474Z info: Request params: {}
+2023-07-01T19:00:49.419Z info: Received a GET request for /favicon.ico
+2023-07-01T19:00:49.422Z info: Request params: {}
+2023-07-01T19:00:49.428Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:139:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-07-01T19:00:50.564Z info: Received a GET request for /params
+2023-07-01T19:00:50.570Z debug: <Params> controller has been called for <params_list>
+2023-07-01T19:00:50.567Z info: Request params: {}
+2023-07-01T19:00:50.572Z debug: Request params: {}
+2023-07-01T19:00:56.999Z info: Received a GET request for /players
+2023-07-01T19:00:57.001Z debug: <Player> controller has been called for <players_list>
+2023-07-01T19:00:57.000Z info: Request params: {}
+2023-07-01T19:00:57.002Z debug: Request params: {}
+2023-07-01T19:01:00.356Z info: Received a GET request for /params
+2023-07-01T19:01:00.358Z debug: <Params> controller has been called for <params_list>
+2023-07-01T19:01:00.359Z debug: Request params: {}
+2023-07-01T19:01:00.357Z info: Request params: {}
+2023-07-01T19:01:41.214Z info: Received a GET request for /params
+2023-07-01T19:01:41.216Z debug: <Params> controller has been called for <params_list>
+2023-07-01T19:01:41.215Z info: Request params: {}
+2023-07-01T19:01:41.217Z debug: Request params: {}
+2023-07-01T19:01:53.113Z info: Received a GET request for /params
+2023-07-01T19:01:53.115Z debug: <Params> controller has been called for <params_list>
+2023-07-01T19:01:53.114Z info: Request params: {}
+2023-07-01T19:01:53.117Z debug: Request params: {}
+2023-07-01T19:02:51.703Z info: Received a GET request for /params
+2023-07-01T19:02:51.706Z debug: <Params> controller has been called for <params_list>
+2023-07-01T19:02:51.704Z info: Request params: {}
+2023-07-01T19:02:51.707Z debug: Request params: {}
+2023-07-01T19:03:14.490Z info: Received a GET request for /params
+2023-07-01T19:03:14.496Z debug: <Params> controller has been called for <params_list>
+2023-07-01T19:03:14.493Z info: Request params: {}
+2023-07-01T19:03:14.499Z debug: Request params: {}
+2023-07-01T19:03:23.366Z info: Received a GET request for /params
+2023-07-01T19:03:23.368Z debug: <Params> controller has been called for <params_list>
+2023-07-01T19:03:23.367Z info: Request params: {}
+2023-07-01T19:03:23.368Z debug: Request params: {}
+2023-07-01T19:03:50.835Z info: Received a GET request for /params
+2023-07-01T19:03:50.837Z debug: <Params> controller has been called for <params_list>
+2023-07-01T19:03:50.836Z info: Request params: {}
+2023-07-01T19:03:50.837Z debug: Request params: {}
+2023-07-01T19:21:45.035Z info: Received a GET request for /params
+2023-07-01T19:21:45.040Z debug: <Params> controller has been called for <params_list>
+2023-07-01T19:21:45.038Z info: Request params: {}
+2023-07-01T19:21:45.043Z debug: Request params: {}
+2023-07-01T19:28:41.993Z info: Received a GET request for /params
+2023-07-01T19:28:41.994Z debug: <Params> controller has been called for <params_list>
+2023-07-01T19:28:41.993Z info: Request params: {}
+2023-07-01T19:28:41.996Z debug: Request params: {}
+2023-07-01T19:29:09.812Z info: Received a GET request for /params
+2023-07-01T19:29:09.814Z debug: <Params> controller has been called for <params_list>
+2023-07-01T19:29:09.813Z info: Request params: {}
+2023-07-01T19:29:09.815Z debug: Request params: {}
+2023-07-01T19:29:40.568Z info: Received a GET request for /params
+2023-07-01T19:29:40.570Z debug: <Params> controller has been called for <params_list>
+2023-07-01T19:29:40.569Z info: Request params: {}
+2023-07-01T19:29:40.572Z debug: Request params: {}
+2023-07-01T19:29:59.947Z info: Received a GET request for /params
+2023-07-01T19:29:59.948Z debug: <Params> controller has been called for <params_list>
+2023-07-01T19:29:59.948Z info: Request params: {}
+2023-07-01T19:29:59.950Z debug: Request params: {}
+2023-07-01T19:31:05.728Z info: Received a GET request for /params
+2023-07-01T19:31:05.730Z debug: <Params> controller has been called for <params_list>
+2023-07-01T19:31:05.729Z info: Request params: {}
+2023-07-01T19:31:05.730Z debug: Request params: {}
+2023-07-01T19:31:23.697Z info: Received a GET request for /params
+2023-07-01T19:31:23.698Z debug: <Params> controller has been called for <params_list>
+2023-07-01T19:31:23.698Z info: Request params: {}
+2023-07-01T19:31:23.699Z debug: Request params: {}

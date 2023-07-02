@@ -7,10 +7,6 @@ var async = require('async')
 /**
  * Import the database connection file.
  */
-//const {db, datatypes} = require("./config/database");
-
-//const Club = require('./models/club')(db, datatypes);
-//const Player = require('./models/player')(db, datatypes);
 
 const db = require('./models');
 
@@ -18,8 +14,8 @@ db.sequelize.sync({ force: true })
 .then(() => {
   console.log(`Database & tables created!`);
   async.series([
-    createClubs,
-    createPlayers
+    createParams,
+    createDatas
   ],
   // Optional callback
   function(err, results) {
@@ -37,68 +33,82 @@ db.sequelize.sync({ force: true })
   var Clubs =  [];
   var Players = [];
 
-  // Create an club record
-  function clubCreate(id, shortdesc, longdesc, cb){
-    clubDetails = {id:id, shortdesc:shortdesc, longdesc:longdesc};
-    var club = db['club'].create(clubDetails)
-    .then(club=> {
-      console.log('New club: ' + JSON.stringify(club, null, 4));
-      Clubs.push(club);
-      cb(null, club);
-    })   
+  var Datas = [];
+  Datas.push(
+    {model:'club', data:{id:1, shortdesc:'MTT', longdesc:'MUZILLAC TT'}},
+    {model:'club', data:{id:2, shortdesc:'SENE TT', longdesc:'SENE TT'}},
+    {model:'player', data:{id:null, firstname:'Damien', lastname:'LEVEUGLE', birthdate:new Date('1969-12-13'), 
+      clubId:1, ranking:931, roleId:2}},
+    {model:'player', data:{id:null, firstname:'Stéphane', lastname:'JULLIOT', birthdate:null, 
+      clubId:1, ranking:591, roleId:1}},
+    {model:'player', data:{id:null, firstname:'Christophe', lastname:'COUTURE', birthdate:null, 
+      clubId:1, ranking:983, roleId:null}},
+    {model:'player', data:{id:null, firstname:'David', lastname:'WAUTHIER', birthdate:null, 
+      clubId:1, ranking:1102, roleId:null}},
+    {model:'player', data:{id:null, firstname:'Frédéric', lastname:'LAMOUR', birthdate:null, 
+      clubId:1, ranking:502, roleId:null}},
+    {model:'player', data:{id:null, firstname:'Nicolas', lastname:'DELOMEZ', birthdate:null, 
+      clubId:1, ranking:879, roleId:null}},
+    {model:'player', data:{id:null, firstname:'Guy', lastname:'COLOMBEL', birthdate:null, 
+      clubId:1, ranking:917, roleId:null}},
+    {model:'player', data:{id:null, firstname:'Luc', lastname:'BAUDAIS', birthdate:null, 
+      clubId:1, ranking:872, roleId:null}},
+    {model:'player', data:{id:null, firstname:'Clément', lastname:'VILAIN', birthdate:null, 
+      clubId:1, ranking:867, roleId:null}},
+    {model:'player', data:{id:null, firstname:'Benjamin', lastname:'VILAIN', birthdate:null, 
+      clubId:1, ranking:762, roleId:null}},
+    {model:'player', data:{id:null, firstname:'Dominique', lastname:'PERON', birthdate:null, 
+      clubId:1, ranking:932, roleId:null}},
+    {model:'player', data:{id:null, firstname:'Rémi', lastname:'SAIL', birthdate:null, 
+      clubId:1, ranking:1105, roleId:null}},
+  );
+
+  var Params = [];
+  Params.push(
+    {model:'role', data: {id:1, shortdesc:'P', longdesc: 'Président', icon:'crown'}},
+    {model:'role', data: {id:2, shortdesc:'T', longdesc: 'Trésorier', icon:'coin'}},
+    {model:'role', data: {id:3, shortdesc:'S', longdesc: 'Secrétaire', icon:'notepad'}}
+  );
+
+   // create a param record
+   function paramCreate(param, cb){
+    var param = db[param.model].create(param.data)
+    .then(p => {
+      console.log(`New ${p.constructor.name} : ` + JSON.stringify(p, null, 4));
+      cb(null, p);
+    })
     .catch(err=>{
       cb(err, null);
       return;
     })
   }
 
-  // Create an player record
-  function playerCreate(id, firstname, lastname, birthdate, club, ranking=null, cb){
-    playerDetails = {id:id, firstname:firstname, lastname:lastname, birthdate:birthdate, clubId:club, ranking: ranking};
-    var player = db['player'].create(playerDetails)
-    .then(player=> {
-      console.log('New player: ' + JSON.stringify(player, null, 4));
-      Players.push(player);
-      cb(null, player);
-    })   
-    .catch(err=>{
-      cb(err, null);
-      return;
-    })
-  }
+     // create a data record
+     function dataCreate(data, cb){
+      var data = db[data.model].create(data.data)
+      .then(d => {
+        console.log(`New ${d.constructor.name} : ` + JSON.stringify(d, null, 4));
+        cb(null, d);
+      })
+      .catch(err=>{
+        cb(err, null);
+        return;
+      })
+    }
 
-  // Seed clubs
-  function createClubs(cb){
-    console.log('Creating CLUBS ...');
-    async.series([
-      function (callback){clubCreate(1, 'MTT', 'MUZILLAC TT', callback)},
-      function(callback) {clubCreate(2, 'SENE TT', 'SENE TT', callback);}
-    ], 
-    cb
-    );
-  }
+ 
 
-   // Seed players
-   function createPlayers(cb){
-    console.log('Creating PLAYERS ...');
-    async.series([
-      function(callback){playerCreate(null, 'Damien', 'LEVEUGLE', new Date('1969-12-13'), 1, 931, callback);},
-      function(callback){playerCreate(null, 'Stéphane', 'JULLIOT', null, 1, 591, callback);},
-      function(callback){playerCreate(null, 'Christophe', 'COUTURE', null, 1, 983, callback)},
-      function(callback){playerCreate(null, 'David', 'WAUTHIER', null, 1, 1102, callback)},
-      function(callback){playerCreate(null, 'Frédéric', 'LAMOUR', null, 1, 502, callback)},
-      function(callback){playerCreate(null, 'Nicolas', 'DELOMEZ', null, 1, 879, callback)},
-      function(callback){playerCreate(null, 'Guy', 'COLOMBEL', null, 1, 917, callback)},
-      function(callback){playerCreate(null, 'Luc', 'BAUDAIS', null, 1, 872, callback)},
-      function(callback){playerCreate(null, 'Clément', 'VILAIN', null, 1, 867, callback)},
-      function(callback){playerCreate(null, 'Benjamin', 'VILAIN', null, 1, 762, callback)},
-      function(callback){playerCreate(null, 'Dominique', 'PERON', null, 1, 932, callback)},
-      function(callback){playerCreate(null, 'Rémi', 'SAIL', null, 1, 1105, callback)}
-        
-    ], 
-    cb
-    );
-  }
+   // Seed Params
+   function createParams(cb){
+    console.log('Creating Params ...');
+    async.mapSeries(Params, (p, cb) => {paramCreate(p, cb)}, cb);
+   }
+
+    // Seed Datas
+    function createDatas(cb){
+      console.log('Creating Datas ...');
+      async.mapSeries(Datas, (d, cb) => {dataCreate(d, cb)}, cb);
+     }
 
 
 
