@@ -32,6 +32,9 @@
  "NumberOfPlayers": "Nb de joueurs",
  "PlayerRanking": "Classement",
  "Parameters": "Paramètres",
- "PARAMETERS": "PARAMETERS",
- "Roles": "Rôles"
+ "Roles": "Rôles",
+ "Teams": "Equipes",
+ "RoleShortDesc": "RoleShortDesc",
+ "RoleLongDesc": "RoleLongDesc",
+ "RoleIcon": "RoleIcon"
 }

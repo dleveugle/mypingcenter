@@ -3757,3 +3757,438 @@ Syntax Error: Unexpected token
 2023-07-01T19:31:23.698Z debug: <Params> controller has been called for <params_list>
 2023-07-01T19:31:23.698Z info: Request params: {}
 2023-07-01T19:31:23.699Z debug: Request params: {}
+2023-07-02T05:52:05.964Z info: Received a GET request for /
+2023-07-02T05:52:05.970Z info: Request params: {}
+2023-07-02T05:52:06.964Z info: Received a GET request for /favicon.ico
+2023-07-02T05:52:06.964Z info: Request params: {}
+2023-07-02T05:52:06.966Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:139:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-07-02T05:52:08.264Z info: Received a GET request for /params
+2023-07-02T05:52:08.268Z debug: <Params> controller has been called for <params_list>
+2023-07-02T05:52:08.265Z info: Request params: {}
+2023-07-02T05:52:08.269Z debug: Request params: {}
+2023-07-02T05:52:08.271Z error: ReferenceError: async is not defined
+    at exports.params_list (C:\dev\node\pingcenter\controllers\paramsController.js:16:5)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-07-02T05:52:29.898Z info: Received a GET request for /params
+2023-07-02T05:52:29.905Z debug: <Params> controller has been called for <params_list>
+2023-07-02T05:52:29.903Z info: Request params: {}
+2023-07-02T05:52:29.906Z debug: Request params: {}
+2023-07-02T05:55:28.712Z info: Received a GET request for /params
+2023-07-02T05:55:28.718Z debug: <Params> controller has been called for <params_list>
+2023-07-02T05:55:28.717Z info: Request params: {}
+2023-07-02T05:55:28.719Z debug: Request params: {}
+2023-07-02T05:55:28.735Z debug: Results sent back {
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ]
+}
+2023-07-02T05:57:32.692Z info: Received a GET request for /players
+2023-07-02T05:57:32.696Z debug: <Player> controller has been called for <players_list>
+2023-07-02T05:57:32.693Z info: Request params: {}
+2023-07-02T05:57:32.697Z debug: Request params: {}
+2023-07-02T05:57:36.498Z info: Received a GET request for /clubs
+2023-07-02T05:57:36.501Z debug: <Club> controller has been called for <clubs_list>
+2023-07-02T05:57:36.500Z info: Request params: {}
+2023-07-02T05:57:36.503Z debug: Request params: {}
+2023-07-02T05:57:36.513Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-07-02T05:59:39.993Z info: Received a GET request for /clubs
+2023-07-02T05:59:39.998Z debug: <Club> controller has been called for <clubs_list>
+2023-07-02T05:59:39.997Z info: Request params: {}
+2023-07-02T05:59:40.000Z debug: Request params: {}
+2023-07-02T05:59:40.020Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-07-02T05:59:41.507Z info: Received a GET request for /players
+2023-07-02T05:59:41.511Z debug: <Player> controller has been called for <players_list>
+2023-07-02T05:59:41.509Z info: Request params: {}
+2023-07-02T05:59:41.512Z debug: Request params: {}
+2023-07-02T06:00:08.260Z info: Received a GET request for /players/edit/10
+2023-07-02T06:00:08.262Z debug: <Player> controller has been called for <player_details_get>
+2023-07-02T06:00:08.261Z info: Request params: {}
+2023-07-02T06:00:08.263Z debug: Request params: {
+  "id": "10"
+}
+2023-07-02T06:00:08.287Z debug: Results sent back {
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ],
+  "player": {
+    "id": 10,
+    "firstname": "Benjamin",
+    "lastname": "VILAIN",
+    "birthdate": null,
+    "ranking": 762,
+    "clubId": 1,
+    "roleId": null,
+    "role": null
+  }
+}
+2023-07-02T06:00:18.075Z info: Received a GET request for /players/edit/1
+2023-07-02T06:00:18.077Z debug: <Player> controller has been called for <player_details_get>
+2023-07-02T06:00:18.076Z info: Request params: {}
+2023-07-02T06:00:18.078Z debug: Request params: {
+  "id": "1"
+}
+2023-07-02T06:00:18.089Z debug: Results sent back {
+  "clubs": [
+    {
+      "id": 1,
+      "shortdesc": "MTT",
+      "longdesc": "MUZILLAC TT"
+    },
+    {
+      "id": 2,
+      "shortdesc": "SENE TT",
+      "longdesc": "SENE TT"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ],
+  "player": {
+    "id": 1,
+    "firstname": "Damien",
+    "lastname": "LEVEUGLE",
+    "birthdate": "1969-12-13 01:00:00",
+    "ranking": 931,
+    "clubId": 1,
+    "roleId": 2,
+    "role": {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    }
+  }
+}
+2023-07-02T06:01:08.158Z info: Received a GET request for /clubs
+2023-07-02T06:01:08.161Z debug: <Club> controller has been called for <clubs_list>
+2023-07-02T06:01:08.159Z info: Request params: {}
+2023-07-02T06:01:08.162Z debug: Request params: {}
+2023-07-02T06:01:08.172Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-07-02T06:01:39.437Z info: Received a GET request for /players
+2023-07-02T06:01:39.439Z debug: <Player> controller has been called for <players_list>
+2023-07-02T06:01:39.438Z info: Request params: {}
+2023-07-02T06:01:39.440Z debug: Request params: {}
+2023-07-02T06:01:54.077Z info: Received a GET request for /params
+2023-07-02T06:01:54.079Z debug: <Params> controller has been called for <params_list>
+2023-07-02T06:01:54.078Z info: Request params: {}
+2023-07-02T06:01:54.080Z debug: Request params: {}
+2023-07-02T06:01:54.093Z debug: Results sent back {
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ]
+}
+2023-07-02T06:01:55.940Z info: Received a GET request for /players
+2023-07-02T06:01:55.942Z debug: <Player> controller has been called for <players_list>
+2023-07-02T06:01:55.941Z info: Request params: {}
+2023-07-02T06:01:55.943Z debug: Request params: {}
+2023-07-02T06:01:56.932Z info: Received a GET request for /clubs
+2023-07-02T06:01:56.933Z debug: <Club> controller has been called for <clubs_list>
+2023-07-02T06:01:56.933Z info: Request params: {}
+2023-07-02T06:01:56.934Z debug: Request params: {}
+2023-07-02T06:01:56.940Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]
+2023-07-02T06:02:39.375Z info: Received a GET request for /clubs/edit/1
+2023-07-02T06:02:39.377Z debug: <Club> controller has been called for <club_details>
+2023-07-02T06:02:39.376Z info: Request params: {}
+2023-07-02T06:02:39.377Z debug: Request params: {
+  "id": "1"
+}
+2023-07-02T06:02:39.389Z debug: Results sent back {
+  "club": {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT"
+  }
+}
+2023-07-02T06:02:43.832Z info: Received a GET request for /players
+2023-07-02T06:02:43.833Z debug: <Player> controller has been called for <players_list>
+2023-07-02T06:02:43.832Z info: Request params: {}
+2023-07-02T06:02:43.834Z debug: Request params: {}
+2023-07-02T06:02:46.282Z info: Received a GET request for /params
+2023-07-02T06:02:46.283Z debug: <Params> controller has been called for <params_list>
+2023-07-02T06:02:46.282Z info: Request params: {}
+2023-07-02T06:02:46.284Z debug: Request params: {}
+2023-07-02T06:02:46.290Z debug: Results sent back {
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ]
+}
+2023-07-02T06:05:40.943Z info: Received a GET request for /params
+2023-07-02T06:05:40.945Z debug: <Params> controller has been called for <params_list>
+2023-07-02T06:05:40.944Z info: Request params: {}
+2023-07-02T06:05:40.946Z debug: Request params: {}
+2023-07-02T06:05:40.957Z debug: Results sent back {
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ]
+}
+2023-07-02T06:06:52.305Z info: Received a GET request for /params
+2023-07-02T06:06:52.310Z debug: <Params> controller has been called for <params_list>
+2023-07-02T06:06:52.308Z info: Request params: {}
+2023-07-02T06:06:52.312Z debug: Request params: {}
+2023-07-02T06:06:52.330Z debug: Results sent back {
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ]
+}
+2023-07-02T06:07:01.574Z info: Received a GET request for /teams
+2023-07-02T06:07:01.576Z info: Request params: {}
+2023-07-02T06:07:01.578Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:139:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-07-02T06:07:12.105Z info: Received a GET request for /params
+2023-07-02T06:07:12.109Z debug: <Params> controller has been called for <params_list>
+2023-07-02T06:07:12.106Z info: Request params: {}
+2023-07-02T06:07:12.110Z debug: Request params: {}
+2023-07-02T06:07:12.125Z debug: Results sent back {
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ]
+}
+2023-07-02T06:07:25.428Z info: Received a GET request for /players
+2023-07-02T06:07:25.431Z debug: <Player> controller has been called for <players_list>
+2023-07-02T06:07:25.429Z info: Request params: {}
+2023-07-02T06:07:25.431Z debug: Request params: {}
+2023-07-02T06:07:27.832Z info: Received a GET request for /clubs
+2023-07-02T06:07:27.834Z debug: <Club> controller has been called for <clubs_list>
+2023-07-02T06:07:27.833Z info: Request params: {}
+2023-07-02T06:07:27.835Z debug: Request params: {}
+2023-07-02T06:07:27.845Z debug: Results sent back [
+  {
+    "id": 1,
+    "shortdesc": "MTT",
+    "longdesc": "MUZILLAC TT",
+    "nbplayers": 12
+  },
+  {
+    "id": 2,
+    "shortdesc": "SENE TT",
+    "longdesc": "SENE TT",
+    "nbplayers": 0
+  }
+]

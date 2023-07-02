@@ -1,0 +1,20 @@
+table#pingTable.table.table-striped.table-hover
+	thead 
+		tr
+			th(scope="col") #{__('RoleShortDesc')}
+			th(scope="col") #{__('RoleLongDesc')}
+			th(scope="col") #{__('RoleIcon')}
+			th
+	tbody 
+		each val in data.roles
+			tr(class="align-middle")
+				td #{val.shortdesc} 
+				td #{val.longdesc}
+				td.text-center #{val.icon}
+				td.text-center
+					.btn-group.ms-2(role="group")
+						+_editButton("editRole("+val.id+")")
+					.btn-group.ms-2(role="group")
+						+_deleteButton("deleteRole("+val.id+")")
+
+include /includes/modalform.pug

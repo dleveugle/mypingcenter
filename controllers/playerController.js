@@ -43,6 +43,10 @@ exports.player_details_get = function(req, res, next){
             db['club'].findAll()
             .then(data => {callback(null, data);});
         },
+        roles: function (callback){
+            db['role'].findAll()
+            .then(data => {callback(null, data);});
+        },
         player: function(callback){
             if(req.params.id == -1) {
                 callback(null, db['player'].build());
@@ -50,7 +54,8 @@ exports.player_details_get = function(req, res, next){
             else{
                 db['player'].findByPk(req.params.id,{
                     include: [{
-                        model: db['club']
+                        model: db['club'],
+                        model: db['role']
                     }]
                 })
                 .then(data => {callback(null,data);});
