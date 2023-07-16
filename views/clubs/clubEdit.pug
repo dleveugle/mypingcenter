@@ -1,17 +1,17 @@
 .container
 	div
-		input#txtShortDesc(type="hidden", class="form-control", value=data.club.id, name="id" 
+		input#txtShortDesc(type="hidden", class="form-control", value=data.id, name="id" 
 		placeholder="#")
 
 	div.input-group.has-validation
 		div.form-floating.mb-3
-			input#txtShortDesc(type="text", class="form-control", value=data.club.shortdesc, name="shortdesc" 
+			input#txtShortDesc(type="text", class="form-control", value=data.shortdesc, name="shortdesc" 
 			placeholder="#")
 			label.form-label(for="txtShortDesc") #{__('ClubShortDescription')}
 			div#invalid-shortdesc.invalid-feedback
 
 	div.form-floating.mb-3
-		input#txtLongDesc(type="text", class="form-control" value=data.club.longdesc name="longdesc"
+		input#txtLongDesc(type="text", class="form-control" value=data.longdesc name="longdesc"
 		placeholder="#")
 		label.form-label(for="txtShortDesc") #{__('ClubName')}
 		div#invalid-longdesc.invalid-feedback

@@ -66,7 +66,8 @@ app.use(services.i18nUrls.init);
 app.use(function(req, res, next) {
   // express helper for natively supported engines
   res.locals.__ = res.__ = function() {
-      return i18n.__.apply(req, arguments);
+    t = i18n.__.apply(req, arguments);
+    return t;
   };
   res.locals.moment = require('moment');
   var path = req.url.split('/');

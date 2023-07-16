@@ -12,5 +12,13 @@
  "Save": "Save",
  "EditingClub": "EditingClub",
  "MSG_ClubCreated": "MSG_ClubCreated",
- "MSG_ClubDeleted": "MSG_ClubDeleted"
+ "MSG_ClubDeleted": "MSG_ClubDeleted",
+ "Teams": "Teams",
+ "Parameters": "Parameters",
+ "creatingClub": "creatingClub",
+ "newClub": "newClub",
+ "clubShortDescription": "clubShortDescription",
+ "clubName": "clubName",
+ "numberOfPlayers": "numberOfPlayers",
+ "editingClub": "editingClub"
 }

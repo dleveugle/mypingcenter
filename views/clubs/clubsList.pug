@@ -18,7 +18,7 @@ block content
             th.text-center(scope="col") #{__('numberOfPlayers')}
             th
         tbody 
-          each val in list
+          each val in data
             tr(class="align-middle")
               th(scope="row") #{val.id}
               td #{val.shortdesc} 

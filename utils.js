@@ -51,10 +51,9 @@ module.exports =  function(){
         getDb: function(){
             return require(`${this.modelsDir}`);
         },
-        _: () => {return _();}
-
-
-
+        requireLodash: function() {
+            return require('lodash');
+        }
     }
 
     return publicInterface;
