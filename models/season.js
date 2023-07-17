@@ -2,7 +2,7 @@
 const {Model} = require('sequelize');
 
 module.exports = (sequelize, DataTypes)  => {
-  class Club extends Model {
+  class Season extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -10,33 +10,23 @@ module.exports = (sequelize, DataTypes)  => {
      */
     static associate(models) {
       // define association here
-      Club.hasMany(models.player);
-      Club.belongsToMany(models.season, {through: 'clubseasons', timestamps: false});
+      Season.belongsToMany(models.club, {through: 'clubseasons', timestamps: false})
     };
   };
-  Club.init({
-    id : {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        primaryKey: true,
-        autoIncrement: 1
-
-    },
-    shortdesc: {
-      type: DataTypes.STRING(20),
-      allowNull: false
+  Season.init({
+    startYear: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true
     },
     longdesc: {
         type: DataTypes.STRING(200),
         allowNull: false
-    },
-    nbplayers: {
-      type: DataTypes.VIRTUAL
     }
   }, {
     sequelize,
     timestamps: false,
-    modelName: 'club'
+    modelName: 'season'
   });
-  return Club;
+  return Season;
 };

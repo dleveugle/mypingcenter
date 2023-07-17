@@ -165,6 +165,13 @@ class baseController{
         }
     }
 
+    /**
+     * Middleware function to update model
+     * @param {*} req 
+     * @param {*} res 
+     * @param {*} next 
+     * @returns 
+     */
     update(req, res, next){
         logger._Controller(this._model, 'update', req);
         // errors is set by validator called in the router

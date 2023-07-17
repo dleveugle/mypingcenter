@@ -37,6 +37,8 @@ db.sequelize.sync({ force: true })
   Datas.push(
     {model:'club', data:{id:1, shortdesc:'MTT', longdesc:'MUZILLAC TT'}},
     {model:'club', data:{id:2, shortdesc:'SENE TT', longdesc:'SENE TT'}},
+
+
     {model:'player', data:{id:null, firstname:'Damien', lastname:'LEVEUGLE', birthdate:new Date('1969-12-13'), 
       clubId:1, ranking:931, roleId:2}},
     {model:'player', data:{id:null, firstname:'Stéphane', lastname:'JULLIOT', birthdate:null, 
@@ -61,6 +63,9 @@ db.sequelize.sync({ force: true })
       clubId:1, ranking:932, roleId:null}},
     {model:'player', data:{id:null, firstname:'Rémi', lastname:'SAIL', birthdate:null, 
       clubId:1, ranking:1105, roleId:null}},
+
+    {model: 'season', data: {startYear:2022, longdesc: 'Saison 2022-2023'}},
+    {model: 'season', data: {startYear:2023, longdesc: 'Saison 2023-2024'}}
   );
 
   var Params = [];

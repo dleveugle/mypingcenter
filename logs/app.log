@@ -10324,3 +10324,583 @@ notNull Violation: club.longdesc cannot be null
     at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
     at middleware (C:\dev\node\pingcenter\node_modules\express-validator\src\middlewares\check.js:16:13)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-07-16T16:22:15.294Z debug: Controller instanciated for model : club
+2023-07-16T16:22:16.254Z info: Received a GET request for /clubs
+2023-07-16T16:22:16.256Z debug: <club> controller has been called for <list>
+2023-07-16T16:22:16.255Z info: Request params: {}
+2023-07-16T16:22:16.257Z debug: Request params: {}
+2023-07-16T16:22:16.293Z debug: Results sent back [{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT","nbplayers":12},{"id":2,"shortdesc":"SENE TT","longdesc":"SENE TT","nbplayers":0},{"id":3,"shortdesc":"fdfds","longdesc":"fdsfs","nbplayers":0},{"id":4,"shortdesc":"gfgf","longdesc":"gdfgfd","nbplayers":0}]
+2023-07-16T16:22:18.070Z info: Received a GET request for /clubs/edit/4
+2023-07-16T16:22:18.073Z debug: <club> controller has been called for <details>
+2023-07-16T16:22:18.071Z info: Request params: {}
+2023-07-16T16:22:18.074Z debug: Request params: {
+  "id": "4"
+}
+2023-07-16T16:22:18.075Z warn: Controller for model club doesn't implement _getPkClause method
+2023-07-16T16:22:18.086Z debug: Results sent back {"id":4,"shortdesc":"gfgf","longdesc":"gdfgfd"}
+2023-07-16T16:22:20.727Z info: Received a POST request for /clubs/edit/4
+2023-07-16T16:22:20.732Z debug: <club> controller has been called for <update>
+2023-07-16T16:22:20.728Z info: Request params: {}
+2023-07-16T16:22:20.733Z debug: Request params: {
+  "id": "4"
+}
+2023-07-16T16:22:20.734Z warn: Controller for model club doesn't implement _getPkClause method
+2023-07-16T16:22:20.762Z info: Received a GET request for /clubs
+2023-07-16T16:22:20.766Z debug: <club> controller has been called for <list>
+2023-07-16T16:22:20.763Z info: Request params: {}
+2023-07-16T16:22:20.768Z debug: Request params: {}
+2023-07-16T16:22:20.781Z debug: Results sent back [{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT","nbplayers":12},{"id":2,"shortdesc":"SENE TT","longdesc":"SENE TT","nbplayers":0},{"id":3,"shortdesc":"fdfds","longdesc":"fdsfs","nbplayers":0},{"id":4,"shortdesc":"gfgf","longdesc":"gdfgfd2","nbplayers":0}]
+2023-07-16T16:34:15.261Z info: Received a DELETE request for /clubs/delete/4
+2023-07-16T16:34:15.263Z debug: <club> controller has been called for <delete>
+2023-07-16T16:34:15.262Z info: Request params: {}
+2023-07-16T16:34:15.264Z debug: Request params: {
+  "id": "4"
+}
+2023-07-16T16:34:15.264Z warn: Controller for model club doesn't implement _getPkClause method
+2023-07-16T16:34:15.301Z info: Received a GET request for /clubs
+2023-07-16T16:34:15.303Z debug: <club> controller has been called for <list>
+2023-07-16T16:34:15.302Z info: Request params: {}
+2023-07-16T16:34:15.304Z debug: Request params: {}
+2023-07-16T16:34:15.314Z debug: Results sent back [{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT","nbplayers":12},{"id":2,"shortdesc":"SENE TT","longdesc":"SENE TT","nbplayers":0},{"id":3,"shortdesc":"fdfds","longdesc":"fdsfs","nbplayers":0}]
+2023-07-16T16:44:49.964Z debug: Controller instanciated for model : club
+2023-07-16T16:44:49.973Z debug: Controller instanciated for model : player
+2023-07-16T16:44:55.795Z info: Received a GET request for /players
+2023-07-16T16:44:55.797Z debug: <player> controller has been called for <list>
+2023-07-16T16:44:55.795Z info: Request params: {}
+2023-07-16T16:44:55.799Z debug: Request params: {}
+2023-07-16T16:44:55.846Z debug: Results sent back [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","ranking":931,"clubId":1,"roleId":2,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":2,"firstname":"Stéphane","lastname":"JULLIOT","birthdate":null,"ranking":591,"clubId":1,"roleId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":3,"firstname":"Christophe","lastname":"COUTURE","birthdate":null,"ranking":983,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":4,"firstname":"David","lastname":"WAUTHIER","birthdate":null,"ranking":1102,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":5,"firstname":"Frédéric","lastname":"LAMOUR","birthdate":null,"ranking":502,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":6,"firstname":"Nicolas","lastname":"DELOMEZ","birthdate":null,"ranking":879,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":7,"firstname":"Guy","lastname":"COLOMBEL","birthdate":null,"ranking":917,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":8,"firstname":"Luc","lastname":"BAUDAIS","birthdate":null,"ranking":872,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":9,"firstname":"Clément","lastname":"VILAIN","birthdate":null,"ranking":867,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":11,"firstname":"Dominique","lastname":"PERON","birthdate":null,"ranking":932,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":12,"firstname":"Rémi","lastname":"SAIL","birthdate":null,"ranking":1105,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-07-16T16:44:58.502Z info: Received a GET request for /players/edit/10
+2023-07-16T16:44:58.504Z debug: <player> controller has been called for <details>
+2023-07-16T16:44:58.502Z info: Request params: {}
+2023-07-16T16:44:58.505Z debug: Request params: {
+  "id": "10"
+}
+2023-07-16T16:44:58.507Z warn: Controller for model player doesn't implement _getPkClause method
+2023-07-16T16:44:58.515Z debug: Results sent back {"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null}
+2023-07-16T16:44:58.552Z error: TypeError: C:\dev\node\pingcenter\views\players\playerEdit.pug:3
+    1| .container
+    2| 	div
+  > 3| 		input#txtId(type="hidden", class="form-control", value=data.player.id, name="id" 
+    4| 		placeholder="#")
+    5| 
+    6| 	div.input-group.has-validation
+
+Cannot read properties of undefined (reading 'id')
+    at eval (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:12:128)
+    at template (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:85:7)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:454:38)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:444:21)
+    at exports.__express [as engine] (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:493:11)
+    at View.render (C:\dev\node\pingcenter\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\dev\node\pingcenter\node_modules\express\lib\application.js:657:10)
+    at Function.render (C:\dev\node\pingcenter\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (C:\dev\node\pingcenter\node_modules\express\lib\response.js:1039:7)
+    at C:\dev\node\pingcenter\controllers\baseController.js:40:17
+2023-07-16T16:46:46.136Z info: Received a GET request for /players
+2023-07-16T16:46:46.137Z debug: <player> controller has been called for <list>
+2023-07-16T16:46:46.137Z info: Request params: {}
+2023-07-16T16:46:46.138Z debug: Request params: {}
+2023-07-16T16:46:46.166Z debug: Results sent back [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","ranking":931,"clubId":1,"roleId":2,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":2,"firstname":"Stéphane","lastname":"JULLIOT","birthdate":null,"ranking":591,"clubId":1,"roleId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":3,"firstname":"Christophe","lastname":"COUTURE","birthdate":null,"ranking":983,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":4,"firstname":"David","lastname":"WAUTHIER","birthdate":null,"ranking":1102,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":5,"firstname":"Frédéric","lastname":"LAMOUR","birthdate":null,"ranking":502,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":6,"firstname":"Nicolas","lastname":"DELOMEZ","birthdate":null,"ranking":879,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":7,"firstname":"Guy","lastname":"COLOMBEL","birthdate":null,"ranking":917,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":8,"firstname":"Luc","lastname":"BAUDAIS","birthdate":null,"ranking":872,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":9,"firstname":"Clément","lastname":"VILAIN","birthdate":null,"ranking":867,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":11,"firstname":"Dominique","lastname":"PERON","birthdate":null,"ranking":932,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":12,"firstname":"Rémi","lastname":"SAIL","birthdate":null,"ranking":1105,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-07-16T16:46:48.039Z info: Received a GET request for /players/edit/10
+2023-07-16T16:46:48.040Z debug: <player> controller has been called for <details>
+2023-07-16T16:46:48.039Z info: Request params: {}
+2023-07-16T16:46:48.041Z debug: Request params: {
+  "id": "10"
+}
+2023-07-16T16:46:48.041Z warn: Controller for model player doesn't implement _getPkClause method
+2023-07-16T16:46:48.047Z debug: Results sent back {"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null}
+2023-07-16T16:46:48.081Z error: TypeError: C:\dev\node\pingcenter\views\players\playerEdit.pug:28
+    26| 		select#selClub(class="form-select" name="clubid" placeholder="#")
+    27| 			option(disabled selected=!data.clubId ) #{__('MSG_SelectAnOption')}
+  > 28| 			each val in data.clubs
+    29| 				option(value=val.id selected=val.id==data.clubId )= val.shortdesc
+    30| 		label.form-label(for="selClub") #{__('PlayerClub')}
+    31| 		div#invalid-clubid.invalid-feedback
+
+Cannot read properties of undefined (reading 'length')
+    at eval (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:57:32)
+    at eval (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:76:4)
+    at template (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:85:7)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:454:38)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:444:21)
+    at exports.__express [as engine] (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:493:11)
+    at View.render (C:\dev\node\pingcenter\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\dev\node\pingcenter\node_modules\express\lib\application.js:657:10)
+    at Function.render (C:\dev\node\pingcenter\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (C:\dev\node\pingcenter\node_modules\express\lib\response.js:1039:7)
+2023-07-16T16:56:22.082Z debug: Controller instanciated for model : club
+2023-07-16T16:56:22.093Z debug: Controller instanciated for model : player
+2023-07-16T16:56:24.678Z info: Received a GET request for /players
+2023-07-16T16:56:24.681Z debug: <player> controller has been called for <list>
+2023-07-16T16:56:24.679Z info: Request params: {}
+2023-07-16T16:56:24.682Z debug: Request params: {}
+2023-07-16T16:56:24.718Z debug: Results sent back [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","ranking":931,"clubId":1,"roleId":2,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":2,"firstname":"Stéphane","lastname":"JULLIOT","birthdate":null,"ranking":591,"clubId":1,"roleId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":3,"firstname":"Christophe","lastname":"COUTURE","birthdate":null,"ranking":983,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":4,"firstname":"David","lastname":"WAUTHIER","birthdate":null,"ranking":1102,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":5,"firstname":"Frédéric","lastname":"LAMOUR","birthdate":null,"ranking":502,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":6,"firstname":"Nicolas","lastname":"DELOMEZ","birthdate":null,"ranking":879,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":7,"firstname":"Guy","lastname":"COLOMBEL","birthdate":null,"ranking":917,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":8,"firstname":"Luc","lastname":"BAUDAIS","birthdate":null,"ranking":872,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":9,"firstname":"Clément","lastname":"VILAIN","birthdate":null,"ranking":867,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":11,"firstname":"Dominique","lastname":"PERON","birthdate":null,"ranking":932,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":12,"firstname":"Rémi","lastname":"SAIL","birthdate":null,"ranking":1105,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-07-16T16:56:26.761Z info: Received a GET request for /players/edit/10
+2023-07-16T16:56:26.763Z debug: <player> controller has been called for <details>
+2023-07-16T16:56:26.762Z info: Request params: {}
+2023-07-16T16:56:26.768Z error: TypeError: Cannot read properties of undefined (reading 'query')
+    at playerController._render (C:\dev\node\pingcenter\controllers\baseController.js:38:11)
+    at playerController.details (C:\dev\node\pingcenter\controllers\baseController.js:124:14)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:421:3)
+2023-07-16T16:56:26.764Z debug: Request params: {
+  "id": "10"
+}
+2023-07-16T16:57:21.082Z debug: Controller instanciated for model : club
+2023-07-16T16:57:21.090Z debug: Controller instanciated for model : player
+2023-07-16T16:57:21.308Z info: Received a GET request for /players
+2023-07-16T16:57:21.310Z debug: <player> controller has been called for <list>
+2023-07-16T16:57:21.308Z info: Request params: {}
+2023-07-16T16:57:21.311Z debug: Request params: {}
+2023-07-16T16:57:21.339Z debug: Results sent back [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","ranking":931,"clubId":1,"roleId":2,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":2,"firstname":"Stéphane","lastname":"JULLIOT","birthdate":null,"ranking":591,"clubId":1,"roleId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":3,"firstname":"Christophe","lastname":"COUTURE","birthdate":null,"ranking":983,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":4,"firstname":"David","lastname":"WAUTHIER","birthdate":null,"ranking":1102,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":5,"firstname":"Frédéric","lastname":"LAMOUR","birthdate":null,"ranking":502,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":6,"firstname":"Nicolas","lastname":"DELOMEZ","birthdate":null,"ranking":879,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":7,"firstname":"Guy","lastname":"COLOMBEL","birthdate":null,"ranking":917,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":8,"firstname":"Luc","lastname":"BAUDAIS","birthdate":null,"ranking":872,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":9,"firstname":"Clément","lastname":"VILAIN","birthdate":null,"ranking":867,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":11,"firstname":"Dominique","lastname":"PERON","birthdate":null,"ranking":932,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":12,"firstname":"Rémi","lastname":"SAIL","birthdate":null,"ranking":1105,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-07-16T16:57:23.178Z info: Received a GET request for /players/edit/10
+2023-07-16T16:57:23.180Z debug: <player> controller has been called for <details>
+2023-07-16T16:57:23.179Z info: Request params: {}
+2023-07-16T16:57:23.185Z error: TypeError: Cannot read properties of undefined (reading 'query')
+    at playerController._render (C:\dev\node\pingcenter\controllers\baseController.js:38:11)
+    at playerController.details (C:\dev\node\pingcenter\controllers\baseController.js:124:14)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:421:3)
+2023-07-16T16:57:23.181Z debug: Request params: {
+  "id": "10"
+}
+2023-07-16T16:58:08.754Z debug: Controller instanciated for model : club
+2023-07-16T16:58:08.764Z debug: Controller instanciated for model : player
+2023-07-16T16:58:10.652Z info: Received a GET request for /players
+2023-07-16T16:58:10.655Z debug: <player> controller has been called for <list>
+2023-07-16T16:58:10.653Z info: Request params: {}
+2023-07-16T16:58:10.656Z debug: Request params: {}
+2023-07-16T16:58:10.689Z debug: Results sent back [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","ranking":931,"clubId":1,"roleId":2,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":2,"firstname":"Stéphane","lastname":"JULLIOT","birthdate":null,"ranking":591,"clubId":1,"roleId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":3,"firstname":"Christophe","lastname":"COUTURE","birthdate":null,"ranking":983,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":4,"firstname":"David","lastname":"WAUTHIER","birthdate":null,"ranking":1102,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":5,"firstname":"Frédéric","lastname":"LAMOUR","birthdate":null,"ranking":502,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":6,"firstname":"Nicolas","lastname":"DELOMEZ","birthdate":null,"ranking":879,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":7,"firstname":"Guy","lastname":"COLOMBEL","birthdate":null,"ranking":917,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":8,"firstname":"Luc","lastname":"BAUDAIS","birthdate":null,"ranking":872,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":9,"firstname":"Clément","lastname":"VILAIN","birthdate":null,"ranking":867,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":11,"firstname":"Dominique","lastname":"PERON","birthdate":null,"ranking":932,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":12,"firstname":"Rémi","lastname":"SAIL","birthdate":null,"ranking":1105,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-07-16T16:58:12.303Z info: Received a GET request for /players/edit/10
+2023-07-16T16:58:12.306Z debug: <player> controller has been called for <details>
+2023-07-16T16:58:12.304Z info: Request params: {}
+2023-07-16T16:58:12.306Z debug: Request params: {
+  "id": "10"
+}
+2023-07-16T16:58:12.314Z error: TypeError: Cannot read properties of undefined (reading 'then')
+    at playerController._render (C:\dev\node\pingcenter\controllers\baseController.js:38:18)
+    at playerController.details (C:\dev\node\pingcenter\controllers\baseController.js:124:14)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\dev\node\pingcenter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:284:15
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:421:3)
+2023-07-16T16:58:33.842Z debug: Controller instanciated for model : club
+2023-07-16T16:58:33.853Z debug: Controller instanciated for model : player
+2023-07-16T16:58:34.079Z info: Received a GET request for /players
+2023-07-16T16:58:34.081Z debug: <player> controller has been called for <list>
+2023-07-16T16:58:34.080Z info: Request params: {}
+2023-07-16T16:58:34.082Z debug: Request params: {}
+2023-07-16T16:58:34.117Z debug: Results sent back [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","ranking":931,"clubId":1,"roleId":2,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":2,"firstname":"Stéphane","lastname":"JULLIOT","birthdate":null,"ranking":591,"clubId":1,"roleId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":3,"firstname":"Christophe","lastname":"COUTURE","birthdate":null,"ranking":983,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":4,"firstname":"David","lastname":"WAUTHIER","birthdate":null,"ranking":1102,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":5,"firstname":"Frédéric","lastname":"LAMOUR","birthdate":null,"ranking":502,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":6,"firstname":"Nicolas","lastname":"DELOMEZ","birthdate":null,"ranking":879,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":7,"firstname":"Guy","lastname":"COLOMBEL","birthdate":null,"ranking":917,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":8,"firstname":"Luc","lastname":"BAUDAIS","birthdate":null,"ranking":872,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":9,"firstname":"Clément","lastname":"VILAIN","birthdate":null,"ranking":867,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":11,"firstname":"Dominique","lastname":"PERON","birthdate":null,"ranking":932,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":12,"firstname":"Rémi","lastname":"SAIL","birthdate":null,"ranking":1105,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-07-16T16:58:36.023Z info: Received a GET request for /players/edit/10
+2023-07-16T16:58:36.026Z debug: <player> controller has been called for <details>
+2023-07-16T16:58:36.024Z info: Request params: {}
+2023-07-16T16:58:36.027Z debug: Request params: {
+  "id": "10"
+}
+2023-07-16T16:58:36.049Z debug: Results sent back {"clubs":[{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"},{"id":2,"shortdesc":"SENE TT","longdesc":"SENE TT"},{"id":3,"shortdesc":"fdfds","longdesc":"fdsfs"}],"roles":[{"id":1,"shortdesc":"P","longdesc":"Président","icon":"crown"},{"id":2,"shortdesc":"T","longdesc":"Trésorier","icon":"coin"},{"id":3,"shortdesc":"S","longdesc":"Secrétaire","icon":"notepad"}],"player":{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"role":null}}
+2023-07-16T16:59:50.186Z debug: Controller instanciated for model : club
+2023-07-16T16:59:50.193Z debug: Controller instanciated for model : player
+2023-07-16T16:59:52.345Z info: Received a GET request for /players
+2023-07-16T16:59:52.348Z debug: <player> controller has been called for <list>
+2023-07-16T16:59:52.346Z info: Request params: {}
+2023-07-16T16:59:52.348Z debug: Request params: {}
+2023-07-16T16:59:52.375Z debug: Results sent back [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","ranking":931,"clubId":1,"roleId":2,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":2,"firstname":"Stéphane","lastname":"JULLIOT","birthdate":null,"ranking":591,"clubId":1,"roleId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":3,"firstname":"Christophe","lastname":"COUTURE","birthdate":null,"ranking":983,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":4,"firstname":"David","lastname":"WAUTHIER","birthdate":null,"ranking":1102,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":5,"firstname":"Frédéric","lastname":"LAMOUR","birthdate":null,"ranking":502,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":6,"firstname":"Nicolas","lastname":"DELOMEZ","birthdate":null,"ranking":879,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":7,"firstname":"Guy","lastname":"COLOMBEL","birthdate":null,"ranking":917,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":8,"firstname":"Luc","lastname":"BAUDAIS","birthdate":null,"ranking":872,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":9,"firstname":"Clément","lastname":"VILAIN","birthdate":null,"ranking":867,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":11,"firstname":"Dominique","lastname":"PERON","birthdate":null,"ranking":932,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":12,"firstname":"Rémi","lastname":"SAIL","birthdate":null,"ranking":1105,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-07-16T16:59:54.807Z info: Received a GET request for /players/edit/10
+2023-07-16T16:59:54.810Z debug: <player> controller has been called for <details>
+2023-07-16T16:59:54.808Z info: Request params: {}
+2023-07-16T16:59:54.811Z debug: Request params: {
+  "id": "10"
+}
+2023-07-16T16:59:54.834Z debug: Results sent back {"clubs":[{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"},{"id":2,"shortdesc":"SENE TT","longdesc":"SENE TT"},{"id":3,"shortdesc":"fdfds","longdesc":"fdsfs"}],"roles":[{"id":1,"shortdesc":"P","longdesc":"Président","icon":"crown"},{"id":2,"shortdesc":"T","longdesc":"Trésorier","icon":"coin"},{"id":3,"shortdesc":"S","longdesc":"Secrétaire","icon":"notepad"}],"player":{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"role":null}}
+2023-07-16T17:00:04.665Z info: Received a GET request for /players/edit/1
+2023-07-16T17:00:04.666Z debug: <player> controller has been called for <details>
+2023-07-16T17:00:04.665Z info: Request params: {}
+2023-07-16T17:00:04.667Z debug: Request params: {
+  "id": "1"
+}
+2023-07-16T17:00:04.682Z debug: Results sent back {"clubs":[{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"},{"id":2,"shortdesc":"SENE TT","longdesc":"SENE TT"},{"id":3,"shortdesc":"fdfds","longdesc":"fdsfs"}],"roles":[{"id":1,"shortdesc":"P","longdesc":"Président","icon":"crown"},{"id":2,"shortdesc":"T","longdesc":"Trésorier","icon":"coin"},{"id":3,"shortdesc":"S","longdesc":"Secrétaire","icon":"notepad"}],"player":{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","ranking":931,"clubId":1,"roleId":2,"role":{"id":2,"shortdesc":"T","longdesc":"Trésorier","icon":"coin"}}}
+2023-07-16T17:00:37.069Z info: Received a GET request for /players/new
+2023-07-16T17:00:37.070Z info: Request params: {}
+2023-07-16T17:00:37.086Z info: Received a GET request for /players/edit/-1
+2023-07-16T17:00:37.088Z debug: <player> controller has been called for <details>
+2023-07-16T17:00:37.087Z info: Request params: {}
+2023-07-16T17:00:37.135Z error: TypeError: C:\dev\node\pingcenter\views\players\playerEdit.pug:3
+    1| .container
+    2| 	div
+  > 3| 		input#txtId(type="hidden", class="form-control", value=data.player.id, name="id" 
+    4| 		placeholder="#")
+    5| 
+    6| 	div.input-group.has-validation
+
+Cannot read properties of undefined (reading 'id')
+    at eval (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:12:128)
+    at template (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:85:7)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:454:38)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:444:21)
+    at exports.__express [as engine] (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:493:11)
+    at View.render (C:\dev\node\pingcenter\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\dev\node\pingcenter\node_modules\express\lib\application.js:657:10)
+    at Function.render (C:\dev\node\pingcenter\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (C:\dev\node\pingcenter\node_modules\express\lib\response.js:1039:7)
+    at C:\dev\node\pingcenter\controllers\baseController.js:40:17
+2023-07-16T17:00:37.089Z debug: Request params: {
+  "id": "-1"
+}
+2023-07-16T17:00:37.091Z debug: Results sent back {"ranking":500,"id":null}
+2023-07-16T17:00:55.487Z info: Received a GET request for /players
+2023-07-16T17:00:55.489Z debug: <player> controller has been called for <list>
+2023-07-16T17:00:55.488Z info: Request params: {}
+2023-07-16T17:00:55.490Z debug: Request params: {}
+2023-07-16T17:00:55.504Z debug: Results sent back [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","ranking":931,"clubId":1,"roleId":2,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":2,"firstname":"Stéphane","lastname":"JULLIOT","birthdate":null,"ranking":591,"clubId":1,"roleId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":3,"firstname":"Christophe","lastname":"COUTURE","birthdate":null,"ranking":983,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":4,"firstname":"David","lastname":"WAUTHIER","birthdate":null,"ranking":1102,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":5,"firstname":"Frédéric","lastname":"LAMOUR","birthdate":null,"ranking":502,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":6,"firstname":"Nicolas","lastname":"DELOMEZ","birthdate":null,"ranking":879,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":7,"firstname":"Guy","lastname":"COLOMBEL","birthdate":null,"ranking":917,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":8,"firstname":"Luc","lastname":"BAUDAIS","birthdate":null,"ranking":872,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":9,"firstname":"Clément","lastname":"VILAIN","birthdate":null,"ranking":867,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":11,"firstname":"Dominique","lastname":"PERON","birthdate":null,"ranking":932,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":12,"firstname":"Rémi","lastname":"SAIL","birthdate":null,"ranking":1105,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-07-16T17:00:58.357Z info: Received a GET request for /players/new
+2023-07-16T17:00:58.358Z info: Request params: {}
+2023-07-16T17:00:58.364Z info: Received a GET request for /players/edit/-1
+2023-07-16T17:00:58.366Z debug: <player> controller has been called for <details>
+2023-07-16T17:00:58.366Z debug: Request params: {
+  "id": "-1"
+}
+2023-07-16T17:00:58.365Z info: Request params: {}
+2023-07-16T17:00:58.367Z debug: Results sent back {"ranking":500,"id":null}
+2023-07-16T17:00:58.397Z error: TypeError: C:\dev\node\pingcenter\views\players\playerEdit.pug:3
+    1| .container
+    2| 	div
+  > 3| 		input#txtId(type="hidden", class="form-control", value=data.player.id, name="id" 
+    4| 		placeholder="#")
+    5| 
+    6| 	div.input-group.has-validation
+
+Cannot read properties of undefined (reading 'id')
+    at eval (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:12:128)
+    at template (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:85:7)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:454:38)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:444:21)
+    at exports.__express [as engine] (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:493:11)
+    at View.render (C:\dev\node\pingcenter\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\dev\node\pingcenter\node_modules\express\lib\application.js:657:10)
+    at Function.render (C:\dev\node\pingcenter\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (C:\dev\node\pingcenter\node_modules\express\lib\response.js:1039:7)
+    at C:\dev\node\pingcenter\controllers\baseController.js:40:17
+2023-07-16T17:01:56.960Z info: Received a GET request for /players
+2023-07-16T17:01:56.961Z debug: <player> controller has been called for <list>
+2023-07-16T17:01:56.960Z info: Request params: {}
+2023-07-16T17:01:56.961Z debug: Request params: {}
+2023-07-16T17:01:56.981Z debug: Results sent back [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","ranking":931,"clubId":1,"roleId":2,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":2,"firstname":"Stéphane","lastname":"JULLIOT","birthdate":null,"ranking":591,"clubId":1,"roleId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":3,"firstname":"Christophe","lastname":"COUTURE","birthdate":null,"ranking":983,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":4,"firstname":"David","lastname":"WAUTHIER","birthdate":null,"ranking":1102,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":5,"firstname":"Frédéric","lastname":"LAMOUR","birthdate":null,"ranking":502,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":6,"firstname":"Nicolas","lastname":"DELOMEZ","birthdate":null,"ranking":879,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":7,"firstname":"Guy","lastname":"COLOMBEL","birthdate":null,"ranking":917,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":8,"firstname":"Luc","lastname":"BAUDAIS","birthdate":null,"ranking":872,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":9,"firstname":"Clément","lastname":"VILAIN","birthdate":null,"ranking":867,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":11,"firstname":"Dominique","lastname":"PERON","birthdate":null,"ranking":932,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":12,"firstname":"Rémi","lastname":"SAIL","birthdate":null,"ranking":1105,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-07-16T17:01:58.442Z info: Received a GET request for /players/edit/10
+2023-07-16T17:01:58.443Z debug: <player> controller has been called for <details>
+2023-07-16T17:01:58.442Z info: Request params: {}
+2023-07-16T17:01:58.443Z debug: Request params: {
+  "id": "10"
+}
+2023-07-16T17:01:58.458Z debug: Results sent back {"clubs":[{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"},{"id":2,"shortdesc":"SENE TT","longdesc":"SENE TT"},{"id":3,"shortdesc":"fdfds","longdesc":"fdsfs"}],"roles":[{"id":1,"shortdesc":"P","longdesc":"Président","icon":"crown"},{"id":2,"shortdesc":"T","longdesc":"Trésorier","icon":"coin"},{"id":3,"shortdesc":"S","longdesc":"Secrétaire","icon":"notepad"}],"player":{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"role":null}}
+2023-07-16T17:02:55.204Z debug: Controller instanciated for model : club
+2023-07-16T17:02:55.212Z debug: Controller instanciated for model : player
+2023-07-16T17:02:55.314Z info: Received a GET request for /players
+2023-07-16T17:02:55.317Z debug: <player> controller has been called for <list>
+2023-07-16T17:02:55.314Z info: Request params: {}
+2023-07-16T17:02:55.319Z debug: Request params: {}
+2023-07-16T17:02:55.339Z debug: Results sent back [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","ranking":931,"clubId":1,"roleId":2,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":2,"firstname":"Stéphane","lastname":"JULLIOT","birthdate":null,"ranking":591,"clubId":1,"roleId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":3,"firstname":"Christophe","lastname":"COUTURE","birthdate":null,"ranking":983,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":4,"firstname":"David","lastname":"WAUTHIER","birthdate":null,"ranking":1102,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":5,"firstname":"Frédéric","lastname":"LAMOUR","birthdate":null,"ranking":502,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":6,"firstname":"Nicolas","lastname":"DELOMEZ","birthdate":null,"ranking":879,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":7,"firstname":"Guy","lastname":"COLOMBEL","birthdate":null,"ranking":917,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":8,"firstname":"Luc","lastname":"BAUDAIS","birthdate":null,"ranking":872,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":9,"firstname":"Clément","lastname":"VILAIN","birthdate":null,"ranking":867,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":11,"firstname":"Dominique","lastname":"PERON","birthdate":null,"ranking":932,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":12,"firstname":"Rémi","lastname":"SAIL","birthdate":null,"ranking":1105,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-07-16T17:02:57.759Z info: Received a GET request for /players/edit/10
+2023-07-16T17:02:57.762Z debug: <player> controller has been called for <details>
+2023-07-16T17:02:57.760Z info: Request params: {}
+2023-07-16T17:02:57.763Z debug: Request params: {
+  "id": "10"
+}
+2023-07-16T17:02:57.785Z debug: Results sent back {"clubs":[{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"},{"id":2,"shortdesc":"SENE TT","longdesc":"SENE TT"},{"id":3,"shortdesc":"fdfds","longdesc":"fdsfs"}],"roles":[{"id":1,"shortdesc":"P","longdesc":"Président","icon":"crown"},{"id":2,"shortdesc":"T","longdesc":"Trésorier","icon":"coin"},{"id":3,"shortdesc":"S","longdesc":"Secrétaire","icon":"notepad"}],"player":{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"role":null}}
+2023-07-16T17:02:59.649Z info: Received a GET request for /players/new
+2023-07-16T17:02:59.650Z info: Request params: {}
+2023-07-16T17:02:59.659Z info: Received a GET request for /players/edit/-1
+2023-07-16T17:02:59.661Z debug: <player> controller has been called for <details>
+2023-07-16T17:02:59.660Z info: Request params: {}
+2023-07-16T17:02:59.693Z error: TypeError: C:\dev\node\pingcenter\views\players\playerEdit.pug:3
+    1| .container
+    2| 	div
+  > 3| 		input#txtId(type="hidden", class="form-control", value=data.player.id, name="id" 
+    4| 		placeholder="#")
+    5| 
+    6| 	div.input-group.has-validation
+
+Cannot read properties of undefined (reading 'id')
+    at eval (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:12:128)
+    at template (eval at wrap (C:\dev\node\pingcenter\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:85:7)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:454:38)
+    at exports.renderFile (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:444:21)
+    at exports.__express [as engine] (C:\dev\node\pingcenter\node_modules\pug\lib\index.js:493:11)
+    at View.render (C:\dev\node\pingcenter\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\dev\node\pingcenter\node_modules\express\lib\application.js:657:10)
+    at Function.render (C:\dev\node\pingcenter\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (C:\dev\node\pingcenter\node_modules\express\lib\response.js:1039:7)
+    at C:\dev\node\pingcenter\controllers\baseController.js:40:17
+2023-07-16T17:02:59.661Z debug: Request params: {
+  "id": "-1"
+}
+2023-07-16T17:02:59.663Z debug: Results sent back {"ranking":500,"id":null}
+2023-07-16T20:06:21.594Z debug: Controller instanciated for model : club
+2023-07-16T20:06:21.608Z debug: Controller instanciated for model : player
+2023-07-16T20:06:39.003Z info: Received a GET request for /
+2023-07-16T20:06:39.004Z info: Request params: {}
+2023-07-16T20:06:41.119Z info: Received a GET request for /favicon.ico
+2023-07-16T20:06:41.120Z info: Request params: {}
+2023-07-16T20:06:41.122Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:140:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-07-16T20:06:42.667Z info: Received a GET request for /players
+2023-07-16T20:06:42.669Z debug: <player> controller has been called for <list>
+2023-07-16T20:06:42.668Z info: Request params: {}
+2023-07-16T20:06:42.670Z debug: Request params: {}
+2023-07-16T20:06:42.709Z debug: Results sent back [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","ranking":931,"clubId":1,"roleId":2,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":2,"firstname":"Stéphane","lastname":"JULLIOT","birthdate":null,"ranking":591,"clubId":1,"roleId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":3,"firstname":"Christophe","lastname":"COUTURE","birthdate":null,"ranking":983,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":4,"firstname":"David","lastname":"WAUTHIER","birthdate":null,"ranking":1102,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":5,"firstname":"Frédéric","lastname":"LAMOUR","birthdate":null,"ranking":502,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":6,"firstname":"Nicolas","lastname":"DELOMEZ","birthdate":null,"ranking":879,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":7,"firstname":"Guy","lastname":"COLOMBEL","birthdate":null,"ranking":917,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":8,"firstname":"Luc","lastname":"BAUDAIS","birthdate":null,"ranking":872,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":9,"firstname":"Clément","lastname":"VILAIN","birthdate":null,"ranking":867,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":11,"firstname":"Dominique","lastname":"PERON","birthdate":null,"ranking":932,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":12,"firstname":"Rémi","lastname":"SAIL","birthdate":null,"ranking":1105,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-07-16T20:06:44.829Z info: Received a GET request for /players/edit/10
+2023-07-16T20:06:44.831Z debug: <player> controller has been called for <details>
+2023-07-16T20:06:44.829Z info: Request params: {}
+2023-07-16T20:06:44.832Z debug: Request params: {
+  "id": "10"
+}
+2023-07-16T20:06:44.867Z debug: Results sent back {"clubs":[{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"},{"id":2,"shortdesc":"SENE TT","longdesc":"SENE TT"},{"id":3,"shortdesc":"fdfds","longdesc":"fdsfs"}],"roles":[{"id":1,"shortdesc":"P","longdesc":"Président","icon":"crown"},{"id":2,"shortdesc":"T","longdesc":"Trésorier","icon":"coin"},{"id":3,"shortdesc":"S","longdesc":"Secrétaire","icon":"notepad"}],"player":{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"role":null}}
+2023-07-16T20:06:49.380Z info: Received a POST request for /players/edit/10
+2023-07-16T20:06:49.387Z debug: <player> controller has been called for <update>
+2023-07-16T20:06:49.381Z info: Request params: {}
+2023-07-16T20:06:49.388Z debug: Request params: {
+  "id": "10"
+}
+2023-07-16T20:06:49.389Z warn: Controller for model player doesn't implement _getPkClause method
+2023-07-16T20:06:49.491Z info: Received a GET request for /players
+2023-07-16T20:06:49.493Z debug: <player> controller has been called for <list>
+2023-07-16T20:06:49.492Z info: Request params: {}
+2023-07-16T20:06:49.493Z debug: Request params: {}
+2023-07-16T20:06:49.520Z debug: Results sent back [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","ranking":931,"clubId":1,"roleId":2,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":2,"firstname":"Stéphane","lastname":"JULLIOT","birthdate":null,"ranking":591,"clubId":1,"roleId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":3,"firstname":"Christophe","lastname":"COUTURE","birthdate":null,"ranking":983,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":4,"firstname":"David","lastname":"WAUTHIER","birthdate":null,"ranking":1102,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":5,"firstname":"Frédéric","lastname":"LAMOUR","birthdate":null,"ranking":502,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":6,"firstname":"Nicolas","lastname":"DELOMEZ","birthdate":null,"ranking":879,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":7,"firstname":"Guy","lastname":"COLOMBEL","birthdate":null,"ranking":917,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":8,"firstname":"Luc","lastname":"BAUDAIS","birthdate":null,"ranking":872,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":9,"firstname":"Clément","lastname":"VILAIN","birthdate":null,"ranking":867,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":10,"firstname":"Benjamin2","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":11,"firstname":"Dominique","lastname":"PERON","birthdate":null,"ranking":932,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":12,"firstname":"Rémi","lastname":"SAIL","birthdate":null,"ranking":1105,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-07-16T20:06:51.952Z info: Received a GET request for /players/edit/10
+2023-07-16T20:06:52.026Z debug: <player> controller has been called for <details>
+2023-07-16T20:06:51.973Z info: Request params: {}
+2023-07-16T20:06:52.061Z debug: Request params: {
+  "id": "10"
+}
+2023-07-16T20:06:52.304Z debug: Results sent back {"clubs":[{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"},{"id":2,"shortdesc":"SENE TT","longdesc":"SENE TT"},{"id":3,"shortdesc":"fdfds","longdesc":"fdsfs"}],"roles":[{"id":1,"shortdesc":"P","longdesc":"Président","icon":"crown"},{"id":2,"shortdesc":"T","longdesc":"Trésorier","icon":"coin"},{"id":3,"shortdesc":"S","longdesc":"Secrétaire","icon":"notepad"}],"player":{"id":10,"firstname":"Benjamin2","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"role":null}}
+2023-07-16T20:06:56.785Z info: Received a POST request for /players/edit/10
+2023-07-16T20:06:56.787Z debug: <player> controller has been called for <update>
+2023-07-16T20:06:56.786Z info: Request params: {}
+2023-07-16T20:06:56.788Z debug: Request params: {
+  "id": "10"
+}
+2023-07-16T20:06:56.789Z warn: Controller for model player doesn't implement _getPkClause method
+2023-07-16T20:06:56.823Z info: Received a GET request for /players
+2023-07-16T20:06:56.824Z debug: <player> controller has been called for <list>
+2023-07-16T20:06:56.824Z info: Request params: {}
+2023-07-16T20:06:56.825Z debug: Request params: {}
+2023-07-16T20:06:56.837Z debug: Results sent back [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","ranking":931,"clubId":1,"roleId":2,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":2,"firstname":"Stéphane","lastname":"JULLIOT","birthdate":null,"ranking":591,"clubId":1,"roleId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":3,"firstname":"Christophe","lastname":"COUTURE","birthdate":null,"ranking":983,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":4,"firstname":"David","lastname":"WAUTHIER","birthdate":null,"ranking":1102,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":5,"firstname":"Frédéric","lastname":"LAMOUR","birthdate":null,"ranking":502,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":6,"firstname":"Nicolas","lastname":"DELOMEZ","birthdate":null,"ranking":879,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":7,"firstname":"Guy","lastname":"COLOMBEL","birthdate":null,"ranking":917,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":8,"firstname":"Luc","lastname":"BAUDAIS","birthdate":null,"ranking":872,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":9,"firstname":"Clément","lastname":"VILAIN","birthdate":null,"ranking":867,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":11,"firstname":"Dominique","lastname":"PERON","birthdate":null,"ranking":932,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":12,"firstname":"Rémi","lastname":"SAIL","birthdate":null,"ranking":1105,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-07-16T20:06:59.252Z info: Received a GET request for /players/new
+2023-07-16T20:06:59.253Z info: Request params: {}
+2023-07-16T20:06:59.261Z info: Received a GET request for /players/edit/-1
+2023-07-16T20:06:59.262Z debug: <player> controller has been called for <details>
+2023-07-16T20:06:59.261Z info: Request params: {}
+2023-07-16T20:06:59.263Z debug: Request params: {
+  "id": "-1"
+}
+2023-07-16T20:06:59.271Z debug: Results sent back {"player":{"ranking":500,"id":null},"clubs":[{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"},{"id":2,"shortdesc":"SENE TT","longdesc":"SENE TT"},{"id":3,"shortdesc":"fdfds","longdesc":"fdsfs"}],"roles":[{"id":1,"shortdesc":"P","longdesc":"Président","icon":"crown"},{"id":2,"shortdesc":"T","longdesc":"Trésorier","icon":"coin"},{"id":3,"shortdesc":"S","longdesc":"Secrétaire","icon":"notepad"}]}
+2023-07-16T20:07:09.691Z info: Received a POST request for /players/create
+2023-07-16T20:07:09.693Z debug: <player> controller has been called for <create>
+2023-07-16T20:07:09.692Z info: Request params: {}
+2023-07-16T20:07:09.694Z debug: Request params: {}
+2023-07-16T20:07:09.731Z info: Received a GET request for /players
+2023-07-16T20:07:09.737Z debug: <player> controller has been called for <list>
+2023-07-16T20:07:09.735Z info: Request params: {}
+2023-07-16T20:07:09.738Z debug: Request params: {}
+2023-07-16T20:07:09.748Z debug: Results sent back [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","ranking":931,"clubId":1,"roleId":2,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":2,"firstname":"Stéphane","lastname":"JULLIOT","birthdate":null,"ranking":591,"clubId":1,"roleId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":3,"firstname":"Christophe","lastname":"COUTURE","birthdate":null,"ranking":983,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":4,"firstname":"David","lastname":"WAUTHIER","birthdate":null,"ranking":1102,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":5,"firstname":"Frédéric","lastname":"LAMOUR","birthdate":null,"ranking":502,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":6,"firstname":"Nicolas","lastname":"DELOMEZ","birthdate":null,"ranking":879,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":7,"firstname":"Guy","lastname":"COLOMBEL","birthdate":null,"ranking":917,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":8,"firstname":"Luc","lastname":"BAUDAIS","birthdate":null,"ranking":872,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":9,"firstname":"Clément","lastname":"VILAIN","birthdate":null,"ranking":867,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":11,"firstname":"Dominique","lastname":"PERON","birthdate":null,"ranking":932,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":12,"firstname":"Rémi","lastname":"SAIL","birthdate":null,"ranking":1105,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":13,"firstname":"dfsfdf","lastname":"fdsfds","birthdate":"2023-07-16 01:00:00","ranking":500,"clubId":2,"roleId":null,"club":{"id":2,"shortdesc":"SENE TT","longdesc":"SENE TT"}}]
+2023-07-16T20:07:17.891Z info: Received a DELETE request for /players/delete/13
+2023-07-16T20:07:17.893Z debug: <player> controller has been called for <delete>
+2023-07-16T20:07:17.892Z info: Request params: {}
+2023-07-16T20:07:17.893Z debug: Request params: {
+  "id": "13"
+}
+2023-07-16T20:07:17.894Z warn: Controller for model player doesn't implement _getPkClause method
+2023-07-16T20:07:17.927Z info: Received a GET request for /players
+2023-07-16T20:07:17.930Z debug: <player> controller has been called for <list>
+2023-07-16T20:07:17.928Z info: Request params: {}
+2023-07-16T20:07:17.931Z debug: Request params: {}
+2023-07-16T20:07:17.939Z debug: Results sent back [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","ranking":931,"clubId":1,"roleId":2,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":2,"firstname":"Stéphane","lastname":"JULLIOT","birthdate":null,"ranking":591,"clubId":1,"roleId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":3,"firstname":"Christophe","lastname":"COUTURE","birthdate":null,"ranking":983,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":4,"firstname":"David","lastname":"WAUTHIER","birthdate":null,"ranking":1102,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":5,"firstname":"Frédéric","lastname":"LAMOUR","birthdate":null,"ranking":502,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":6,"firstname":"Nicolas","lastname":"DELOMEZ","birthdate":null,"ranking":879,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":7,"firstname":"Guy","lastname":"COLOMBEL","birthdate":null,"ranking":917,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":8,"firstname":"Luc","lastname":"BAUDAIS","birthdate":null,"ranking":872,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":9,"firstname":"Clément","lastname":"VILAIN","birthdate":null,"ranking":867,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":11,"firstname":"Dominique","lastname":"PERON","birthdate":null,"ranking":932,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":12,"firstname":"Rémi","lastname":"SAIL","birthdate":null,"ranking":1105,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-07-16T20:08:14.079Z info: Received a GET request for /players/edit/1
+2023-07-16T20:08:14.080Z debug: <player> controller has been called for <details>
+2023-07-16T20:08:14.079Z info: Request params: {}
+2023-07-16T20:08:14.081Z debug: Request params: {
+  "id": "1"
+}
+2023-07-16T20:08:14.102Z debug: Results sent back {"clubs":[{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"},{"id":2,"shortdesc":"SENE TT","longdesc":"SENE TT"},{"id":3,"shortdesc":"fdfds","longdesc":"fdsfs"}],"roles":[{"id":1,"shortdesc":"P","longdesc":"Président","icon":"crown"},{"id":2,"shortdesc":"T","longdesc":"Trésorier","icon":"coin"},{"id":3,"shortdesc":"S","longdesc":"Secrétaire","icon":"notepad"}],"player":{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","ranking":931,"clubId":1,"roleId":2,"role":{"id":2,"shortdesc":"T","longdesc":"Trésorier","icon":"coin"}}}
+2023-07-16T20:08:18.362Z info: Received a GET request for /teams
+2023-07-16T20:08:18.362Z info: Request params: {}
+2023-07-16T20:08:18.365Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:140:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-07-16T20:08:20.065Z info: Received a GET request for /params
+2023-07-16T20:08:20.066Z debug: <Params> controller has been called for <params_list>
+2023-07-16T20:08:20.066Z info: Request params: {}
+2023-07-16T20:08:20.067Z debug: Request params: {}
+2023-07-16T20:08:20.075Z debug: Results sent back {
+  "roles": [
+    {
+      "id": 1,
+      "shortdesc": "P",
+      "longdesc": "Président",
+      "icon": "crown"
+    },
+    {
+      "id": 2,
+      "shortdesc": "T",
+      "longdesc": "Trésorier",
+      "icon": "coin"
+    },
+    {
+      "id": 3,
+      "shortdesc": "S",
+      "longdesc": "Secrétaire",
+      "icon": "notepad"
+    }
+  ]
+}
+2023-07-16T20:08:26.166Z info: Received a GET request for /roles/new
+2023-07-16T20:08:26.167Z info: Request params: {}
+2023-07-16T20:08:26.167Z error: NotFoundError: Not Found
+    at C:\dev\node\pingcenter\app.js:140:8
+    at Layer.handle [as handle_request] (C:\dev\node\pingcenter\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:328:13)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:280:10)
+    at C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:646:15
+    at next (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\dev\node\pingcenter\node_modules\express\lib\router\index.js:47:12)
+2023-07-16T20:14:27.779Z debug: Controller instanciated for model : club
+2023-07-16T20:14:27.795Z debug: Controller instanciated for model : player
+2023-07-16T20:14:27.800Z debug: Controller instanciated for model : params
+2023-07-16T20:14:28.034Z info: Received a GET request for /params
+2023-07-16T20:14:28.038Z debug: <params> controller has been called for <list>
+2023-07-16T20:14:28.035Z info: Request params: {}
+2023-07-16T20:14:28.040Z debug: Request params: {}
+2023-07-16T20:14:28.056Z debug: Results sent back {"roles":[{"id":1,"shortdesc":"P","longdesc":"Président","icon":"crown"},{"id":2,"shortdesc":"T","longdesc":"Trésorier","icon":"coin"},{"id":3,"shortdesc":"S","longdesc":"Secrétaire","icon":"notepad"}]}
+2023-07-16T20:14:28.295Z error: Error: Failed to lookup view "paramss/paramssList" in views directory "C:\dev\node\pingcenter\views"
+    at Function.render (C:\dev\node\pingcenter\node_modules\express\lib\application.js:597:17)
+    at ServerResponse.render (C:\dev\node\pingcenter\node_modules\express\lib\response.js:1039:7)
+    at C:\dev\node\pingcenter\controllers\baseController.js:40:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-07-16T20:14:55.856Z debug: Controller instanciated for model : club
+2023-07-16T20:14:55.866Z debug: Controller instanciated for model : player
+2023-07-16T20:14:55.872Z debug: Controller instanciated for model : param
+2023-07-16T20:15:04.509Z info: Received a GET request for /params
+2023-07-16T20:15:04.512Z debug: <param> controller has been called for <list>
+2023-07-16T20:15:04.510Z info: Request params: {}
+2023-07-16T20:15:04.513Z debug: Request params: {}
+2023-07-16T20:15:04.529Z debug: Results sent back {"roles":[{"id":1,"shortdesc":"P","longdesc":"Président","icon":"crown"},{"id":2,"shortdesc":"T","longdesc":"Trésorier","icon":"coin"},{"id":3,"shortdesc":"S","longdesc":"Secrétaire","icon":"notepad"}]}
+2023-07-16T20:18:34.135Z info: Received a GET request for /players
+2023-07-16T20:18:34.138Z debug: <player> controller has been called for <list>
+2023-07-16T20:18:34.136Z info: Request params: {}
+2023-07-16T20:18:34.139Z debug: Request params: {}
+2023-07-16T20:18:34.206Z debug: Results sent back [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","ranking":931,"clubId":1,"roleId":2,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":2,"firstname":"Stéphane","lastname":"JULLIOT","birthdate":null,"ranking":591,"clubId":1,"roleId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":3,"firstname":"Christophe","lastname":"COUTURE","birthdate":null,"ranking":983,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":4,"firstname":"David","lastname":"WAUTHIER","birthdate":null,"ranking":1102,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":5,"firstname":"Frédéric","lastname":"LAMOUR","birthdate":null,"ranking":502,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":6,"firstname":"Nicolas","lastname":"DELOMEZ","birthdate":null,"ranking":879,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":7,"firstname":"Guy","lastname":"COLOMBEL","birthdate":null,"ranking":917,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":8,"firstname":"Luc","lastname":"BAUDAIS","birthdate":null,"ranking":872,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":9,"firstname":"Clément","lastname":"VILAIN","birthdate":null,"ranking":867,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":11,"firstname":"Dominique","lastname":"PERON","birthdate":null,"ranking":932,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":12,"firstname":"Rémi","lastname":"SAIL","birthdate":null,"ranking":1105,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-07-16T20:18:35.754Z info: Received a GET request for /players/edit/10
+2023-07-16T20:18:35.757Z debug: <player> controller has been called for <details>
+2023-07-16T20:18:35.755Z info: Request params: {}
+2023-07-16T20:18:35.758Z debug: Request params: {
+  "id": "10"
+}
+2023-07-16T20:18:35.781Z debug: Results sent back {"clubs":[{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"},{"id":2,"shortdesc":"SENE TT","longdesc":"SENE TT"},{"id":3,"shortdesc":"fdfds","longdesc":"fdsfs"}],"roles":[{"id":1,"shortdesc":"P","longdesc":"Président","icon":"crown"},{"id":2,"shortdesc":"T","longdesc":"Trésorier","icon":"coin"},{"id":3,"shortdesc":"S","longdesc":"Secrétaire","icon":"notepad"}],"player":{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"role":null}}
+2023-07-16T20:18:41.814Z info: Received a POST request for /players/edit/10
+2023-07-16T20:18:41.819Z debug: <player> controller has been called for <update>
+2023-07-16T20:18:41.814Z info: Request params: {}
+2023-07-16T20:18:41.821Z debug: Request params: {
+  "id": "10"
+}
+2023-07-16T20:18:41.823Z warn: Controller for model player doesn't implement _getPkClause method
+2023-07-16T20:18:41.857Z info: Received a GET request for /players
+2023-07-16T20:18:41.859Z debug: <player> controller has been called for <list>
+2023-07-16T20:18:41.858Z info: Request params: {}
+2023-07-16T20:18:41.860Z debug: Request params: {}
+2023-07-16T20:18:41.874Z debug: Results sent back [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","ranking":931,"clubId":1,"roleId":2,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":2,"firstname":"Stéphane","lastname":"JULLIOT","birthdate":null,"ranking":591,"clubId":1,"roleId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":3,"firstname":"Christophe","lastname":"COUTURE","birthdate":null,"ranking":983,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":4,"firstname":"David","lastname":"WAUTHIER","birthdate":null,"ranking":1102,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":5,"firstname":"Frédéric","lastname":"LAMOUR","birthdate":null,"ranking":502,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":6,"firstname":"Nicolas","lastname":"DELOMEZ","birthdate":null,"ranking":879,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":7,"firstname":"Guy","lastname":"COLOMBEL","birthdate":null,"ranking":917,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":8,"firstname":"Luc","lastname":"BAUDAIS","birthdate":null,"ranking":872,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":9,"firstname":"Clément","lastname":"VILAIN","birthdate":null,"ranking":867,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":11,"firstname":"Dominique","lastname":"PERON","birthdate":null,"ranking":932,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":12,"firstname":"Rémi","lastname":"SAIL","birthdate":null,"ranking":1105,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-07-16T20:18:44.015Z info: Received a GET request for /players/edit/10
+2023-07-16T20:18:44.017Z debug: <player> controller has been called for <details>
+2023-07-16T20:18:44.016Z info: Request params: {}
+2023-07-16T20:18:44.018Z debug: Request params: {
+  "id": "10"
+}
+2023-07-16T20:18:44.033Z debug: Results sent back {"clubs":[{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"},{"id":2,"shortdesc":"SENE TT","longdesc":"SENE TT"},{"id":3,"shortdesc":"fdfds","longdesc":"fdsfs"}],"roles":[{"id":1,"shortdesc":"P","longdesc":"Président","icon":"crown"},{"id":2,"shortdesc":"T","longdesc":"Trésorier","icon":"coin"},{"id":3,"shortdesc":"S","longdesc":"Secrétaire","icon":"notepad"}],"player":{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"role":null}}
+2023-07-16T20:19:33.334Z debug: Controller instanciated for model : club
+2023-07-16T20:19:33.346Z debug: Controller instanciated for model : player
+2023-07-16T20:19:33.354Z debug: Controller instanciated for model : param
+2023-07-16T20:19:35.042Z info: Received a GET request for /players
+2023-07-16T20:19:35.044Z debug: <player> controller has been called for <list>
+2023-07-16T20:19:35.043Z info: Request params: {}
+2023-07-16T20:19:35.046Z debug: Request params: {}
+2023-07-16T20:19:35.076Z debug: Results sent back [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","ranking":931,"clubId":1,"roleId":2,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":2,"firstname":"Stéphane","lastname":"JULLIOT","birthdate":null,"ranking":591,"clubId":1,"roleId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":3,"firstname":"Christophe","lastname":"COUTURE","birthdate":null,"ranking":983,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":4,"firstname":"David","lastname":"WAUTHIER","birthdate":null,"ranking":1102,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":5,"firstname":"Frédéric","lastname":"LAMOUR","birthdate":null,"ranking":502,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":6,"firstname":"Nicolas","lastname":"DELOMEZ","birthdate":null,"ranking":879,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":7,"firstname":"Guy","lastname":"COLOMBEL","birthdate":null,"ranking":917,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":8,"firstname":"Luc","lastname":"BAUDAIS","birthdate":null,"ranking":872,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":9,"firstname":"Clément","lastname":"VILAIN","birthdate":null,"ranking":867,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":11,"firstname":"Dominique","lastname":"PERON","birthdate":null,"ranking":932,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":12,"firstname":"Rémi","lastname":"SAIL","birthdate":null,"ranking":1105,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-07-16T20:19:36.882Z info: Received a GET request for /players/edit/10
+2023-07-16T20:19:36.885Z debug: <player> controller has been called for <details>
+2023-07-16T20:19:36.882Z info: Request params: {}
+2023-07-16T20:19:36.887Z debug: Request params: {
+  "id": "10"
+}
+2023-07-16T20:19:36.917Z debug: Results sent back {"roles":[{"id":1,"shortdesc":"P","longdesc":"Président","icon":"crown"},{"id":2,"shortdesc":"T","longdesc":"Trésorier","icon":"coin"},{"id":3,"shortdesc":"S","longdesc":"Secrétaire","icon":"notepad"}],"player":{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":null,"role":null},"clubs":[{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"},{"id":2,"shortdesc":"SENE TT","longdesc":"SENE TT"},{"id":3,"shortdesc":"fdfds","longdesc":"fdsfs"}]}
+2023-07-16T20:19:39.934Z info: Received a POST request for /players/edit/10
+2023-07-16T20:19:39.944Z debug: <player> controller has been called for <update>
+2023-07-16T20:19:39.935Z info: Request params: {}
+2023-07-16T20:19:39.945Z debug: Request params: {
+  "id": "10"
+}
+2023-07-16T20:19:39.947Z warn: Controller for model player doesn't implement _getPkClause method
+2023-07-16T20:19:39.981Z info: Received a GET request for /players
+2023-07-16T20:19:39.983Z debug: <player> controller has been called for <list>
+2023-07-16T20:19:39.981Z info: Request params: {}
+2023-07-16T20:19:39.985Z debug: Request params: {}
+2023-07-16T20:19:39.995Z debug: Results sent back [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","ranking":931,"clubId":1,"roleId":2,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":2,"firstname":"Stéphane","lastname":"JULLIOT","birthdate":null,"ranking":591,"clubId":1,"roleId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":3,"firstname":"Christophe","lastname":"COUTURE","birthdate":null,"ranking":983,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":4,"firstname":"David","lastname":"WAUTHIER","birthdate":null,"ranking":1102,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":5,"firstname":"Frédéric","lastname":"LAMOUR","birthdate":null,"ranking":502,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":6,"firstname":"Nicolas","lastname":"DELOMEZ","birthdate":null,"ranking":879,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":7,"firstname":"Guy","lastname":"COLOMBEL","birthdate":null,"ranking":917,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":8,"firstname":"Luc","lastname":"BAUDAIS","birthdate":null,"ranking":872,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":9,"firstname":"Clément","lastname":"VILAIN","birthdate":null,"ranking":867,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":11,"firstname":"Dominique","lastname":"PERON","birthdate":null,"ranking":932,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":12,"firstname":"Rémi","lastname":"SAIL","birthdate":null,"ranking":1105,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-07-16T20:19:41.801Z info: Received a GET request for /players/edit/10
+2023-07-16T20:19:41.803Z debug: <player> controller has been called for <details>
+2023-07-16T20:19:41.802Z info: Request params: {}
+2023-07-16T20:19:41.804Z debug: Request params: {
+  "id": "10"
+}
+2023-07-16T20:19:41.816Z debug: Results sent back {"clubs":[{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"},{"id":2,"shortdesc":"SENE TT","longdesc":"SENE TT"},{"id":3,"shortdesc":"fdfds","longdesc":"fdsfs"}],"roles":[{"id":1,"shortdesc":"P","longdesc":"Président","icon":"crown"},{"id":2,"shortdesc":"T","longdesc":"Trésorier","icon":"coin"},{"id":3,"shortdesc":"S","longdesc":"Secrétaire","icon":"notepad"}],"player":{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":1,"role":{"id":1,"shortdesc":"P","longdesc":"Président","icon":"crown"}}}
+2023-07-16T20:19:57.725Z info: Received a POST request for /players/edit/10
+2023-07-16T20:19:57.728Z debug: <player> controller has been called for <update>
+2023-07-16T20:19:57.726Z info: Request params: {}
+2023-07-16T20:19:57.728Z debug: Request params: {
+  "id": "10"
+}
+2023-07-16T20:19:57.729Z warn: Controller for model player doesn't implement _getPkClause method
+2023-07-16T20:19:57.762Z info: Received a GET request for /players
+2023-07-16T20:19:57.764Z debug: <player> controller has been called for <list>
+2023-07-16T20:19:57.764Z debug: Request params: {}
+2023-07-16T20:19:57.763Z info: Request params: {}
+2023-07-16T20:19:57.777Z debug: Results sent back [{"id":1,"firstname":"Damien","lastname":"LEVEUGLE","birthdate":"1969-12-13 01:00:00","ranking":931,"clubId":1,"roleId":2,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":2,"firstname":"Stéphane","lastname":"JULLIOT","birthdate":null,"ranking":591,"clubId":1,"roleId":1,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":3,"firstname":"Christophe","lastname":"COUTURE","birthdate":null,"ranking":983,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":4,"firstname":"David","lastname":"WAUTHIER","birthdate":null,"ranking":1102,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":5,"firstname":"Frédéric","lastname":"LAMOUR","birthdate":null,"ranking":502,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":6,"firstname":"Nicolas","lastname":"DELOMEZ","birthdate":null,"ranking":879,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":7,"firstname":"Guy","lastname":"COLOMBEL","birthdate":null,"ranking":917,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":8,"firstname":"Luc","lastname":"BAUDAIS","birthdate":null,"ranking":872,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":9,"firstname":"Clément","lastname":"VILAIN","birthdate":null,"ranking":867,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":2,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":11,"firstname":"Dominique","lastname":"PERON","birthdate":null,"ranking":932,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}},{"id":12,"firstname":"Rémi","lastname":"SAIL","birthdate":null,"ranking":1105,"clubId":1,"roleId":null,"club":{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"}}]
+2023-07-16T20:20:00.074Z info: Received a GET request for /players/edit/10
+2023-07-16T20:20:00.075Z debug: <player> controller has been called for <details>
+2023-07-16T20:20:00.075Z info: Request params: {}
+2023-07-16T20:20:00.076Z debug: Request params: {
+  "id": "10"
+}
+2023-07-16T20:20:00.099Z debug: Results sent back {"clubs":[{"id":1,"shortdesc":"MTT","longdesc":"MUZILLAC TT"},{"id":2,"shortdesc":"SENE TT","longdesc":"SENE TT"},{"id":3,"shortdesc":"fdfds","longdesc":"fdsfs"}],"roles":[{"id":1,"shortdesc":"P","longdesc":"Président","icon":"crown"},{"id":2,"shortdesc":"T","longdesc":"Trésorier","icon":"coin"},{"id":3,"shortdesc":"S","longdesc":"Secrétaire","icon":"notepad"}],"player":{"id":10,"firstname":"Benjamin","lastname":"VILAIN","birthdate":null,"ranking":762,"clubId":1,"roleId":2,"role":{"id":2,"shortdesc":"T","longdesc":"Trésorier","icon":"coin"}}}

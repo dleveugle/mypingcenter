@@ -5,28 +5,25 @@
 // import modules
 var express = require('express');
 var router = express.Router();
-const playerController = global.Utils.requireControllers('playerController');
-
+var playerController = global.Utils.requireControllers('playerController');
+const p = new playerController();
 /**
  * GET 
  */ 
-// player list route
-router.get('/', playerController.players_list);
-// edit player route
-router.get('/edit/:id', playerController.player_details_get);
-// route for new player
+router.get('/', p.list);
+router.get('/edit/:id', p.details);
 router.get('/new',function(req, res, next){res.redirect('edit/-1');});
 
 
 /**
  * POST
  */
-router.post('/create', playerController.player_create);
-router.post('/edit/:id', playerController.player_update);
+router.post('/create', p.getValidationRules('/create'), p.create);
+router.post('/edit/:id', p.getValidationRules('/update'), p.update);
 
 /**
  * DELETE
  */
-router.delete('/delete/:id', playerController.player_delete);
+router.delete('/delete/:id', p.delete);
 
 module.exports = router;

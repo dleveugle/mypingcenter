@@ -20,9 +20,6 @@ router.get('/new',function(req, res, next){ res.redirect('edit/-1');});
 router.post('/create', c.getValidationRules('/create'), c.create);
 router.post('/edit/:id', c.getValidationRules('/update'), c.update);
 
-/*router.post('/edit/:id', clubController.club_update);
-router.post('/create', clubController.club_create);
-
 /**
  * DELETE 
  */
