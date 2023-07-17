@@ -29,10 +29,10 @@ module.exports =  function(){
             return require(`${this.modelsDir}/${script}`);
         },
         requireRoutes: function(script) {
-            return require(`${this.routesDir}/${script}`);
+            return require(`${this.routesDir}/${script}Router`);
         },
         requireControllers: function(script) {
-            return require(`${this.controllersDir}/${script}`);
+            return require(`${this.controllersDir}/${script}Controller`);
         },
         requireDB: function() {
             return require(`${this.configDir}/database`);

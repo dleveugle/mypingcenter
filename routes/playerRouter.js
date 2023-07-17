@@ -5,7 +5,7 @@
 // import modules
 var express = require('express');
 var router = express.Router();
-var playerController = global.Utils.requireControllers('playerController');
+var playerController = global.Utils.requireControllers('player');
 const p = new playerController();
 /**
  * GET 

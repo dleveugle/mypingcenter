@@ -4,7 +4,7 @@
 var express = require('express');
 var router = express.Router();
 //TODO Suppress 'Controller' string in requireController call
-var clubController = global.Utils.requireControllers('clubController');
+var clubController = global.Utils.requireControllers('club');
 const c = new clubController();
 
 /**

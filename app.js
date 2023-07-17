@@ -117,18 +117,34 @@ app.use((req, res, next) => {
 });
 //***************************************************************************************
 
+/**
+ * Middleware function to check if user has signed in
+ * @param {*} req 
+ * @param {*} res 
+ */
+function checkSignIn(req, res){
+  if(req.session.user){
+     next();     //If session exists, proceed to page
+  } else {
+     var err = new Error("Not logged in!");
+     console.log(req.session.user);
+     next(err);  //Error, trying to access unauthorized page!
+  }
+}
+
 // Routers
 app.use((req, res, next) => {
   // Log an info message for each incoming request
   logger._i(`Received a ${req.method} request for ${req.url}`);
   logger._iRequestParams(req);
-  
   next();
 });
-app.use('/', global.Utils.requireRoutes('index'));
-app.use('/clubs', global.Utils.requireRoutes('clubRouter'));
-app.use('/players', global.Utils.requireRoutes('playerRouter'));
-app.use('/params', global.Utils.requireRoutes('paramsRouter'));
+
+app.use('/', checkSignIn, global.Utils.requireRoutes('index'));
+app.use('/user', global.Utils.requireRoutes('user'));
+app.use('/clubs', checkSignIn, global.Utils.requireRoutes('club'));
+app.use('/players', checkSignIn, global.Utils.requireRoutes('player'));
+app.use('/params', checkSignIn, global.Utils.requireRoutes('params'));
 
 /**
  * Database 
