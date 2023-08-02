@@ -1,14 +1,24 @@
 header#header.header
     .header_toggle 
-        i#header-toggle.bx.bx-menu
+        i#header-toggle.bx.bx-menu.bx-md
 
     nav.header_breadcrumb(style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb")
-        ol.breadcrumb 
+        ol.breadcrumb.mb-0 
             li.breadcrumb-item
                 a(href="/")
-                    i.bx.bx-home
+                    i.bx.bx-home.bx-md
             li.breadcrumb-item  
                 span= breadcrumb
 
-    .header_img
-        img(src="https://i.imgur.com/hczKIze.jpg" alt="") 
+    if session.user
+        .header_icon.me-2
+            a(href="/user/account")
+                i.bx.bxs-user-account.bx-md
+        .header_icon 
+            a(href="/user/logout")
+                i.bx.bx-log-out-circle.bx-md
+    else 
+        .header_icon 
+            a(href="/user/login")
+                i.bx.bx-log-in-circle.bx-md
+

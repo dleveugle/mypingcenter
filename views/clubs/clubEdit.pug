@@ -10,8 +10,9 @@
 			label.form-label(for="txtShortDesc") #{__('ClubShortDescription')}
 			div#invalid-shortdesc.invalid-feedback
 
-	div.form-floating.mb-3
-		input#txtLongDesc(type="text", class="form-control" value=data.longdesc name="longdesc"
-		placeholder="#")
-		label.form-label(for="txtShortDesc") #{__('ClubName')}
-		div#invalid-longdesc.invalid-feedback
+	div.input-group.has-validation
+		div.form-floating.mb-3
+			input#txtLongDesc(type="text", class="form-control" value=data.longdesc name="longdesc"
+			placeholder="#")
+			label.form-label(for="txtShortDesc") #{__('ClubName')}
+			div#invalid-longdesc.invalid-feedback

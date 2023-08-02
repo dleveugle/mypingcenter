@@ -1,6 +1,6 @@
 const svc = require('../services');
 
-const pass = 'BLABLA';
+const pass = 'damien';
 
 const e = new svc.encrypter();
 

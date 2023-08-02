@@ -74,6 +74,7 @@ app.use(function(req, res, next) {
   res.locals.path = path[1] ? path[1] : '';
   res.locals.url = require('./services/myUrl');
   res.locals._ = require('lodash');
+  res.locals.session = req.session;
   next();
 });
 
@@ -122,7 +123,7 @@ app.use((req, res, next) => {
  * @param {*} req 
  * @param {*} res 
  */
-function checkSignIn(req, res){
+function checkSignIn(req, res, next){
   if(req.session.user){
      next();     //If session exists, proceed to page
   } else {
@@ -140,8 +141,9 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use('/', checkSignIn, global.Utils.requireRoutes('index'));
 app.use('/user', global.Utils.requireRoutes('user'));
+app.use('/', global.Utils.requireRoutes('index'));
+
 app.use('/clubs', checkSignIn, global.Utils.requireRoutes('club'));
 app.use('/players', checkSignIn, global.Utils.requireRoutes('player'));
 app.use('/params', checkSignIn, global.Utils.requireRoutes('params'));

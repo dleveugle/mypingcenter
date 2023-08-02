@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .card.mt-5
+    h5.card-header #{__('MSG_WelcomeOnMyPingCenter')}
+    .card-body
+      h5.card-title #{__('MyApplication')}
+      p.card-text #{__('TXT_Introduction')} 
+      a.btn.btn-primary(href="/user/login") #{__('Login')}
+      a.btn.btn-primary(href="/user/signup") #{__('Signup')}

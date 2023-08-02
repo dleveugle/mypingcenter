@@ -10,32 +10,36 @@
 			label.form-label(for="txtFirstName") #{__('PlayerFirstName')}
 			div#invalid-firstname.invalid-feedback
 
-	div.form-floating.mb-3
-		input#txtLastName(type="text", class="form-control" value=data.player.lastname name="lastname"
-		placeholder="#")
-		label.form-label(for="txtLastName") #{__('PlayerLastName')}
-		div#invalid-lastname.invalid-feedback
+	div.input-group.has-validation
+		div.form-floating.mb-3
+			input#txtLastName(type="text", class="form-control" value=data.player.lastname name="lastname"
+			placeholder="#")
+			label.form-label(for="txtLastName") #{__('PlayerLastName')}
+			div#invalid-lastname.invalid-feedback
 
-	div.form-floating.mb-3
-		select#selRole(class="form-select" name="roleid" placeholder="#")
-			option(disabled selected=!data.player.roleId ) #{__('MSG_SelectAnOption')}
-			each val in data.roles
-				option(value=val.id selected=val.id==data.player.roleId )= val.longdesc
-		label.form-label(for="selRole") #{__('PlayerRole')}
-		div#invalid-clubid.invalid-feedback
+	div.input-group.has-validation
+		div.form-floating.mb-3
+			select#selRole(class="form-select" name="roleid" placeholder="#")
+				option(disabled selected=!data.player.roleId ) #{__('MSG_SelectAnOption')}
+				each val in data.roles
+					option(value=val.id selected=val.id==data.player.roleId )= val.longdesc
+			label.form-label(for="selRole") #{__('PlayerRole')}
+			div#invalid-clubid.invalid-feedback
 
-	div.form-floating.mb-3
-		input#txtBirthDate(type="date", class="form-control" data-bs-date-format="dd-mm-yyyy" value=moment(data.player.birthdate).format("YYYY-MM-DD") name="birthdate"
-		placeholder="#" )
-		label.form-label(for="txtBirthDate") #{__('PlayerBirthDate')}
-		div#invalid-birthdate.invalid-feedback
+	div.input-group.has-validation
+		div.form-floating.mb-3
+			input#txtBirthDate(type="date", class="form-control" data-bs-date-format="dd-mm-yyyy" value=moment(data.player.birthdate).format("YYYY-MM-DD") name="birthdate"
+			placeholder="#" )
+			label.form-label(for="txtBirthDate") #{__('PlayerBirthDate')}
+			div#invalid-birthdate.invalid-feedback
 
-	div.form-floating.mb-3
-		select#selClub(class="form-select" name="clubid" placeholder="#")
-			option(disabled selected=!data.player.clubId ) #{__('MSG_SelectAnOption')}
-			each val in data.clubs
-				option(value=val.id selected=val.id==data.player.clubId )= val.shortdesc
-		label.form-label(for="selClub") #{__('PlayerClub')}
-		div#invalid-clubid.invalid-feedback
+	div.input-group.has-validation
+		div.form-floating.mb-3
+			select#selClub(class="form-select" name="clubid" placeholder="#")
+				option(disabled selected=!data.player.clubId ) #{__('MSG_SelectAnOption')}
+				each val in data.clubs
+					option(value=val.id selected=val.id==data.player.clubId )= val.shortdesc
+			label.form-label(for="selClub") #{__('PlayerClub')}
+			div#invalid-clubid.invalid-feedback
 
 

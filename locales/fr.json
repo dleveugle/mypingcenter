@@ -40,5 +40,16 @@
  "roleLongDesc": "roleLongDesc",
  "roleIcon": "roleIcon",
  "editingRole": "editingRole",
- "PlayerRole": "PlayerRole"
+ "PlayerRole": "PlayerRole",
+ "Login": "Login",
+ "Log in": "Log in",
+ "Password": "Password",
+ "MSG_UsernameIsMandatory": "MSG_UsernameIsMandatory",
+ "MSG_PasswordIsMandatory": "MSG_PasswordIsMandatory",
+ "Signup": "Signup",
+ "MSG_userSignedUp": "MSG_userSignedUp",
+ "MSG_WelcomeUser": "MSG_WelcomeUser",
+ "MSG_WelcomeOnMyPingCenter": "MSG_WelcomeOnMyPingCenter",
+ "TXT_Introduction": "TXT_Introduction",
+ "Finances": "Finances"
 }

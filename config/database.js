@@ -22,3 +22,4 @@ timezone: 'Etc/GMT-1' //for writing to database;
 
 module.exports.datatypes = Sequelize.DataTypes;
 module.exports.db = sequelize;
+module.exports.Op = Sequelize.Op;

@@ -65,14 +65,25 @@ db.sequelize.sync({ force: true })
       clubId:1, ranking:1105, roleId:null}},
 
     {model: 'season', data: {startYear:2022, longdesc: 'Saison 2022-2023'}},
-    {model: 'season', data: {startYear:2023, longdesc: 'Saison 2023-2024'}}
+    {model: 'season', data: {startYear:2023, longdesc: 'Saison 2023-2024'}},
+
+    {model: 'user', data: {id: 'damien', password: '$2b$10$j.5VzdIwAKGscPTTF.I0qexeOQ6M6.I8chA9wrC5GdOAQlKpGU12W'}}
+
+   
   );
 
   var Params = [];
   Params.push(
     {model:'role', data: {id:1, shortdesc:'P', longdesc: 'Président', icon:'crown'}},
     {model:'role', data: {id:2, shortdesc:'T', longdesc: 'Trésorier', icon:'coin'}},
-    {model:'role', data: {id:3, shortdesc:'S', longdesc: 'Secrétaire', icon:'notepad'}}
+    {model:'role', data: {id:3, shortdesc:'S', longdesc: 'Secrétaire', icon:'notepad'}},
+
+    {model:'transactionType', data: {code: 'R', longdesc: 'Revenu', sign: 1}},
+    {model:'transactionType', data: {code: 'D', longdesc: 'Dépense', sign: -1}},
+
+    {model:'transactionMedia', data: {code: 'V', longdesc: 'Virement'}},
+    {model:'transactionMedia', data: {code: 'C', longdesc: 'Chèque'}},
+    {model:'transactionMedia', data: {code: 'E', longdesc: 'Espèce'}}
   );
 
    // create a param record

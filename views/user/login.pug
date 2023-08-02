@@ -1,0 +1,76 @@
+extends ../layout
+
+block content
+	.modal.fade#modalForm(tabindex=-1, role="dialog")
+		.modal-dialog(role="document")
+			.modal-content
+				form#loginForm(action="/user/login" method="POST")
+					.modal-header
+						div.mx-2 
+							i#modalFormHeaderImage
+							span  #{__('Login')} / #{__('Signup')} 
+					.modal-body
+						div.input-group.has-validation
+							div.form-floating.mb-3
+								input#txtUsername(type="text", class="form-control", name="username", placeholder="#")
+								label.form-label(for="txtUsername") #{__('Login')}
+								div#invalid-username.invalid-feedback
+						div.input-group.has-validation
+							div.form-floating.mb-3
+								input#txtPassword(type="text", class="form-control", name="password", placeholder="#")
+								label.form-label(for="txtPassword") #{__('Password')}
+								div#invalid-password.invalid-feedback
+
+					.modal-footer
+						.me-auto
+							button#signupFormSubmitButton(type="button", class="btn btn-danger") #{__('Signup')}
+						button(type="button", class="btn btn-secondary", data-bs-dismiss="modal", data-bs-target="#modalForm") #{__('Close')} 
+						button#loginFormSubmitButton(type="button", class="btn btn-primary") #{__('Log in')}
+
+	script.
+		$('#modalForm').ready(function() { 
+			$('#modalForm').modal('show');
+
+			$('#loginFormSubmitButton').on('click', function() {
+				var datastring = $("#loginForm").serialize();
+				$(".is-invalid:visible").removeClass('is-invalid');
+				$.ajax({
+					type: "POST",
+					url:$("#loginForm").attr('action'),
+					data: datastring,
+					dataType: "json",
+					success: function(data) {
+						window.location.href=__url("");
+					},
+					error: function(error) {
+						error.responseJSON.forEach((e)=> {
+						$("[name="+e.path+"]").addClass('is-invalid');
+						$("#invalid-"+e.path).html(e.msg);
+						});
+						$(".is-invalid:visible:first").select().focus();
+					}
+				});
+			});
+
+			$('#signupFormSubmitButton').on('click', function() {
+				var datastring = $("#loginForm").serialize();
+				$(".is-invalid:visible").removeClass('is-invalid');
+				$.ajax({
+					type: "POST",
+					url:'/user/signup',
+					data: datastring,
+					dataType: "json",
+					success: function(data) {
+						window.location.href=__url("");
+					},
+					error: function(error) {
+						error.responseJSON.forEach((e)=> {
+						$("[name="+e.path+"]").addClass('is-invalid');
+						$("#invalid-"+e.path).html(e.msg);
+						});
+						$(".is-invalid:visible:first").select().focus();
+					}
+				});
+			});
+		});
+		

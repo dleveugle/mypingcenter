@@ -13,10 +13,12 @@ const u = new userController();
  */ 
 // params list route
 router.get('/signup', u.signup);
+router.get('/login', u.login);
+router.get('/logout', u.logout);
 
 /**
  * POST 
  */ 
-router.post('/signup', u.validateSignup)
-
+router.post('/signup', u.getValidationRules('/validateSignup'), u.ajaxValidateSignup);
+router.post('/login', u.getValidationRules('/validateLogin'), u.ajaxValidateLogin);
 module.exports = router;
